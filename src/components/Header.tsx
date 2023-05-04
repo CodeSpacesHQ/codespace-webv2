@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="flex justify-between h-[100px] items-center px-[102px]">
+    <header className="flex justify-between h-[100px] items-center px-[102px] font-gelion">
       <div className='logo'>LOGO</div>
       <div className='menu'>
         <ul className="flex space-x-[61px]">
