@@ -28,6 +28,8 @@ const Footer = () => {
                 <a
                   href={social_link}
                   key={id}
+                  target='_blank'
+                  rel='noopener'
                   className='hover:scale-105 transition-all hover:shadow-xl p-2 rounded-full'>
                   <img
                     src={icon}
@@ -43,7 +45,7 @@ const Footer = () => {
             <div className='flex flex-col space-y-[11px]'>
               {footerLinks.map(({ id, title, social_link }) => (
                 <div key={id} className='hover:scale-105 transition-all hover:text-primary'>
-                  <a href={social_link} className='text-base md:text-[22px]'>
+                  <a href={social_link} target="_blank" rel='noopener' className='text-base md:text-[22px]'>
                     {title}
                   </a>
                 </div>
