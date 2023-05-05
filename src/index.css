@@ -2,22 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Hide the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 
-.color-slide
-{
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
 
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+body {
+  @apply bg-white h-full overflow-x-hidden m-0 font-poppins text-[24px]/9 text-black font-normal tracking-[-0.20000000298023224px];
+}
+
+nav {
+  @apply text-nav-text text-base tracking-normal text-center;
+}
+
+.color-slide {
   background-image: linear-gradient(
     -150deg,
     #231557 0%,
     #44107a 29%,
-    #5D5CD6  67%,
-    #5D5CD6 100%
+    #5d5cd6 67%,
+    #5d5cd6 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -28,7 +49,6 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
   display: inline-block;
-
 }
 
 @keyframes textclip {

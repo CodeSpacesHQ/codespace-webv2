@@ -1,12 +1,9 @@
-
-import './App.css'
-import Home from './pages/Home'
+import "./App.css";
+// import Home from './pages/Home'
+import JobOpp from "./pages/JobOpp";
 
 function App() {
-
-  return (
-    <Home />
-  )
+  return <JobOpp />;
 }
 
-export default App
+export default App;
