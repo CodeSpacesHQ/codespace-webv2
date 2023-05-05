@@ -8,13 +8,17 @@ export default {
     fontFamily:{
       'gelion': ['gelion'],
       'dm-sans': ['DM Sans'],
-      'poppins': ['Poppins']
+      'poppins': ['Poppins'],
+      'hind-siliguri': ['Hind Siliguri']
     },
     extend: {
       colors: {
         'primary': '#5D5CD6',
         'light-purple': '#6463D9',
         'grey': '#A19A9A'
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       }
     },
   },
