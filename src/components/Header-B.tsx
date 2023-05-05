@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import HamburgerIcon from "../assets/hamburger.svg";
 import logo from "../assets/logo.svg";
 
@@ -11,11 +12,44 @@ const menuItems = [
 ];
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 42) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleNavClick = () => {
+    setNavOpen(!navOpen);
+  };
+  const navClasses = `fixed top-0 h-full w-full bg-white transform transition-all ease-in-out duration-300 ${
+    navOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+  }`;
+
   return (
-    <header>
+    <header
+      className={`fixed top-0 w-full ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      }  transition-all duration-500`}
+    >
       <nav>
         <div className="flex justify-between lg:justify-between py-12 lg:py-8 items-center px-7 sm:px-[62px] xl:px-[102px] font-poppins mx-auto">
-          <img src={logo} alt="logo" className=" h-[31px] cursor-pointer" />
+          <img
+            src={logo}
+            alt="logo"
+            className=" h-[31px] cursor-pointer z-10"
+          />
           {/* Menu */}
           <div className="menu hidden lg:flex items-center justify-between">
             <div>
@@ -40,7 +74,7 @@ const Header = () => {
           </div>
           {/* Mobile Menu */}
 
-          <div className="lg:hidden">
+          <div className="lg:hidden z-10" onClick={handleNavClick}>
             <div className="mobile-icon">
               <img
                 src={HamburgerIcon}
@@ -52,15 +86,30 @@ const Header = () => {
         </div>
 
         {/* Tab menu */}
-        {/* <ul className="hidden lg:flex justify-between px-7 h-[50px] items-center border-t border-light-purple border-opacity-20 font-poppins">
-          {menuItems.map((item, index) => {
-            return (
-              <li key={index} className="cursor-pointer hover:scale-105">
-                <a href="#">{item}</a>
-              </li>
-            );
-          })}
-        </ul> */}
+        <div className={`lg:hidden ${navClasses}`}>
+          <img
+            src={logo}
+            alt="logo"
+            className=" h-[31px] py-12 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0"
+          />
+          <ul className="px-7 h-[50px] items-center font-poppins">
+            {menuItems.map((item, index) => {
+              return (
+                <li
+                  key={index}
+                  className="cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2"
+                >
+                  <a href="#">{item}</a>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="donate absolute bottom-10 hover:scale-110 transition-all px-7 w-full">
+            <button className="bg-primary w-full rounded-[10px] py-3 text-white">
+              Donate Now
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
   );
