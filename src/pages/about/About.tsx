@@ -1,5 +1,6 @@
 import { AboutBanner, Vision , Team, Partners} from "."
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 export const About = () => {
     return (
@@ -19,6 +20,10 @@ export const About = () => {
 
             <div>
                 <Partners />
+            </div>
+
+            <div>
+                <Footer />
             </div>
 
         </section>

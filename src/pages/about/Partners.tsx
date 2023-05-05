@@ -50,10 +50,12 @@ export const Partners = () => {
                     </p>
 
                     <div>
-                        <button className=" bg-[#5D5CD6] hover:bg-white hover:border hover:border-[#5D5CD6] 
-                        transition duration-300 ease-in-out hover:text-[#5D5CD6]
-                        rounded-[40px] p-4 px-6 font-gilroy text-[#FEFEFE]
-                        font-bold w-250px md:w-[300px]">Join our community</button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBjs67bGLUuoJqUIFlIse2SQeHnmBCDp07cz_HrAlHSNKZsA/viewform?usp=send_form">
+                            <button className=" bg-[#5D5CD6] hover:bg-white hover:border hover:border-[#5D5CD6] 
+                            transition duration-300 ease-in-out hover:text-[#5D5CD6]
+                            rounded-[40px] p-4 px-6 font-gilroy text-[#FEFEFE]
+                            font-bold w-250px md:w-[300px]">Join our community</button>
+                        </a>
                     </div>
 
                 </div>
