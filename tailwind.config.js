@@ -9,6 +9,7 @@ export default {
       'gelion': ['gelion'],
       'dm-sans': ['DM Sans'],
       'poppins': ['Poppins'],
+      'hind-siliguri': ['Hind Siliguri'],
       'epilogue': ['"Epilogue"', 'sans-serif'],
       'gilroy': ['"Gilroy-Regular"', 'sans-serif'],
     },
@@ -17,7 +18,13 @@ export default {
         'primary': '#5D5CD6',
         'light-purple': '#6463D9',
         'grey': '#A19A9A'
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+      },
+      screens: {
+        'xmd': '920px',
+      },
     },
   },
   plugins: [],

@@ -1,13 +1,19 @@
 import { teams } from '../../constants/teams'
+import { useWidth } from '../../hooks/useWidth'
 
 export const Team = () => {
+    const width = useWidth()
+
+    const isMobile = width <= 768
     return (
-        <section className='bg-[#FFFFFF] px-[102px] py-16'>
-            <h2 className='font-gelion font-[700px] mb-8 
-            text-center text-[64px] leading-[72px] text-[#000000]'>Core Team</h2>
+        <section className='bg-[#FFFFFF] px-7 xl:px-[102px] py-8 sm:py-12 md:py-16'>
+            <h2 className='font-gelion font-[700px]  sm:mb-6 
+            text-center text-[32px] sm:text-[40px] md:text-[64px] leading-[72px] text-[#000000]'>
+                {isMobile? 'Meet the Team' : "Core Team"}
+            </h2>
 
             <div>
-                <p className=' font-dm-sans mb-8 text-[#9F9A9A] font-normal text-[24px] leading-[48px] text-center'>
+                <p className=' font-gelion md:font-dm-sans  mb-8 text-[#9F9A9A] font-normal text-[16px] sm:text-[24px] leading-[18px] sm:leading-[48px] tracking-[0.12em] text-center'>
                     We're a diverse, close-knit team on an
                     adventure to build something enduring,
                     while learning something new, every day.
