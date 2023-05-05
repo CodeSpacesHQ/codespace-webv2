@@ -5,10 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily:{
+    fontFamily: {
       'gelion': ['gelion'],
       'dm-sans': ['DM Sans'],
-      'poppins': ['Poppins']
+      'poppins': ['Poppins'],
+      'epilogue': ['"Epilogue"', 'sans-serif'],
+      'gilroy': ['"Gilroy-Regular"', 'sans-serif'],
     },
     extend: {
       colors: {
