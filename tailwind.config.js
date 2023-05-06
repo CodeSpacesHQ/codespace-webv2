@@ -2,11 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
+    fontFamily:  {
       gelion: ["gelion", "sans-serif"],
       "dm-sans": ["DM Sans", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
-      "hind-siliguri": ["Hind Siliguri"],
+      "hind-siliguri": ["Hind Siliguri"],,
+      'epilogue': ['"Epilogue"', 'sans-serif'],
+      'gilroy': ['"Gilroy-Regular"', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -30,8 +32,10 @@ export default {
       screens: {
         wideScreen: "1400px",
         // => @media (min-width: 1400px) { ... }
+      },      screens: {
+        'xmd': '920px',
       },
-    },
+   },
   },
   plugins: [],
 };

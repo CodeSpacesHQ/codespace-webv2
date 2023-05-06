@@ -1,9 +1,12 @@
 import "./App.css";
-// import Home from './pages/Home'
-import JobOpp from "./pages/JobOpp";
+import { Routes } from "./config";
 
 function App() {
-  return <JobOpp />;
+  return (
+    <>
+      <Routes />
+    </>
+  );
 }
 
 export default App;
