@@ -17,8 +17,15 @@ export default {
         "dark-blue": "#0B0A29",
         "nav-text": "#070F18",
       },
+      keyframes: {
+        "slide-in": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
       animation: {
         "spin-slow": "spin 6s linear infinite",
+        "slide-in": "slide-in 1s ease-out",
       },
       screens: {
         wideScreen: "1400px",
