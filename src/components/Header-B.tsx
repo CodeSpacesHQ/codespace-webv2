@@ -41,7 +41,7 @@ const Header = () => {
       }  transition-all duration-500`}
     >
       <nav>
-        <div className="flex justify-between lg:justify-between py-12 lg:py-8 items-center px-7 sm:px-[62px] xl:px-[102px] font-poppins mx-auto">
+        <div className="flex justify-between lg:justify-between py-12 max-md:py-8 lg:py-8 items-center px-7 sm:px-[62px] xl:px-[102px] font-poppins mx-auto">
           <img
             src={logo}
             alt="logo"

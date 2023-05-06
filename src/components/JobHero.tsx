@@ -6,17 +6,20 @@ import art from "../assets/art1.png";
 const JobHero = () => {
   return (
     <div className="relative w-full bg-[url('assets/pattern.png')] bg-no-repeat bg-center bg-cover h-screen overflow-hidden">
-      <div className="absolute right-0 top-44" id="arrow">
+      <div className="absolute wideScreen:right-0 -right-36  xl:-right-9 sm:top-[156px] max-md:bottom-[134px] max-smallest:bottom-[94px] max-sm:-right-9">
         <img src={arrow} alt="shapes" className="h-24 sm:h-full" />
+      </div>
+      <div className="absolute -right-[17px] -bottom-8 max-smallest:-bottom-16 sm:bottom-[9px]">
+        <img src={pattern} alt="shapes" className="h-[143px]" />
       </div>
       <div className="w-full h-full">
         <Header />
-        <div className=" ps-[104px] pt-[236px] pb-[120px] flex justify-between wideScreen:pe-[269px] pe-[175px]">
-          <div className="me-40">
-            <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2">
+        <div className="xl:ps-[104px] pt-[236px] max-md:pt-[189px] max-xl:px-[65px] pb-[120px] flex justify-between items-center max-md:items-end wideScreen:pe-[269px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
+          <div className="xl:me-40 me-12 max-md:me-0">
+            <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-md:text-[20px]/6">
               JOB OPPORTUNITIES
             </p>
-            <h1 className="font-gelion text-[55px]/[66px] text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
+            <h1 className="font-gelion text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
               Empowering the Next Generation of Tech Innovators
             </h1>
             <p>
@@ -24,7 +27,11 @@ const JobHero = () => {
               empowering Genz in technology across Africa.{" "}
             </p>
           </div>
-          <img src={art} className=" h-[146px]" alt="art" />
+          <img
+            src={art}
+            className=" h-[146px] max-md:h-[103px] max-md:me-[34px] max-md:mt-8"
+            alt="art"
+          />
         </div>
       </div>
     </div>

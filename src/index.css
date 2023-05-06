@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 
 @tailwind base;
 @tailwind components;
@@ -28,7 +28,7 @@
 }
 
 body {
-  @apply bg-white h-full overflow-x-hidden m-0 font-poppins text-[24px]/9 text-black font-normal tracking-[-0.20000000298023224px];
+  @apply bg-white h-full overflow-x-hidden m-0 font-poppins text-[24px]/9 max-md:text-[18px]/[27px] text-black font-normal tracking-[-0.20000000298023224px];
 }
 
 nav {
