@@ -16,7 +16,7 @@ export default {
     extend: {
       colors: {
         'primary': '#5D5CD6',
-        'light-purple': '#6463D9',
+        'light-purple': '#F6F6FF',
         'grey': '#A19A9A'
       },
       animation: {
