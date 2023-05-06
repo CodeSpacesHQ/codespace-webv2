@@ -1,18 +1,20 @@
 import { useRoutes } from "react-router";
-import Home from "../pages/Home";
-import { About } from "../pages";
+import { About, JobOpp, Home } from "../pages";
 
 //Add your routes here
-export function Routes(){
-    return useRoutes([
-        {
-            path: "/",
-            element: <Home />
-        },
-        {
-            path: "/about",
-            element: <About />
-        }
-    ])
+export function Routes() {
+  return useRoutes([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/jobOpp",
+      element: <JobOpp />,
+    },
+  ]);
 }
-

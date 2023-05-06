@@ -1,17 +1,12 @@
 import { useState, useEffect } from "react";
 import HamburgerIcon from "./HamburgerIcon";
 import logo from "../assets/logo.svg";
-
-const menuItems = [
-  "About Us",
-  "Donate",
-  "Shop",
-  "Job Opportunities",
-  "Blog",
-  "Contact Us",
-];
+import { useNavigate } from "react-router";
+import { menuItems } from "../data/menuItems";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -39,10 +34,6 @@ const Header = () => {
     navOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
   }`;
 
-  //   const delayed = (delay) =>{
-  //     if (d)
-  //   }
-
   return (
     <header
       className={`fixed top-0 w-full ${
@@ -54,19 +45,21 @@ const Header = () => {
           <img
             src={logo}
             alt="logo"
-            className=" h-[31px] cursor-pointer z-10"
+            className=" h-[31px] cursor-pointer z-40"
+            onClick={() => navigate("/")}
           />
           {/* Menu */}
           <div className="menu hidden lg:flex items-center justify-between">
             <div>
               <ul className="flex space-x-10 lg:space-x-6 wideScreen:space-x-[61px] xl:space-x-[30px]">
-                {menuItems.map((item, index) => {
+                {menuItems.map((item) => {
                   return (
                     <li
-                      key={index}
+                      key={item.key}
+                      onClick={() => navigate(item.where)}
                       className="cursor-pointer hover:scale-105 transition-all hover:text-primary"
                     >
-                      <a href="#">{item}</a>
+                      {item.name}
                     </li>
                   );
                 })}
@@ -80,7 +73,7 @@ const Header = () => {
           </div>
           {/* Mobile Menu */}
 
-          <div className="lg:hidden z-10" onClick={handleNavClick}>
+          <div className="lg:hidden z-40" onClick={handleNavClick}>
             <div className="mobile-icon">
               <HamburgerIcon isOpen={isAnimating} />
             </div>
@@ -88,25 +81,26 @@ const Header = () => {
         </div>
 
         {/* Tab menu */}
-        <div className={`lg:hidden ${navClasses}`}>
+        <div className={`lg:hidden z-30 ${navClasses}`}>
           <div className="py-12 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
             <img src={logo} alt="logo" className=" h-[31px]" />
           </div>
 
           <ul className="px-7 h-[50px] text-left font-poppins">
-            {menuItems.map((item, index) => {
+            {menuItems.map((item) => {
               return (
                 <li
-                  key={index}
+                  key={item.key}
+                  onClick={() => navigate(item.where)}
                   className={`cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl ${
                     isAnimating ? "animate-slide-in" : "hidden"
                   }`}
                   style={{
-                    animationDelay: `${index * 500}ms`,
+                    animationDelay: `${item.key * 500}ms`,
                   }}
                 >
                   <span>
-                    <a href="#">{item}</a>
+                    <a href="#">{item.name}</a>
                   </span>
                 </li>
               );
