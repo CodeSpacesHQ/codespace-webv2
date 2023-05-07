@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className='px-7 lg:px-[102px]'>
       <div className='pt-[101px] pb-[57px] mx-auto max-w-[1500px]'>
-        <div className='space-y-[34px] sm:space-y-0 pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 sm:gap-10'>
-          <div className='flex flex-col lg:col-span-2 relative'>
+        <div className='space-y-[34px] sm:space-y-0 pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
+          <div className='flex flex-col relative'>
             <span className='mb-[19px]'>
             <img src="/assets/black-logo.svg" className='w-60 md:w-72' alt="" />
             <img src="/assets/black-logo.svg" className='absolute -top-3 opacity-[0.02] left-0 w-72 md:w-96' alt="" />
@@ -16,7 +16,7 @@ const Footer = () => {
               founders, designers, and tech enthusiasts across Africa.
             </span>
           </div>
-          <div className='flex flex-col lg:col-span-2'>
+          <div className='flex flex-col'>
             <span className='mb-4 font-semibold text-2xl font-hind-siliguri'>
               Reach out to us
             </span>
@@ -24,7 +24,7 @@ const Footer = () => {
               If you'd like to volunteer or donate to any of our programs, reach
               out to us through any of these channels:
             </span>
-            <div className='flex space-x-[10px] -ml-[7px]'>
+            <div className='flex space-x-[5px] -ml-[7px]'>
               {socialLinks.map(({ id, icon, social_link }) => (
                 <a
                   href={social_link}
