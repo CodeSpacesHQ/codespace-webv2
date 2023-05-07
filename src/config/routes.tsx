@@ -1,18 +1,18 @@
-import { RouteObject, useRoutes } from "react-router";
+import { useRoutes } from "react-router";
 import Home from "../pages/Home";
 import { About } from "../pages";
-import { SharedLayout } from "../components";
 
-export function Routes() {
-    const routes:RouteObject[] = [
+//Add your routes here
+export function Routes(){
+    return useRoutes([
         {
-            path: '/',
-            element: <SharedLayout />,
-            children: [
-                { index:true, element: <Home /> },
-                { path: 'about', element: <About /> },
-            ]
+            path: "/",
+            element: <Home />
+        },
+        {
+            path: "/about",
+            element: <About />
         }
-    ]
-    return useRoutes(routes)
+    ])
 }
+
