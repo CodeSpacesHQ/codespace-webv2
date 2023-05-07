@@ -11,7 +11,7 @@ const Footer = () => {
             <img src="/assets/black-logo.svg" className='w-60 md:w-72' alt="" />
             <img src="/assets/black-logo.svg" className='absolute -top-3 opacity-[0.02] left-0 w-72 md:w-96' alt="" />
             </span>
-            <span className='font-poppins text-[#8C8C8C] leading-6 md:leading-8'>
+            <span className='text-sm font-poppins text-[#8C8C8C] leading-6 md:leading-8'>
               We are a vibrant community for the tech-savvy Gen Z developers,
               founders, designers, and tech enthusiasts across Africa.
             </span>
@@ -20,11 +20,11 @@ const Footer = () => {
             <span className='mb-4 font-semibold text-2xl font-hind-siliguri'>
               Reach out to us
             </span>
-            <span className='font-poppins text-[#8C8C8C] leading-6 md:leading-8 mb-7'>
+            <span className='text-sm font-poppins text-[#8C8C8C] leading-6 md:leading-8 mb-7'>
               If you'd like to volunteer or donate to any of our programs, reach
               out to us through any of these channels:
             </span>
-            <div className='flex space-x-[20px]'>
+            <div className='flex space-x-[10px] -ml-[7px]'>
               {socialLinks.map(({ id, icon, social_link }) => (
                 <a
                   href={social_link}
@@ -35,7 +35,7 @@ const Footer = () => {
                   <img
                     src={icon}
                     alt='Social Media Icons'
-                    className='w-[25px] h-[25px] md:w-7 md:h-7'
+                    className='w-5 h-5 md:w-6 md:h-6'
                   />
                 </a>
               ))}
@@ -46,7 +46,7 @@ const Footer = () => {
             <div className='flex flex-col space-y-[11px]'>
               {footerLinks.map(({ id, title, social_link }) => (
                 <div key={id}>
-                  <a href={social_link} className='text-base hover:scale-110 transition-all hover:text-primary md:text-[22px]'>
+                  <a href={social_link} className='text-base hover:scale-110 transition-all hover:text-primary '>
                     {title}
                   </a>
                 </div>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className='border border-[#C2C2F0]' />
-        <div className='pt-[30px] md:pt-[92px] text-center font-gelion text-[15px] md:text-lg'>
+        <div className='pt-[30px] md:pt-[92px] text-center font-gelion text-[15px]'>
           <span>Code Space | All Rights Reserved | Copyright 2023</span>
         </div>
       </div>
