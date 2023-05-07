@@ -45,8 +45,8 @@ const Footer = () => {
             <span className='mb-4 font-semibold text-2xl'>Quick links</span>
             <div className='flex flex-col space-y-[11px]'>
               {footerLinks.map(({ id, title, social_link }) => (
-                <div key={id} className='hover:scale-105 transition-all hover:text-primary'>
-                  <a href={social_link} target="_blank" rel='noopener' className='text-base md:text-[22px]'>
+                <div key={id}>
+                  <a href={social_link} target="_blank" rel='noopener' className='text-base hover:scale-110 transition-all hover:text-primary md:text-[22px]'>
                     {title}
                   </a>
                 </div>
