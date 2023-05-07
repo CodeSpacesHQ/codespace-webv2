@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full ${
+      className={`fixed top-0 w-full z-20 ${
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }  transition-all duration-500`}
     >
@@ -49,7 +49,7 @@ const Header = () => {
             onClick={() => navigate("/")}
           />
           {/* Menu */}
-          <div className="menu hidden lg:flex items-center justify-between">
+          <div className="items-center justify-between hidden menu lg:flex">
             <div>
               <ul className="flex space-x-10 lg:space-x-6 wideScreen:space-x-[61px] xl:space-x-[30px]">
                 {menuItems.map((item) => {
@@ -57,7 +57,7 @@ const Header = () => {
                     <li
                       key={item.key}
                       onClick={() => navigate(item.where)}
-                      className="cursor-pointer hover:scale-105 transition-all hover:text-primary"
+                      className="transition-all cursor-pointer hover:scale-105 hover:text-primary"
                     >
                       {item.name}
                     </li>
@@ -66,14 +66,14 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="donate hidden lg:block hover:scale-110 transition-all">
+          <div className="hidden transition-all donate lg:block hover:scale-110">
             <button className="bg-primary w-[150px] rounded-[10px] py-3 text-white">
               Donate Now
             </button>
           </div>
           {/* Mobile Menu */}
 
-          <div className="lg:hidden z-40" onClick={handleNavClick}>
+          <div className="z-40 lg:hidden" onClick={handleNavClick}>
             <div className="mobile-icon">
               <HamburgerIcon isOpen={isAnimating} />
             </div>
@@ -106,7 +106,7 @@ const Header = () => {
               );
             })}
           </ul>
-          <div className="donate absolute bottom-10 hover:scale-110 transition-all px-7 w-full">
+          <div className="absolute w-full transition-all donate bottom-10 hover:scale-110 px-7">
             <button className="bg-primary w-full rounded-[10px] py-3 text-white">
               Donate Now
             </button>

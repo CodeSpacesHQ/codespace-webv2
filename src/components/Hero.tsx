@@ -1,8 +1,6 @@
-import Header from "./Header-B";
 const Hero = () => {
   return (
     <section className="bg-[url('/public/assets/Hero-bg.svg')] min-h-[90vh] md:min-h-[calc(100vh+100px)] bg-no-repeat bg-right bg-contain flex items-center overflow-hidden relative">
-      <Header />
       <div className="max-w-3xl px-7 md:py-0 lg:pl-[102px] relative">
         <h1 className="font-gelion font-bold text-4xl leading-[42px] md:text-[64px] md:leading-[70px] mb-9">
           Reshaping how{" "}
@@ -11,7 +9,7 @@ const Hero = () => {
           </span>{" "}
           is told and shared with tech
         </h1>
-        <p className="font-dm-sans text-lg md:text-2xl text-grey mb-8">
+        <p className="mb-8 text-lg font-dm-sans md:text-2xl text-grey">
           We are a Community that connects teen techies (17 -19) accross Nigeria
           in one place to share opportunites, work on awesome projects and
           foster quality connections.
@@ -26,7 +24,7 @@ const Hero = () => {
           </a>
         </button>
         <img
-          className="absolute -bottom-24 xl:bottom-0 lg:left-0 lg:-bottom-6 -rotate-45 lg:rotate-0 -left-20 animate-pulse"
+          className="absolute -rotate-45 -bottom-24 xl:bottom-0 lg:left-0 lg:-bottom-6 lg:rotate-0 -left-20 animate-pulse"
           src="/public/assets/arrow.svg"
           alt=""
         />
@@ -34,7 +32,7 @@ const Hero = () => {
 
       <img
         src="/public/assets/rotate.svg"
-        className="absolute bottom-10 lg:bottom-40 right-7 md:right-20 animate-spin-slow w-32 h-32 md:w-auto md:h-auto"
+        className="absolute w-32 h-32 bottom-10 lg:bottom-40 right-7 md:right-20 animate-spin-slow md:w-auto md:h-auto"
         alt=""
       />
     </section>

@@ -1,4 +1,3 @@
-import Header from "./Header-B";
 import arrow from "../assets/Arrow 3.svg";
 import pattern from "../assets/Frame 48.svg";
 import art from "../assets/art1.png";
@@ -13,7 +12,6 @@ const JobHero = () => {
         <img src={pattern} alt="shapes" className="h-[143px]" />
       </div>
       <div className="w-full h-full">
-        <Header />
         <div className="xl:ps-[104px] pt-[236px] max-md:pt-[189px] max-xl:px-[65px] pb-[120px] flex justify-between items-center max-md:items-end wideScreen:pe-[269px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
           <div className="xl:me-40 me-12 max-md:me-0">
             <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-md:text-[20px]/6 ps-[2px]">
