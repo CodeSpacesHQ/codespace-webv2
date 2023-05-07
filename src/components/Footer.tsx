@@ -4,9 +4,9 @@ import { footerLinks } from '../data/footerLinks';
 const Footer = () => {
   return (
     <footer className='px-7 lg:px-[102px]'>
-      <div className='pt-[101px] pb-[57px] mx-auto max-w-[1500px]'>
-        <div className='space-y-[34px] sm:space-y-0 pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
-          <div className='flex flex-col relative'>
+      <div className='pt-[131px] pb-[57px] mx-auto max-w-[1500px]'>
+        <div className='space-y-[34px] sm:space-y-0 md:space-y-[34px] pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
+          <div className='flex flex-col relative md:space-y-8'>
             <span className='mb-[19px]'>
             <img src="/assets/black-logo.svg" className='w-60 md:w-72' alt="" />
             <img src="/assets/black-logo.svg" className='absolute -top-3 opacity-[0.02] left-0 w-72 md:w-96' alt="" />
@@ -17,7 +17,7 @@ const Footer = () => {
             </span>
           </div>
           <div className='flex flex-col'>
-            <span className='mb-4 font-semibold text-2xl font-hind-siliguri'>
+            <span className='mb-4 font-semibold text-xl font-hind-siliguri'>
               Reach out to us
             </span>
             <span className='text-sm font-poppins text-[#8C8C8C] leading-6 md:leading-8 mb-7'>
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='flex flex-col font-hind-siliguri lg:col-span-1'>
-            <span className='mb-4 font-semibold text-2xl'>Quick links</span>
+            <span className='mb-4 font-semibold text-xl'>Quick links</span>
             <div className='flex flex-col space-y-[11px]'>
               {footerLinks.map(({ id, title, social_link }) => (
                 <div key={id}>
