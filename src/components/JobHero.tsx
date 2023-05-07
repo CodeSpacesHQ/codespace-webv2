@@ -16,7 +16,7 @@ const JobHero = () => {
         <Header />
         <div className="xl:ps-[104px] pt-[236px] max-md:pt-[189px] max-xl:px-[65px] pb-[120px] flex justify-between items-center max-md:items-end wideScreen:pe-[269px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
           <div className="xl:me-40 me-12 max-md:me-0">
-            <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-md:text-[20px]/6">
+            <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-md:text-[20px]/6 ps-[2px]">
               JOB OPPORTUNITIES
             </p>
             <h1 className="font-gelion text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
