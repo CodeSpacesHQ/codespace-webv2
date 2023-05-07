@@ -5,11 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily:{
+    fontFamily: {
       'gelion': ['gelion'],
       'dm-sans': ['DM Sans'],
       'poppins': ['Poppins'],
-      'hind-siliguri': ['Hind Siliguri']
+      'hind-siliguri': ['Hind Siliguri'],
+      'epilogue': ['"Epilogue"', 'sans-serif'],
+      'gilroy': ['"Gilroy-Regular"', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -19,7 +21,10 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
-      }
+      },
+      screens: {
+        'xmd': '920px',
+      },
     },
   },
   plugins: [],
