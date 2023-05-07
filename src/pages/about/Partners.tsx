@@ -43,7 +43,7 @@ export const Partners = () => {
 
                 <div className="w-full xmd:w-2/5 flex justify-center items-center xmd:items-start flex-col mt-8 xmd:mt-0 ">
                     <p className=" mb-6 font-gilroy text-[#8C8C8C] font-normal
-                        leading-[21px] sm:leading-[32px] text-[14px] sm:text-[16px] md:text-[22px] text-center xmd:text-justify max-w-xs xmd:max-w-md">
+                        leading-[21px] sm:leading-[32px] text-[14px] sm:text-[18px] sm:max-w-sm md:text-[22px] text-center xmd:text-start max-w-xs md:max-w-lg xmd:max-w-md">
                         Be a part of our ever growing community by
                         joining our Telegram channel and getting
                         periodic updates.

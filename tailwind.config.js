@@ -11,7 +11,7 @@ export default {
       'poppins': ['Poppins'],
       'hind-siliguri': ['Hind Siliguri'],
       'epilogue': ['"Epilogue"', 'sans-serif'],
-      'gilroy': ['"Gilroy-Regular"', 'sans-serif'],
+      'gilroy': ['svn-gilroy', 'sans-serif'],
     },
     extend: {
       colors: {
