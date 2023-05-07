@@ -8,8 +8,8 @@ const Footer = () => {
         <div className='space-y-[34px] sm:space-y-0 pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 sm:gap-10'>
           <div className='flex flex-col lg:col-span-2 relative'>
             <span className='mb-[19px]'>
-            <img src="/public/assets/black-logo.svg" className='w-60 md:w-72' alt="" />
-            <img src="/public/assets/black-logo.svg" className='absolute -top-3 opacity-[0.02] left-0 w-72 md:w-96' alt="" />
+            <img src="/assets/black-logo.svg" className='w-60 md:w-72' alt="" />
+            <img src="/assets/black-logo.svg" className='absolute -top-3 opacity-[0.02] left-0 w-72 md:w-96' alt="" />
             </span>
             <span className='font-poppins text-[#8C8C8C] leading-6 md:leading-8'>
               We are a vibrant community for the tech-savvy Gen Z developers,

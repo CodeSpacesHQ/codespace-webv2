@@ -1,7 +1,7 @@
 import { Bounce } from "react-awesome-reveal";
 const Hero = () => {
   return (
-    <section className="bg-[url('/public/assets/Hero-bg.svg')] min-h-[90vh] md:min-h-[calc(100vh+100px)] bg-no-repeat bg-right bg-contain flex items-center overflow-hidden relative max-w-[1500px] mx-auto">
+    <section className="bg-[url('/assets/Hero-bg.svg')] min-h-[90vh] md:min-h-[calc(100vh+100px)] bg-no-repeat bg-right bg-contain flex items-center overflow-hidden relative max-w-[1500px] mx-auto">
       <div className='max-w-3xl px-7 md:py-0 lg:pl-[102px] relative '>
       <Bounce cascade damping={0.4} duration={2000}>
         <h1 className='font-gelion font-bold text-4xl leading-[42px] md:text-[64px] md:leading-[70px] mb-9'>
@@ -26,13 +26,13 @@ const Hero = () => {
         </Bounce>
         <img
           className='absolute -bottom-24 xl:bottom-0 lg:left-0 lg:-bottom-6 -rotate-45 lg:rotate-0 -left-20 animate-pulse'
-          src='/public/assets/arrow.svg'
+          src='/assets/arrow.svg'
           alt=''
         />
       </div>
 
       <img
-        src='/public/assets/rotate.svg'
+        src='/assets/rotate.svg'
         className='absolute bottom-10 lg:bottom-40 right-7 md:right-20 animate-spin-slow w-32 h-32 md:w-auto md:h-auto'
         alt=''
       />

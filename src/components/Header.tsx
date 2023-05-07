@@ -15,7 +15,7 @@ const Header = () => {
     <nav className='bg-white'>
       <div className='flex justify-between lg:justify-between h-[100px] items-center px-7 2xl:px-[102px] font-poppins max-w-[1500px] mx-auto'>
         <a href='#' className='logo'>
-          <img src="/public/assets/black-logo.svg" className='w-40 xl:w-56' alt="" />
+          <img src="/assets/black-logo.svg" className='w-40 xl:w-56' alt="" />
         </a>
         {/* Menu */}
         <div className='menu hidden lg:flex items-center justify-between'>
