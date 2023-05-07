@@ -46,7 +46,7 @@ const Footer = () => {
             <div className='flex flex-col space-y-[11px]'>
               {footerLinks.map(({ id, title, social_link }) => (
                 <div key={id}>
-                  <a href={social_link} target="_blank" rel='noopener' className='text-base hover:scale-110 transition-all hover:text-primary md:text-[22px]'>
+                  <a href={social_link} className='text-base hover:scale-110 transition-all hover:text-primary md:text-[22px]'>
                     {title}
                   </a>
                 </div>
