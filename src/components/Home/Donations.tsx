@@ -16,7 +16,6 @@ const Donations = () => {
           also dedicated to breaking down barriers in tech by providing
           resources and support to help individuals pursue their passions.
         </p>
-
         <button className='bg-primary text-white font-semibold text-base md:text-xl lg:text-[28px] rounded-[25px] px-7 sm:px-8 py-4 md:px-24 md:py-5 hover:scale-110 transition-all leading-[19.2px] lg:leading-[33.59px]'>
           <a
             href='https://forms.gle/csVUQEScZpiK9WzE8'
