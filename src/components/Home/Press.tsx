@@ -1,7 +1,7 @@
 const Press = () => {
   return (
     <section className='px-7 lg:px-[102px]'>
-      <div className='mt-[71px]'>
+      <div className='mt-[71px] mb-24'>
         <h2 className='font-dm-sans font-medium text-[29px] text-primary mb-4 uppercase'>
           Latest press release
         </h2>

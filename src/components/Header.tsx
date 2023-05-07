@@ -1,20 +1,12 @@
 import HamburgerIcon from '../assets/hamburger.svg';
-
-const menuItems = [
-  'About Us',
-  'Donate',
-  'Shop',
-  'Job Opportunities',
-  'Blog',
-  'Contact Us',
-];
+import { menuItems } from '../data/menuItems';
 
 const Header = () => {
   return (
     <header>
     <nav className='bg-white'>
       <div className='flex justify-between lg:justify-between h-[100px] items-center px-7 2xl:px-[102px] font-poppins max-w-[1500px] mx-auto'>
-        <a href='#' className='logo'>
+        <a href='/' className='logo'>
           <img src="/assets/black-logo.svg" className='w-40 xl:w-56' alt="" />
         </a>
         {/* Menu */}
@@ -24,7 +16,7 @@ const Header = () => {
               {menuItems.map((item, index) => {
                 return (
                   <li key={index} className='cursor-pointer hover:scale-105 transition-all hover:text-primary'>
-                    <a href='#'>{item}</a>
+                    <a href={item.linkTo}>{item.title}</a>
                   </li>
                 );
               })}
@@ -54,7 +46,7 @@ const Header = () => {
         {menuItems.map((item, index) => {
           return (
             <li key={index} className='cursor-pointer hover:scale-105'>
-              <a href='#'>{item}</a>
+            <a href={item.linkTo}>{item.title}</a>
             </li>
           );
         })}
