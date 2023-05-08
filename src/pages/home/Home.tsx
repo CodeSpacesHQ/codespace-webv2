@@ -1,5 +1,5 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+// import Header from '../../components/Header'
+// import Footer from '../../components/Footer'
 import Hero from '../../components/Home/Hero'
 import Donations from '../../components/Home/Donations'
 import Services from '../../components/Home/Services'
