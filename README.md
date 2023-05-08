@@ -15,8 +15,15 @@ We welcome contributions to our website from the community! If you'd like to con
 
 
 ## Contact Us
-If you have any question, please reach out to us at hello@codespaceafrica.com or come chat with us on Twitter.
+> If you have any question, please reach out to us at hello@codespaceafrica.com or come chat with us on Twitter.
 
 ## License
 
-This repository is licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use and modify the documentation as needed.
+> This repository is licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use and modify the documentation as needed.
+
+
+<br />
+
+<a target="_blank" href="https://www.vercel.com?utm_source=genztechies&utm_campaign=oss">
+  <img src="./public/powered-by-vercel.svg" alt="Powered by vercel">
+</a>
