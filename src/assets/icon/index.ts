@@ -4,8 +4,8 @@ import techpoint from "./techpoint.svg"
 import technext from "./Technext-Logo.svg"
 import digitalTimes from "./digitaltimes.svg"
 import guardians from "./guardians.svg"
-import star1 from "./star 1.svg"
-import star2 from "./star 2.svg"
+import star1 from "./Star 1.svg"
+import star2 from "./Star 2.svg"
 
 export {
     icon1,

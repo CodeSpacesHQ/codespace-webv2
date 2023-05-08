@@ -8,12 +8,12 @@ export default {
       poppins: ["Poppins"],
       "hind-siliguri": ["Hind Siliguri"],
       epilogue: ['"Epilogue"', "sans-serif"],
-      gilroy: ['"Gilroy-Regular"', "sans-serif"],
+      gilroy: ["svn-gilroy", "sans-serif"],
     },
     extend: {
       colors: {
         primary: "#5D5CD6",
-        "light-purple": "#6463D9",
+        "light-purple": "#F6F6FF",
         grey: "#A19A9A",
         "black-shade": "#121212",
         "dark-blue": "#0B0A29",
