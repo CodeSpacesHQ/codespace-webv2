@@ -1,38 +1,26 @@
-interface MenuItems {
-  key: number;
-  name: string;
-  where: string;
-}
-
-export const menuItems: MenuItems[] = [
+export const menuItems = [
   {
-    key: 1,
-    name: "About Us",
-    where: "/about",
+    title: 'About Us',
+    linkTo: '/about'
   },
   {
-    key: 2,
-    name: "Donate",
-    where: "#",
+    title: 'Donate',
+    linkTo: '#'
   },
   {
-    key: 3,
-    name: "Shop",
-    where: "#",
+    title: 'Shop',
+    linkTo: '#'
   },
   {
-    key: 4,
-    name: "Job Opportunities",
-    where: "/jobOpp",
+    title: 'Job Opportunities',
+    linkTo: '#'
   },
   {
-    key: 5,
-    name: "Blog",
-    where: "#",
+    title: 'Blog',
+    linkTo: '#'
   },
   {
-    key: 6,
-    name: "Contact Us",
-    where: "#",
-  },
+    title: 'Contact Us',
+    linkTo: '#'
+  }
 ];
