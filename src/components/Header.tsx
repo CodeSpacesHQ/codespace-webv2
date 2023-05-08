@@ -1,4 +1,5 @@
 import HamburgerIcon from "../assets/hamburger.svg";
+import Logo from "../assets/images/codespace-logo.svg";
 import { menuItems } from "../data/menuItems";
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
       <nav className="bg-white">
         <div className="flex justify-between lg:justify-between h-[100px] items-center px-7 2xl:px-[102px] font-poppins max-w-[1500px] mx-auto">
           <a href="/" className="logo">
-            <img src="/assets/black-logo.svg" className="w-40 xl:w-56" alt="" />
+            <img src={Logo} className="w-40 xl:w-56" alt="" />
           </a>
           {/* Menu */}
           <div className="items-center justify-between hidden menu lg:flex">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import HamburgerIcon from "./HamburgerIcon";
-import logo from "../assets/logo.svg";
+import logo from "../assets/images/codespace-logo.svg";
 import { menuItems } from "../data/menuItems";
 
 const Header = () => {
