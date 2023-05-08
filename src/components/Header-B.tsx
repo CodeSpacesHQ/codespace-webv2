@@ -43,7 +43,7 @@ const Header = () => {
             <img
               src={logo}
               alt="logo"
-              className="relative h-[31px] cursor-pointer z-40"
+              className="relative lg:h-[18px] h-[22px] xl:h-[22px] cursor-pointer z-40"
             />
           </a>
           {/* Menu */}
