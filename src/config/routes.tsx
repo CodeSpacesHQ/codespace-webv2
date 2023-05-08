@@ -10,7 +10,7 @@ export function Routes() {
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
-        { path: "/jobOpp", element: <JobOpp /> },
+        { path: "/job", element: <JobOpp /> },
       ],
     },
   ];

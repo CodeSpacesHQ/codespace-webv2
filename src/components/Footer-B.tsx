@@ -1,7 +1,7 @@
 import { socialLinks } from "../data/socialLinks";
 import { footerLinks } from "../data/footerLinks";
 
-import logo from "../assets/logoFooter.svg";
+import logo from "../assets/images/codespace-logo.svg";
 
 const Footer = () => {
   const textStyle =
