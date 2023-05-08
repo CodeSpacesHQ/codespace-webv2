@@ -2,7 +2,7 @@ export const footerLinks = [
   {
     id: 0,
     title: 'About Us',
-    social_link: '#',
+    social_link: '/about',
   },
   {
     id: 1,

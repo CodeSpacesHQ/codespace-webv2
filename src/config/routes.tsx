@@ -1,5 +1,5 @@
 import { RouteObject, useRoutes } from "react-router";
-import Home from "../pages/Home";
+import Home from "../pages/home/Home";
 import { About } from "../pages";
 import { SharedLayout } from "../components";
 
