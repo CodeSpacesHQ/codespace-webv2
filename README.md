@@ -6,8 +6,8 @@ Our aim is to bring together teenage tech enthusiasts (aged 17-20) from across A
 
 
 ## Getting Started
-- Install dependencies by running npm install or yarn install
-- Start the development server with npm run dev or yarn dev
+- Install dependencies by running <code>npm install</code> or <code>yarn install</code>
+- Start the development server with <code>npm run dev</code> or <code>yarn dev</code>
 
 ## Contributing ✨
 
