@@ -25,5 +25,5 @@ We welcome contributions to our website from the community! If you'd like to con
 <br />
 
 <a target="_blank" href="https://www.vercel.com?utm_source=genztechies&utm_campaign=oss">
-  <img src="./public/powered-by-vercel.svg" alt="Powered by vercel">
+  <img src="./public/vercel-logo" alt="Powered by vercel">
 </a>
