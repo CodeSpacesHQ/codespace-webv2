@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 import HamburgerIcon from "./HamburgerIcon";
 import logo from "../assets/logo.svg";
-import { useNavigate } from "react-router";
 import { menuItems } from "../data/menuItems";
 
 const Header = () => {
-  const navigate = useNavigate();
-
   const [isScrolled, setIsScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -42,12 +39,13 @@ const Header = () => {
     >
       <nav>
         <div className="flex justify-between lg:justify-between py-12 max-md:py-8 lg:py-8 items-center px-7 sm:px-[62px] xl:px-[102px] font-poppins mx-auto">
-          <img
-            src={logo}
-            alt="logo"
-            className=" h-[31px] cursor-pointer z-40"
-            onClick={() => navigate("/")}
-          />
+          <a href={"/"}>
+            <img
+              src={logo}
+              alt="logo"
+              className=" h-[31px] cursor-pointer z-40"
+            />
+          </a>
           {/* Menu */}
           <div className="items-center justify-between hidden menu lg:flex">
             <div>
@@ -56,10 +54,9 @@ const Header = () => {
                   return (
                     <li
                       key={item.key}
-                      onClick={() => navigate(item.where)}
                       className="transition-all cursor-pointer hover:scale-105 hover:text-primary"
                     >
-                      {item.name}
+                      <a href={item.where}>{item.name}</a>
                     </li>
                   );
                 })}
@@ -91,7 +88,6 @@ const Header = () => {
               return (
                 <li
                   key={item.key}
-                  onClick={() => navigate(item.where)}
                   className={`cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl ${
                     isAnimating ? "animate-slide-in" : "hidden"
                   }`}
@@ -100,7 +96,7 @@ const Header = () => {
                   }}
                 >
                   <span>
-                    <a href="#">{item.name}</a>
+                    <a href={item.where}>{item.name}</a>
                   </span>
                 </li>
               );

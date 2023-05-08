@@ -1,4 +1,5 @@
 import { Bounce } from "react-awesome-reveal";
+
 const Hero = () => {
   return (
     <section className="bg-[url('/assets/Hero-bg.svg')] min-h-[90vh] md:min-h-[calc(100vh+100px)] bg-no-repeat bg-right bg-contain flex items-center overflow-hidden relative max-w-[1500px] mx-auto">
