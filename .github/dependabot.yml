@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      
+# Notify these users about updates
+  reviewers:
+    - username: "Tobithedev"
+    - username: "clintonimaroo"
+    - username: "IndigoSoftwares21"
