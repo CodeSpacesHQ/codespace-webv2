@@ -23,7 +23,7 @@ export const menuItems: MenuItems[] = [
   {
     key: 4,
     name: "Job Opportunities",
-    where: "/jobOpp",
+    where: "/job",
   },
   {
     key: 5,
