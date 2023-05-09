@@ -9,30 +9,30 @@ export const Partners = () => {
         font-gelion font-semibold text-[28px] sm:text-[40px] leading-[48px] tracking-[-0.02em]'>Some of our Partners</h2>
 
             <div className="flex  justify-center items-center flex-wrap mb-6 ">
-                <div className=" w-[200px] mt-8  mb-6  me-6 h-[60px] object-contain">
+                <div className="w-[200px] xmd:w-2/12 mt-8  mb-6  me-6 h-[60px] object-contain">
                     <img src={techpoint} className="w-full object-contain h-full" alt="Tech point" />
                 </div>
 
-                <div className=" w-[200px]  me-6 ">
+                <div className="w-[200px] xmd:w-2/12 me-6 ">
                     <img className="w-full object-contain h-full" src={technext} alt="Tech next" />
                 </div>
 
-                <div className=" w-[200px]  me-6 ">
+                <div className="w-[200px] xmd:w-2/12 me-6 ">
                     <img className="w-full object-contain h-full" src={digitalTimes} alt="Digital times" />
                 </div>
 
-                <div className=" w-[200px] mt-4 mb-4">
+                <div className="w-[200px] xmd:w-2/12 mt-4 mb-4">
                     <img className="w-full object-contain  h-full" src={guardians} alt="The Guardians" />
                 </div>
             </div>
 
             <div className=" cursor-pointer  mb-8 relative flex flex-col xmd:flex-row items-center justify-center">
-                <div className="w-full xmd:w-3/5 flex justify-center items-center relative px-0 xmd:px-20">
-                    <div className="w-[300px]">
+                <div className="w-full xmd:w-3/5 flex justify-center items-center relative">
+                    <div className="w-[80%] max-w-[400px] xmd:-ml-20">
                         <img src={buttons} className=" object-cover w-full" alt="Join the community" />
                     </div>
 
-                    <div className=" absolute left-2 w-[20px] sm:w-[40px] object-cover sm:left-8 md:left-12 xmd:left-20 top-8 xmd:top-12">
+                    <div className=" absolute w-[20px] sm:w-[40px] object-cover left-0 top-8 xmd:top-12">
                         <img src={star2} alt={`star logo`} className=" object-cover w-full" />
                     </div>
 
@@ -41,9 +41,9 @@ export const Partners = () => {
                     </div>
                 </div>
 
-                <div className="w-full xmd:w-2/5 flex justify-center items-center flex-col mt-8 xmd:mt-0 ">
-                    <p className=" mb-6 font-gilroy text-[#8C8C8C] font-normal tracking-[-0.02em]
-                        leading-[21px] sm:leading-[32px] text-[14px] sm:text-[16px] md:text-[22px] text-center xmd:text-justify">
+                <div className="w-full xmd:w-2/5 flex justify-center items-center xmd:items-start flex-col mt-8 xmd:mt-0 ">
+                    <p className=" mb-6 font-gilroy text-[#8C8C8C] font-normal
+                        leading-[21px] sm:leading-[32px] text-[14px] sm:text-[18px] sm:max-w-sm md:text-[22px] text-center xmd:text-start max-w-xs md:max-w-lg xmd:max-w-md">
                         Be a part of our ever growing community by
                         joining our Telegram channel and getting
                         periodic updates.

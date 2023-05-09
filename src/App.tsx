@@ -1,15 +1,11 @@
-import './App.css'
-import { Routes } from './config'
-
+import { Routes } from "./config";
 
 function App() {
-
   return (
     <>
       <Routes />
     </>
-    
-  )
+  );
 }
 
-export default App
+export default App;

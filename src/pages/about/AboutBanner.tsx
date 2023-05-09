@@ -4,7 +4,7 @@ export const AboutBanner = () => {
    
 
     return (
-        <div className=" flex flex-col xmd:flex-row items-center justify-center mb-12 bg-[#FFFFFF] px-7 lg:px-[102px] relative">
+        <div className=" flex flex-col xmd:flex-row items-center justify-center lg:mt-20 mt-36 mb-12 bg-[#FFFFFF] px-7 lg:px-[102px] relative">
             <div className="w-full xmd:w-[80%] pb-12 -mt-20 sm:-mt-14 md:mt-0">
                 <h1 className=" text-[16px] mb-3 font-gelion text-[#5D5CD6]">KNOW ABOUT US</h1>
 
