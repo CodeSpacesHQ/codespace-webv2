@@ -38,6 +38,7 @@ export default {
       },
       screens: {
         wideScreen: "1400px",
+        mobileM:'425px',
         smallest: "375px",
         xmd: "920px",
         // => @media (min-width: 1400px) { ... }

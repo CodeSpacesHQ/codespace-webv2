@@ -6,6 +6,7 @@ import digitalTimes from "./digitaltimes.svg"
 import guardians from "./guardians.svg"
 import star1 from "./Star 1.svg"
 import star2 from "./Star 2.svg"
+import codespace from "./codespace.svg"
 
 export {
     icon1,
@@ -15,5 +16,6 @@ export {
     digitalTimes,
     guardians,
     star1,
-    star2
+    star2,
+    codespace
 }

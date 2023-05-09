@@ -1,27 +1,28 @@
-
+import { codespace } from "../../assets/icon"
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, } from "react-icons/fa"
+import { BsSend } from "react-icons/bs"
 
 export const EmailTemplate = () => {
+    const date = new Date()
+    const year = date.getFullYear()
     return (
-        <section className="font-barlow pb-40">
-            <div>
-                <div className="w-full absolute bg-bgTemplate bg-cover z-30 h-[277px] flex justify-center items-center"></div>
-                <div className=" absolute w-full bg-primary h-[277px]">
-                    <h1 className="text-6xl font-gelion text-white absolute w-full
-                top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-32 leading-snug
-                ">
-                        Connecting Gen Z Reshaping how
-                        Africa's story is told and shared with tech
-                    </h1>
+        <section className=" sm:font-barlow mx-4 my-8 md:my-16 font-poppins md:m-16 bg-[#FFFFFF]">
+            <div className="relative">
+                <div className="w-full absolute bg-bgTemplate bg-contain h-[125px]  z-30 mobileM:h-[250px]"></div>
+                <div className=" absolute w-full bg-primary h-[125px] mobileM:h-[250px]">
+                    <div className=" absolute top-1/2 left-1/2 transfrom -translate-x-1/2 -translate-y-1/2">
+                        <img src={codespace} alt="codespace" />
+                    </div>
                 </div>
             </div>
 
 
-            <div className="pt-[277px] px-32 bg-[#FFFFFF] text-[#5E5E5E]">
-                <div className="my-6 font-semibold text-[32px] leading-[38px]">
+            <div className="pt-[135px] mobileM:pt-[277px] px-4  mobileM:px-8 sm:px-16 text-[#5E5E5E] bg-[#FFFFFF">
+                <div className="my-6 font-semibold text-[18px] sm:text-[32px] leading-[38px]">
                     <h2>Hey Clinton,</h2>
                 </div>
 
-                <div className=" text-[26px] font-normal leading-[31px]">
+                <div className=" text-[15px] sm:text-[26px] font-normal leading-[31px]">
 
                     <p className="mb-6">
                         Welcome to the Code Space community! We're thrilled to have you onboard and excited to see the unique perspective you bring to our group of innovative developers.
@@ -55,7 +56,47 @@ export const EmailTemplate = () => {
 
                 </div>
 
+                <div className="mt-20">
+                    <div className="w-full h-[1px] bg-gray-300"></div>
+                    <div className=' flex justify-center items-center font-bold 
+                    flex-col mt-12 text-center text-[#CECECE] text-sm sm:text-xl'>
+                        <p className="mb-12">Need help, or have questions?</p>
+
+                        <p className="mb-12 w-full sm:w-[450px]">Please visit out  <a href='#' className="text-[#7777DD]">contact us page</a > or reply to this message.</p>
+                    </div>
+                    <div className="w-full h-[1px] bg-gray-300"></div>
+                </div>
+
+                <div>
+                    <div className="flex justify-center items-center mt-8">
+                        <div className="flex justify-center items-center w-[40px] h-[40px] border border-[#7777DD] rounded-full bg-white text-[#7777DD]">
+                            <FaFacebookF className=" text-[20px]" />
+                        </div>
+                        <div className="flex justify-center items-center w-[40px] h-[40px] border border-[#7777DD] rounded-full bg-white text-[#7777DD] ml-4">
+                            <FaTwitter className=" text-[20px]" />
+                        </div>
+                        <div className="flex justify-center items-center w-[40px] h-[40px] border border-[#7777DD] rounded-full bg-white text-[#7777DD] ml-4">
+                            <FaLinkedinIn className=" text-[20px]" />
+                        </div>
+                        <div className="flex justify-center items-center w-[40px] h-[40px] border border-[#7777DD] rounded-full bg-white text-[#7777DD] ml-4">
+                            <FaInstagram className=" text-[20px]" />
+                        </div>
+
+                        <div className="flex justify-center items-center w-[40px] h-[40px] border border-[#7777DD] rounded-full bg-white text-[#7777DD] ml-4">
+                            <BsSend className=" text-[20px]" />
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div className=" mt-12 pb-12 text-center  text-[12px] mobileM:text-[14px] font-bold">
+                    code space | All Rights Reserved | Copyright <span>{year}</span>
+                </div>
+
             </div>
+
+
         </section>
     )
 }
