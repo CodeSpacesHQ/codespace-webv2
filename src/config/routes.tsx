@@ -1,6 +1,7 @@
 import { RouteObject, useRoutes } from "react-router";
-import { Home, About, JobOpp } from "../pages";
+import { Home, About, JobOpp, EmailTemplate } from "../pages";
 import { SharedLayout } from "../components";
+ 
 
 export function Routes() {
   const routes: RouteObject[] = [
@@ -13,6 +14,7 @@ export function Routes() {
         { path: "/job", element: <JobOpp /> },
       ],
     },
+    { path: "/email", element: <EmailTemplate /> },
   ];
   return useRoutes(routes);
 }

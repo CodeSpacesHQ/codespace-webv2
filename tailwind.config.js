@@ -9,6 +9,7 @@ export default {
       "hind-siliguri": ["Hind Siliguri"],
       epilogue: ['"Epilogue"', "sans-serif"],
       gilroy: ["svn-gilroy", "sans-serif"],
+      barlow: ["Barlow", "sans-serif"],
     },
     extend: {
       colors: {
@@ -35,6 +36,9 @@ export default {
         xmd: "920px",
         // => @media (min-width: 1400px) { ... }
       },
+      backgroundImage:{
+        'bgTemplate':'url("src/assets/images/emailHero.png")'
+      }
     },
   },
   plugins: [],
