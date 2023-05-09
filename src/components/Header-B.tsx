@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import HamburgerIcon from "./HamburgerIcon";
-import logo from "../assets/images/codespace-logo.svg";
+import logo from "../assets/logo.svg";
 import { menuItems } from "../data/menuItems";
 
 const Header = () => {
@@ -43,7 +43,7 @@ const Header = () => {
             <img
               src={logo}
               alt="logo"
-              className="relative lg:h-[18px] h-[22px] xl:h-[22px] cursor-pointer z-40"
+              className="relative h-[31px] cursor-pointer z-40"
             />
           </a>
           {/* Menu */}

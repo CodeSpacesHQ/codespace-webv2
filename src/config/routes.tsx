@@ -1,6 +1,6 @@
 import { RouteObject, useRoutes } from "react-router";
 import { Home, About, JobOpp } from "../pages";
-import { SharedLayout } from "../components";
+import { SharedLayout } from "../components/layout/SharedLayout";
 
 export function Routes() {
   const routes: RouteObject[] = [

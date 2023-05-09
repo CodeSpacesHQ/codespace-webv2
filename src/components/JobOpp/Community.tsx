@@ -1,46 +1,21 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 
-import { star1, star2 } from "../assets/icon";
-import { join, community } from "../assets/images";
+import { star1, star2 } from "../../assets/icon";
+import { buttons, buttonsSmall } from "../../assets/images";
 
 const Community: React.FC = () => {
-  const elementRef = useRef<HTMLImageElement>(null);
-  const [completion, setCompletion] = useState(0);
-
-  useEffect(() => {
-    const element = elementRef.current;
-    let top: number;
-    const checkImage = () => {
-      if (element) {
-        top = element.offsetTop;
-        // Check if the element is in view
-        if (document.documentElement.scrollTop >= top) {
-          const height = document.documentElement.clientHeight;
-          let scroll = document.documentElement.scrollTop;
-          setCompletion((scroll / height) * 100);
-          window.addEventListener("scroll", checkImage);
-        }
-      }
-    };
-    window.addEventListener("scroll", checkImage);
-  }, []);
-
   return (
-    <div className="relative flex flex-col items-center justify-center mb-8 cursor-pointer xmd:flex-row">
+    <div className="relative flex flex-col items-center justify-center sm:mb-[116px] cursor-pointer xmd:flex-row">
       <div className="relative flex items-center justify-center w-full xmd:w-3/5">
         <div className="xmd:-ml-20">
           <img
-            src={join}
-            className="object-cover w-[271px] sm:w-[371px] "
+            src={buttons}
+            className="w-[370px] max-lg:hidden"
             alt="Join the community"
           />
           <img
-            ref={elementRef}
-            src={community}
-            className="object-cover w-[192px] sm:w-[250px]"
-            style={{
-              transform: `translate(${completion}px, -10px)`,
-            }}
+            src={buttonsSmall}
+            className="w-[268.67px] lg:hidden"
             alt="Join the community"
           />
         </div>
@@ -61,21 +36,21 @@ const Community: React.FC = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-full mt-8 xmd:w-2/5 xmd:items-start xmd:mt-0 ">
+      <div className="flex flex-col items-center w-full mt-8 xmd:w-2/5 xmd:items-start xmd:mt-0 ">
         <p
           className=" mb-6 font-gilroy text-[#8C8C8C] font-normal
                         leading-[21px] sm:leading-[32px] text-[14px] sm:text-[18px] sm:max-w-sm md:text-[22px] text-center xmd:text-start max-w-xs md:max-w-lg xmd:max-w-md"
         >
-          <div className="max-lg:hidden">
+          <span className="max-lg:hidden">
             Be a part of our ever growing community by joining our Telegram
             channel and getting periodic updates.
-          </div>
-          <div className="lg:hidden">
+          </span>
+          <span className="lg:hidden">
             Be a part of our ever growing
             <br /> community by joining our Telegram
             <br />
             channel and getting periodic updates.
-          </div>
+          </span>
         </p>
 
         <div>
