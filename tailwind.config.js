@@ -25,10 +25,16 @@ export default {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
         },
+        floatAnimation: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "spin-slow": "spin 6s linear infinite",
         "slide-in": "slide-in 1s ease-out",
+        float: "floatAnimation 3s infinite ease-in-out;",
       },
       screens: {
         wideScreen: "1400px",
