@@ -1,7 +1,7 @@
 import { socialLinks } from "../data/socialLinks";
 import { footerLinks } from "../data/footerLinks";
 
-import logo from "../assets/images/codespace-logo.svg";
+import logo from "../assets/logoFooter.svg";
 
 const Footer = () => {
   const textStyle =
@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="w-full border-t-2 border-dashed border-[#D1D1D2] sm:hidden" />
         <div className=" pb-[30px] md:pb-[89px] flex max-sm:flex-col sm:gap-[60px] lg:gap-[73px]">
           <div className="flex-1">
-            <div className="mb-[19px] max-md:mt-[34px]  sm:mt-[66px]">
-              <img src={logo} className="h-[28px] md:h-[32px]" alt="logo" />
+            <div className="mb-[19px]">
+              <img src={logo} className="h-[86px] md:h-[132px]" alt="logo" />
             </div>
             <div className={textStyle}>
               We are a vibrant community for the tech-savvy Gen Z developers,
