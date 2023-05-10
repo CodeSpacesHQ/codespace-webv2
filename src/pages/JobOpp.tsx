@@ -1,5 +1,5 @@
 import JobHero from "../components/JobOpp/JobHero";
-import Community from "../components/JobOpp/Community";
+import Community from "../components/Community";
 import Opportunities from "../components/JobOpp/Opportunities";
 
 import useReadingProgress from "../hooks/useReadingProgress";

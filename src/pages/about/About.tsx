@@ -4,7 +4,7 @@ import { Partners } from ".";
 export const About = () => {
   return (
     <section className="relative">
-      <div className="py-8 mt-16">
+      <div>
         <AboutBanner />
       </div>
 

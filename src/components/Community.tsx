@@ -1,11 +1,11 @@
 import React from "react";
 
-import { star1, star2 } from "../../assets/icon";
-import { buttons, buttonsSmall } from "../../assets/images";
+import { star1, star2 } from "../assets/icon";
+import { buttons, buttonsSmall } from "../assets/images";
 
 const Community: React.FC = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center sm:mb-[116px] cursor-pointer xmd:flex-row">
+    <div className="relative flex flex-col items-center justify-center sm:mb-[116px] xmd:flex-row">
       <div className="relative flex items-center justify-center w-full xmd:w-3/5">
         <div className="xmd:-ml-20">
           <img
