@@ -22,7 +22,7 @@ export const Team = () => {
       </div>
 
       <div>
-        <div className="flex flex-wrap items-center justify-center xl:gap-[31px] gap-x-12 gap-y-16">
+        <div className="flex flex-wrap items-center justify-center xl:gap-x-[31px] sm:gap-y-[118px] gap-x-12 gap-y-16">
           {teams.map((team) => {
             const { id, name, role, image } = team;
             return (
