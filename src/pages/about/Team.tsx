@@ -6,10 +6,10 @@ export const Team = () => {
 
   const isMobile = width <= 640;
   return (
-    <section className="bg-[#FFFFFF] px-7 lg:px-[65px] xl:px-[101px] pt-8 sm:pt-12 md:pt-16 pb-[234px] max-sm:pb-[184px]">
+    <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-8 sm:pt-12 md:pt-16 pb-[234px] max-sm:pb-[184px]">
       <h2
         className="font-gelion font-[700] sm:mb-6 
-            text-center text-[32px] sm:text-[40px] md:text-[64px] leading-[72px] text-[#000000]"
+            text-center text-[32px] sm:text-[54px] lg:text-[64px] leading-[72px] text-[#000000]"
       >
         {isMobile ? "Meet the Team" : "Core Team"}
       </h2>
@@ -17,7 +17,7 @@ export const Team = () => {
       <div>
         <p className=" font-gelion md:font-dm-sans mb-9 sm:mb-16 text-[#9F9A9A] font-normal text-[16px]/[18px] sm:text-[24px]/[48px] text-center">
           We're a diverse, close-knit team on an adventure to build something
-          enduring, while learning something new, every day.
+          enduring, while learning something new, everyday.
         </p>
       </div>
 
