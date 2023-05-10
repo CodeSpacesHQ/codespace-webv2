@@ -10,7 +10,7 @@ export const JobOpp = () => {
     <>
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
-        className="fixed z-[100] w-full h-1 bg-primary top-0"
+        className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
       />
       <JobHero />
       <Opportunities />
