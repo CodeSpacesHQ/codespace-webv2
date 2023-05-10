@@ -1,23 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-.color-slide
-{
-
+.color-slide {
   background-image: linear-gradient(
     -150deg,
     #231557 0%,
     #44107a 29%,
-    #5D5CD6  67%,
-    #5D5CD6 100%
+    #5d5cd6 67%,
+    #5d5cd6 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -28,7 +15,6 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
   display: inline-block;
-
 }
 
 @keyframes textclip {
@@ -51,10 +37,4 @@
   60% {
     transform: translateY(-5px);
   }
-}
-
-.bounce-delayed {
-  animation: bounce 3s ease-in-out infinite;
-  animation-delay: calc(0.1s * var(--index));
-  --index: 1;
 }

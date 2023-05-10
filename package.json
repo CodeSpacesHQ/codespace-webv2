@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "flowbite": "^1.6.5",
+    "@emotion/react": "^11.10.8",
+    "framer-motion": "^10.12.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-awesome-reveal": "^4.2.3",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.11.1",
+    "react-router-dom": "^6.11.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
