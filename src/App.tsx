@@ -1,11 +1,12 @@
-import { Routes } from "./config";
+
+import './App.css'
+import Home from './pages/Home'
 
 function App() {
+
   return (
-    <>
-      <Routes />
-    </>
-  );
+    <Home />
+  )
 }
 
-export default App;
+export default App
