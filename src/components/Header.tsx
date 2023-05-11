@@ -47,14 +47,14 @@ const Header = () => {
     setIsAnimating(!isAnimating);
     setAnimationKey((prevKey) => prevKey + 1);
   };
-  const navClasses = `fixed top-0 h-full w-full bg-white transform transition-all ease-in-out duration-500 ${
-    navOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+  const navClasses = `fixed top-0 h-[68%] w-full bg-white bg-opacity-70 sm:bg-opacity-80 transform transition-all ease-in-out duration-500 ${
+    navOpen ? "translate-y-0" : "translate-y-[-100%]"
   }`;
 
   return (
     <header
       className={`fixed top-0 w-full z-20 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        isScrolled ? " bg-white bg-opacity-70 shadow-md" : "bg-transparent"
       }  transition-all duration-500`}
     >
       <nav>
@@ -99,7 +99,7 @@ const Header = () => {
 
         {/* Tab menu */}
         <div className={`lg:hidden z-30 ${navClasses}`}>
-          <div className="py-12 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
+          <div className="py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
             <img src={logo} alt="logo" className=" h-[31px]" />
           </div>
 
@@ -110,7 +110,7 @@ const Header = () => {
                   key={`${item.key}-${animationKey}`}
                   initial={{ opacity: 0, x: "-100%" }}
                   animate={isAnimating ? controls : undefined}
-                  style={{ transitionDelay: `${item.key * 500}ms` }}
+                  style={{ transitionDelay: `${item.key * 100}ms` }}
                   className={`cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500 delay-[${
                     item.key * 500
                   }ms]`}
