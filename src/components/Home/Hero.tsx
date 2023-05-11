@@ -19,7 +19,7 @@ const Hero = () => {
             and foster quality connections.
           </p>
 
-          <button className="bg-primary text-white font-semibold text-base lg:text-2xl rounded-[25px] px-[18px] py-[14.5px] sm:px-8 sm:py-4 lg:px-[67px] lg:py-[23px] hover:scale-110 transition-all mb-44">
+          <button className="bg-primary text-white font-semibold text-base lg:text-xl rounded-[25px] px-[18px] py-[14.5px] sm:px-8 sm:py-4 lg:px-12 lg:py-[23px] hover:scale-105 transition-all mb-44">
             <a
               href="https://forms.gle/csVUQEScZpiK9WzE8"
               target="_blank"

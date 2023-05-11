@@ -33,6 +33,6 @@ export const menuItems: MenuItems[] = [
   {
     key: 6,
     name: "Contact Us",
-    where: "#",
+    where: "/contact",
   },
 ];

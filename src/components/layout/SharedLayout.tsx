@@ -1,4 +1,4 @@
-import Header from "../Header-B";
+import Header from "../Header";
 import Footer from "../Footer-B";
 import { Outlet } from "react-router";
 
