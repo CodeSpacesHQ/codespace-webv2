@@ -3,10 +3,29 @@ import HamburgerIcon from "./HamburgerIcon";
 import logo from "../assets/logo.svg";
 import { menuItems } from "../data/menuItems";
 
+import { motion, useAnimation } from "framer-motion";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [animationKey, setAnimationKey] = useState(0);
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isAnimating) {
+      controls.start({
+        opacity: 1,
+        x: 0,
+      });
+    } else {
+      controls.start({
+        opacity: 0,
+        x: "-100%",
+      });
+    }
+  }, [controls, isAnimating]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +45,7 @@ const Header = () => {
   const handleNavClick = () => {
     setNavOpen(!navOpen);
     setIsAnimating(!isAnimating);
+    setAnimationKey((prevKey) => prevKey + 1);
   };
   const navClasses = `fixed top-0 h-full w-full bg-white transform transition-all ease-in-out duration-500 ${
     navOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
@@ -86,19 +106,19 @@ const Header = () => {
           <ul className="px-7 h-[50px] text-left font-poppins">
             {menuItems.map((item) => {
               return (
-                <li
-                  key={item.key}
-                  className={`cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl ${
-                    isAnimating ? "animate-slide-in" : "hidden"
-                  }`}
-                  style={{
-                    animationDelay: `${item.key * 500}ms`,
-                  }}
+                <motion.li
+                  key={`${item.key}-${animationKey}`}
+                  initial={{ opacity: 0, x: "-100%" }}
+                  animate={isAnimating ? controls : undefined}
+                  style={{ transitionDelay: `${item.key * 500}ms` }}
+                  className={`cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500 delay-[${
+                    item.key * 500
+                  }ms]`}
                 >
                   <span>
                     <a href={item.where}>{item.name}</a>
                   </span>
-                </li>
+                </motion.li>
               );
             })}
           </ul>
