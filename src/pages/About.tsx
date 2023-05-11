@@ -1,6 +1,5 @@
-import { AboutBanner, Vision, Team } from ".";
-import { Partners } from ".";
-import useReadingProgress from "../../hooks/useReadingProgress";
+import { Partners, AboutBanner, Vision, Team } from "../components/about";
+import useReadingProgress from "../hooks/useReadingProgress";
 
 export const About = () => {
   const completion = useReadingProgress();
