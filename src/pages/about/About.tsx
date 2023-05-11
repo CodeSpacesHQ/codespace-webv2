@@ -1,10 +1,16 @@
 import { AboutBanner, Vision, Team } from ".";
 import { Partners } from ".";
+import useReadingProgress from "../../hooks/useReadingProgress";
 
 export const About = () => {
+  const completion = useReadingProgress();
   return (
     <section className="relative">
-      <div className="py-8 mt-16">
+      <span
+        style={{ transform: `translateX(${completion - 100}%)` }}
+        className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
+      />
+      <div>
         <AboutBanner />
       </div>
 

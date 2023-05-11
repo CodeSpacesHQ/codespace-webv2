@@ -1,30 +1,13 @@
-import React, { useRef, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import useOnScreen from "../../hooks/useOnScreen"; // Custom hook to check if element is in view
+import React from "react";
+import useSlideIn from "../../hooks/useSlideIn";
+import { motion } from "framer-motion";
 
 import arrow from "../../assets/Arrow 3.svg";
 import pattern from "../../assets/Frame 48.svg";
 import art from "../../assets/art.png";
 
 const JobHero: React.FC = () => {
-  const ref = useRef(null);
-  const isVisible = useOnScreen(ref);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (isVisible) {
-      controls.start({
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.8 },
-      });
-    } else {
-      controls.start({
-        opacity: 0,
-        x: "-100%",
-      });
-    }
-  }, [isVisible, controls]);
+  const { controls, ref } = useSlideIn();
   return (
     <div className="relative w-full bg-[url('../assets/pattern.png')] bg-no-repeat bg-center bg-cover h-screen overflow-hidden">
       <div className="absolute wideScreen:right-0 -right-36  xl:-right-9 sm:top-[156px] max-md:bottom-[134px] max-smallest:bottom-[94px] max-sm:-right-9">
@@ -41,21 +24,22 @@ const JobHero: React.FC = () => {
             animate={controls}
             className="max-xl:me-16 me-36 max-md:me-0"
           >
-            <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-md:text-[20px]/6 ps-[2px]">
+            <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 ps-[2px]">
               JOB OPPORTUNITIES
             </p>
             <h1 className="font-gelion text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
-              Empowering the Next Generation of Tech Innovators
+              Empowering the Next <br className="max-lg:hidden max-sm:block" />{" "}
+              Generation of Tech Innovators
             </h1>
-            <p className=" font-poppins text-[24px]/9 max-sm:[18px]/[27px] tracking-[-0.20000000298023224px] font-normal">
+            <p className=" font-poppins text-[24px]/9 max-sm:text-[18px]/[27px] tracking-[-0.20000000298023224px] font-normal">
               We are a non-profit organization focused on celebrating and
               empowering Genz in technology across Africa.{" "}
             </p>
           </motion.div>
           <div className="relative md:-bottom-2 bottom-4 right-5 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-8">
-            <div className="border-2 w-24 h-24 md:w-32 md:h-32 border-primary border-dashed rounded-full animate-spin-slow"></div>
+            <div className="w-24 h-24 border-2 border-dashed rounded-full md:w-32 md:h-32 border-primary animate-spin-slow"></div>
             <div className="absolute top-[8px] left-[8px] bg-primary rounded-full mx-auto">
-              <img className="w-20 md:w-28 h-20 md:h-28" src={art} alt="" />
+              <img className="w-20 h-20 md:w-28 md:h-28" src={art} alt="" />
             </div>
           </div>
         </div>

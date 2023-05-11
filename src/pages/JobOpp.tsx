@@ -1,5 +1,5 @@
 import JobHero from "../components/JobOpp/JobHero";
-import Community from "../components/JobOpp/Community";
+import Community from "../components/Community";
 import Opportunities from "../components/JobOpp/Opportunities";
 
 import useReadingProgress from "../hooks/useReadingProgress";
@@ -10,7 +10,7 @@ export const JobOpp = () => {
     <>
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
-        className="fixed z-[100] w-full h-1 bg-primary top-0"
+        className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
       />
       <JobHero />
       <Opportunities />
