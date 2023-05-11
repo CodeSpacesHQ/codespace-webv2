@@ -1,12 +1,19 @@
 import React from "react";
-import useSlideIn from "../../hooks/useSlideIn";
+import useSlideIn from "../hooks/useSlideIn";
 import { motion } from "framer-motion";
 
-import arrow from "../../assets/Arrow 3.svg";
-import pattern from "../../assets/Frame 48.svg";
-import art from "../../assets/art.png";
+import arrow from "../assets/Arrow 3.svg";
+import pattern from "../assets/Frame 48.svg";
+import art from "../assets/art.png";
 
-const JobHero: React.FC = () => {
+interface JobHeroProps {
+  title: string;
+  h1: string;
+  h1Cont?: string;
+  text: string;
+}
+
+const JobHero: React.FC<JobHeroProps> = ({ title, h1, h1Cont, text }) => {
   const { controls, ref } = useSlideIn();
   return (
     <div className="relative w-full bg-[url('../assets/pattern.png')] bg-no-repeat bg-center bg-cover h-screen overflow-hidden">
@@ -25,15 +32,15 @@ const JobHero: React.FC = () => {
             className="max-xl:me-16 me-36 max-md:me-0"
           >
             <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 ps-[2px]">
-              JOB OPPORTUNITIES
+              {title}
             </p>
             <h1 className="font-gelion text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
-              Empowering the Next <br className="max-lg:hidden max-sm:block" />{" "}
-              Generation of Tech Innovators
+              {h1}
+              {h1Cont && <br className="max-lg:hidden max-sm:block" />}{" "}
+              {h1Cont && h1Cont}
             </h1>
             <p className=" font-poppins text-[24px]/9 max-sm:text-[18px]/[27px] tracking-[-0.20000000298023224px] font-normal">
-              We are a non-profit organization focused on celebrating and
-              empowering Genz in technology across Africa.{" "}
+              {text}
             </p>
           </motion.div>
           <div className="relative md:-bottom-2 bottom-4 right-5 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-8">

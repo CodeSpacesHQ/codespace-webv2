@@ -15,7 +15,7 @@ export const Team = () => {
       </h2>
 
       <div>
-        <p className=" font-gelion md:font-dm-sans mb-9 sm:mb-16 text-[#9F9A9A] font-normal text-[16px]/[18px] sm:text-[24px]/[48px] text-center">
+        <p className=" font-gelion md:font-dm-sans mb-9 sm:mb-16 text-[#9F9A9A] font-normal text-[16px]/[20px] sm:text-[24px]/[48px] w-11/12 sm:w-10/12 xl:w-8/12 mx-auto text-center">
           We're a diverse, close-knit team on an adventure to build something
           enduring, while learning something new, everyday.
         </p>
@@ -30,14 +30,14 @@ export const Team = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center`}
               >
-                <div className="w-[246px] h-[246px] rounded-full overflow-hidden flex justify-center items-start bg-gray-500 object-cover">
+                <div className="w-[246px] h-[246px] rounded-full overflow-hidden flex justify-center items-start bg-gray-500 object-cover mb-7">
                   <img src={image} alt={name} className="object-cover w-full" />
                 </div>
 
-                <h3 className=" font-dm-sans font-[500px] text-[24px] leading-[45px] text-[#000000] text-center">
+                <h3 className="font-dm-sans font-[700] text-[24px]/[45px] text-[#000000] text-center tracking-normal">
                   {name}
                 </h3>
-                <p className=" text-[#868687] font-[700] text-[24px] leading-[45px] text-center">
+                <p className="font-dm-sans text-[#868687] font-[500] text-[24px]/[45px] text-center tracking-normal">
                   {role}
                 </p>
               </div>

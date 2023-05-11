@@ -13,7 +13,7 @@ export const menuItems: MenuItems[] = [
   {
     key: 2,
     name: "Donate",
-    where: "#",
+    where: "/donate",
   },
   {
     key: 3,

@@ -1,4 +1,4 @@
-import Community from "../../components/Community";
+import Community from "../Community";
 
 import {
   digitalTimes,
@@ -24,7 +24,7 @@ export const Partners = () => {
         Some of our Partners
       </h2>
 
-      <div className="flex flex-wrap items-center justify-center gap-6 max-sm:mb-[106px]">
+      <div className="flex flex-wrap items-center justify-center gap-4 sm:lg:gap-12  lg:gap-8 xl:gap-16 max-sm:mb-[106px]">
         {partners.map((item, index) => {
           return (
             <div

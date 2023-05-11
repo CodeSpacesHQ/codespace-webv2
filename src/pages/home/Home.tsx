@@ -4,7 +4,7 @@ import Services from "../../components/Home/Services";
 import Quotes from "../../components/Home/Quotes";
 import useReadingProgress from "../../hooks/useReadingProgress";
 import Press from "../../components/Home/Press";
-import { Partners } from "../about";
+import { Partners } from "../../components/about";
 
 export const Home = () => {
   const completion = useReadingProgress();
