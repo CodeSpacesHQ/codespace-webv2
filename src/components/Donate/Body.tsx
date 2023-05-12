@@ -23,7 +23,7 @@ const Body = () => {
               <h3 className="font-gelion text-[22px]/[26px] lg:text-[32px]/10 tracking-[-0.005em] lg:tracking-[-0.01em] font-semibold mb-3 sm:mb-2">
                 {title}
               </h3>
-              <p className="font-gelion text-[#8C8C8C] font-normal text-[22px]/8 tracking-[-0.20000000298023224px]">
+              <p className="font-gelion text-[#8C8C8C] font-normal text-[20px]/8 tracking-[-0.20000000298023224px]">
                 {text}{" "}
                 {index === 2 && (
                   <span>
