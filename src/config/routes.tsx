@@ -1,5 +1,5 @@
 import { RouteObject, useRoutes } from "react-router";
-import { Home, About, JobOpp, Donate } from "../pages";
+import { Home, About, JobOpp, Donate, Shop } from "../pages";
 import { SharedLayout } from "../components/layout/SharedLayout";
 import Contact from "../pages/contact/Contact";
 
@@ -14,6 +14,7 @@ export function Routes() {
         { path: "/job", element: <JobOpp /> },
         { path: "/contact", element: <Contact /> },
         { path: "/donate", element: <Donate /> },
+        { path: "/shop", element: <Shop /> },
       ],
     },
   ];

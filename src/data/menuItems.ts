@@ -18,7 +18,7 @@ export const menuItems: MenuItems[] = [
   {
     key: 3,
     name: "Shop",
-    where: "#",
+    where: "/shop",
   },
   {
     key: 4,
