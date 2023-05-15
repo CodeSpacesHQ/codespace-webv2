@@ -13,7 +13,7 @@ export const AboutBanner = () => {
       <div className="absolute bottom-0 right-0">
         <img src={box} alt="" />
       </div>
-      <div className="xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[87px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
+      <div className="xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: "-100%" }}
@@ -32,7 +32,7 @@ export const AboutBanner = () => {
             <br className="max-lg:hidden" /> technology
           </h1>
         </motion.div>
-        <div className="relative md:-bottom-2 bottom-4 right-5 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-8 max-sm:me-[75px]">
+        <div className="relative md:-bottom-2 bottom-4 right-5 max-md:right-8 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-20 max-sm:me-[75px]">
           <div className="w-24 h-24 border-2 border-dashed rounded-full md:w-32 md:h-32 border-primary animate-spin-slow"></div>
           <div className="absolute top-[8px] left-[8px] bg-primary rounded-full mx-auto">
             <img className="w-20 h-20 md:w-28 md:h-28" src={art} alt="" />
