@@ -40,7 +40,11 @@ const JobHero: React.FC<JobHeroProps> = ({
       <div className="absolute -right-[17px] max-lg:right-0 -bottom-12 max-smallest:-bottom-16 lg:bottom-14">
         <img src={pattern} alt="shapes" className="h-[143px]" />
       </div>
-      <div className="xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
+      <div
+        className={`xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 ${
+          star ? "max-lg:flex-col max-lg:items-end" : "max-md:flex-col"
+        }`}
+      >
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: "-100%" }}
@@ -60,8 +64,12 @@ const JobHero: React.FC<JobHeroProps> = ({
           </p>
         </motion.div>
         {star ? (
-          <div className="max-sm:absolute max-sm:bottom-[70px] max-sm:right-28">
-            <img src={starPattern} alt="shapes" className="h-full" />
+          <div className="relative lg:bottom-2 bottom-4 right-9 max-lg:right-8 max-lg:me-[34px] max-lg:mt-20 max-sm:me-[75px]">
+            <img
+              src={starPattern}
+              alt="shapes"
+              className="h-full max-md:h-[49px]"
+            />
           </div>
         ) : (
           <div className="relative md:-bottom-2 bottom-4 right-5 max-md:right-8 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-20 max-sm:me-[75px]">
