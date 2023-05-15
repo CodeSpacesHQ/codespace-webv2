@@ -15,14 +15,14 @@ export const donateContents: donateItems[] = [
     link: "/contact",
   },
   {
-    key: 1,
+    key: 2,
     title: "DONATE IN CASH",
     text: "We appreciate every cash donation we receive and strive to maximize its impact. Your contribution will help shape a brighter future for the tech industry by providing entry-level tech professionals with opportunities to advance their careers. We are committed to ensuring that your donation goes a long way in creating a positive impact on the lives of these individuals and the industry as a whole.",
     buttonText: "DONATE NOW",
     link: "https://paystack.com/pay/77iitrxp80",
   },
   {
-    key: 1,
+    key: 3,
     title: "DONATE IN KIND",
     text: "At CodeSpace Africa, we welcome donations in kind from anyone willing to support our community members. If you have any laptops, books, or other tech gear that you would like to donate, please don't hesitate to contact us at",
     buttonText: "SEND US AN EMAIL",

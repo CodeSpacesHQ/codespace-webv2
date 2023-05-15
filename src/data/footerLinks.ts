@@ -20,7 +20,7 @@ export const footerLinks = [
     social_link: "/contact",
   },
   {
-    id: 3,
+    id: 4,
     title: "Perks & Benefits",
     social_link: "/perks",
   },

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import HamburgerIcon from "./HamburgerIcon";
 import logo from "../assets/logo.svg";
 import { menuItems } from "../data/menuItems";
@@ -76,7 +77,16 @@ const Header = () => {
                       key={item.key}
                       className="transition-all cursor-pointer hover:scale-105 hover:text-primary"
                     >
-                      <a href={item.where}>{item.name}</a>
+                      <a
+                        href={item.where}
+                        className={
+                          window.location.pathname === item.where
+                            ? "font-semibold"
+                            : "font-normal"
+                        }
+                      >
+                        {item.name}
+                      </a>
                     </li>
                   );
                 })}
@@ -119,7 +129,16 @@ const Header = () => {
                   className={`hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
                 >
                   <span>
-                    <a href={item.where}>{item.name}</a>
+                    <a
+                      href={item.where}
+                      className={
+                        window.location.pathname === item.where
+                          ? "font-semibold"
+                          : "font-normal"
+                      }
+                    >
+                      {item.name}
+                    </a>
                   </span>
                 </motion.li>
               );
