@@ -34,8 +34,8 @@ const JobHero: React.FC<JobHeroProps> = ({
       className="relative w-full bg-cover bg-center h-screen overflow-hidden"
       style={backgroundImageStyle}
     >
-      <div className="absolute wideScreen:right-0 -right-36  xl:-right-9 sm:top-[156px] max-md:bottom-[134px] max-smallest:bottom-[94px] max-sm:-right-9">
-        <img src={arrow} alt="shapes" className="h-24 sm:h-full" />
+      <div className="absolute wideScreen:right-0 -right-9 md:-right-24  xl:-right-9 md:top-[156px] sm:bottom-[164px] bottom-[194px]  ">
+        <img src={arrow} alt="shapes" className="h-24 sm:h-28 md:h-40 xl:h-48" />
       </div>
       <div className="absolute -right-[17px] -bottom-8 max-smallest:-bottom-16 sm:bottom-[9px]">
         <img src={pattern} alt="shapes" className="h-[143px]" />
@@ -66,7 +66,7 @@ const JobHero: React.FC<JobHeroProps> = ({
               <img src={starPattern} alt="shapes" className="h-full" />
             </div>
           ) : (
-            <div className="relative md:-bottom-2 bottom-4 right-5 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-8">
+            <div className="relative md:-bottom-2 bottom-4 right-5 sm:right-16 md:right-5 xl:right-16 2xl:right-5 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] md:mt-8 mt-28">
               <div className="w-24 h-24 border-2 border-dashed rounded-full md:w-32 md:h-32 border-primary animate-spin-slow"></div>
               <div className="absolute top-[8px] left-[8px] bg-primary rounded-full mx-auto">
                 <img className="w-20 h-20 md:w-28 md:h-28" src={art} alt="" />

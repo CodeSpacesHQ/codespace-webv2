@@ -2,6 +2,7 @@ import { RouteObject, useRoutes } from "react-router";
 import { Home, About, JobOpp, Donate, Shop } from "../pages";
 import { SharedLayout } from "../components/layout/SharedLayout";
 import Contact from "../pages/contact/Contact";
+import Perks from "../pages/perks/Perks";
 
 export function Routes() {
   const routes: RouteObject[] = [
@@ -15,6 +16,7 @@ export function Routes() {
         { path: "/contact", element: <Contact /> },
         { path: "/donate", element: <Donate /> },
         { path: "/shop", element: <Shop /> },
+        { path: "/perks", element: <Perks /> },
       ],
     },
   ];
