@@ -13,7 +13,9 @@ const useOnScreen = (ref: React.RefObject<any>): boolean => {
     }
 
     return () => {
-      observer.unobserve(ref.current!);
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
     };
   }, [ref]);
 
