@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.codespaceafrica.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+   <url>
+    <loc>https://www.codespaceafrica.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/job</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+    <url>
+    <loc>https://www.codespaceafrica.com/donate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+    <url>
+    <loc>https://www.codespaceafrica.com/shop</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+    <url>
+    <loc>https://www.codespaceafrica.com/perks</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>CodeSpace Africa</image:title>
+    </image:image>
+  </url>
+</urlset>
