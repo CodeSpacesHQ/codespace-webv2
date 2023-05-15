@@ -1,26 +1,26 @@
 import { socialLinks } from "../data/socialLinks";
 import { footerLinks } from "../data/footerLinks";
 
-import logo from "../assets/logoFooter.svg";
+import logo from "../assets/logo.svg";
 
 const Footer = () => {
   const textStyle =
     "font-poppins text-[#8C8C8C] text-[15px]/[23px] font-normal md:text-[16px]/8 tracking-[-0.20000000298023224px]";
   return (
-    <footer className="">
+    <footer>
       <div className="pt-[35px] sm:pb-[57px] pb-6 mx-auto">
-        <div className="w-full border-t-2 border-dashed border-[#D1D1D2] sm:hidden" />
-        <div className=" pb-[30px] ps-[26px] sm:ps-10 max-lg:pe-28 lg:ps-[69.83px] lg:pe-[165px] xl:ps-[108px] xl:pe-[332px] md:pb-[89px] flex max-sm:flex-col xmd::gap-[60px] sm:gap-[30px] lg:gap-[73px]">
+        <div className="w-full border-t-2 border-dashed border-[#D1D1D2] sm:hidden mb-10" />
+        <div className=" pb-[30px] ps-[26px] sm:ps-10 max-lg:pe-28 max-sm:pe-7 lg:ps-[69.83px] lg:pe-[165px] xl:ps-[108px] xl:pe-[332px] md:pb-[89px] flex max-sm:flex-col xmd::gap-[60px] sm:gap-[30px] lg:gap-[73px]">
           <div className="flex-1">
-            <div className="mb-[19px] max-lg:mb-0">
-              <img src={logo} className="h-[86px] md:h-[132px]" alt="logo" />
+            <div className="mb-[19px]">
+              <img src={logo} className=" w-44" alt="logo" />
             </div>
             <div className={textStyle}>
               We are a vibrant community for the tech-savvy Gen Z developers,
               founders, designers, and tech enthusiasts across Africa.
             </div>
           </div>
-          <div className="flex flex-col flex-1 sm:mt-[66px] max-md:mt-[34px]">
+          <div className="flex flex-col flex-1 max-md:mt-[34px]">
             <span className="mb-4 text-2xl font-semibold leading-6 font-hind-siliguri">
               Reach out to us
             </span>
@@ -46,7 +46,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col flex-none font-hind-siliguri sm:mt-[66px] max-md:mt-[59px]">
+          <div className="flex flex-col flex-none font-hind-siliguri max-md:mt-[59px]">
             <span className="mb-[27px] text-2xl font-semibold leading-6 font-hind-siliguri">
               Quick links
             </span>

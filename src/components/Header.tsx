@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import HamburgerIcon from "./HamburgerIcon";
 import logo from "../assets/logo.svg";
 import { menuItems } from "../data/menuItems";
@@ -63,7 +64,7 @@ const Header = () => {
             <img
               src={logo}
               alt="logo"
-              className="relative h-[31px] cursor-pointer z-40"
+              className="relative h-[16px] cursor-pointer z-40"
             />
           </a>
           {/* Menu */}
@@ -76,18 +77,32 @@ const Header = () => {
                       key={item.key}
                       className="transition-all cursor-pointer hover:scale-105 hover:text-primary"
                     >
-                      <a href={item.where}>{item.name}</a>
+                      <a
+                        href={item.where}
+                        className={
+                          window.location.pathname === item.where
+                            ? "font-semibold"
+                            : "font-normal"
+                        }
+                      >
+                        {item.name}
+                      </a>
                     </li>
                   );
                 })}
               </ul>
             </div>
           </div>
-          <div className="hidden transition-all donate lg:block hover:scale-110">
+          <a
+            href="https://paystack.com/pay/77iitrxp80"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden transition-all donate lg:block hover:scale-110"
+          >
             <button className="bg-primary w-[150px] rounded-[10px] py-3 text-white">
               Donate Now
             </button>
-          </div>
+          </a>
           {/* Mobile Menu */}
 
           <div className="z-40 lg:hidden" onClick={handleNavClick}>
@@ -99,8 +114,8 @@ const Header = () => {
 
         {/* Tab menu */}
         <div className={`lg:hidden z-30 ${navClasses}`}>
-          <div className="py-12 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
-            <img src={logo} alt="logo" className=" h-[31px]" />
+          <div className="py-12 max-md:py-8 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
+            <img src={logo} alt="logo" className=" h-[16px]" />
           </div>
 
           <ul className="px-7 h-[50px] text-left font-poppins">
@@ -114,17 +129,31 @@ const Header = () => {
                   className={`hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
                 >
                   <span>
-                    <a href={item.where}>{item.name}</a>
+                    <a
+                      href={item.where}
+                      className={
+                        window.location.pathname === item.where
+                          ? "font-semibold"
+                          : "font-normal"
+                      }
+                    >
+                      {item.name}
+                    </a>
                   </span>
                 </motion.li>
               );
             })}
           </ul>
-          <div className="absolute w-full transition-all donate bottom-10 hover:scale-110 px-7">
+          <a
+            href="https://paystack.com/pay/77iitrxp80"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute w-full transition-all donate bottom-10 hover:scale-110 px-7"
+          >
             <button className="bg-primary w-full rounded-[10px] py-3 text-white">
               Donate Now
             </button>
-          </div>
+          </a>
         </div>
       </nav>
     </header>

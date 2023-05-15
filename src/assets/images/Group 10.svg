@@ -1,6 +1,6 @@
 <svg width="146" height="147" viewBox="0 0 146 147" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="71" cy="76" r="60" fill="#5D5CD6"/>
-<circle cx="71" cy="76" r="70" stroke="#5D5CD6" stroke-width="2" stroke-dasharray="12 12"/>
+<circle cx="71" cy="76" r="60" fill="#5B5AD1"/>
+<circle cx="71" cy="76" r="70" stroke="#5B5AD1" stroke-width="2" stroke-dasharray="12 12"/>
 <path d="M146 72.5C146 112.541 113.541 145 73.5 145C33.4594 145 1 112.541 1 72.5C1 32.4594 33.4594 0 73.5 0C113.541 0 146 32.4594 146 72.5Z" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
