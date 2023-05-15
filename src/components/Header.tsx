@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import HamburgerIcon from "./HamburgerIcon";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo-black.svg";
 import { menuItems } from "../data/menuItems";
 
 import { motion, useAnimation } from "framer-motion";
