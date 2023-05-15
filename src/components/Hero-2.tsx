@@ -66,7 +66,7 @@ const JobHero: React.FC<JobHeroProps> = ({
         </motion.div>
         <motion.div {...slideAnimation("up")}>
           {star ? (
-            <div className="relative lg:bottom-2 bottom-4 right-9 max-lg:right-8 max-lg:me-[34px] max-lg:mt-20 max-sm:me-[75px] animate-spin-slow">
+            <div className="relative lg:bottom-2 bottom-4 right-9 max-lg:right-8 max-lg:me-[34px] max-lg:mt-20 max-sm:me-[75px] animate-float">
               <img
                 src={starPattern}
                 alt="shapes"
