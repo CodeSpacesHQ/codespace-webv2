@@ -19,7 +19,7 @@ export const donateContents: donateItems[] = [
     title: "DONATE IN CASH",
     text: "We appreciate every cash donation we receive and strive to maximize its impact. Your contribution will help shape a brighter future for the tech industry by providing entry-level tech professionals with opportunities to advance their careers. We are committed to ensuring that your donation goes a long way in creating a positive impact on the lives of these individuals and the industry as a whole.",
     buttonText: "DONATE NOW",
-    link: "#",
+    link: "https://paystack.com/pay/77iitrxp80",
   },
   {
     key: 1,

@@ -29,7 +29,7 @@ const Body = () => {
                   <span>
                     <a
                       href={link}
-                      className="text-[#5D5CD6] underline hover:no-underline text-inherit"
+                      className="text-[#5B5AD1] underline hover:no-underline text-inherit"
                     >
                       info@codespaceafrica.com.
                     </a>{" "}
@@ -41,8 +41,8 @@ const Body = () => {
               <a
                 href={link}
                 className="absolute bottom-[35px] left-0 right-0 mx-8 font-poppins font-semibold tracking-normal py-[19px] text-white rounded-[10px] text-center text-base
-                    bg-[#5D5CD6] hover:bg-white hover:border hover:border-[#5D5CD6] 
-                    transition duration-300 ease-in-out hover:text-[#5D5CD6]"
+                    bg-[#5B5AD1] hover:bg-white hover:border hover:border-[#5B5AD1] 
+                    transition duration-300 ease-in-out hover:text-[#5B5AD1]"
                 target="_blank"
                 rel="noopener noreferrer"
               >

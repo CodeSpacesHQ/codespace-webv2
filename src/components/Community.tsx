@@ -59,8 +59,8 @@ const Community: React.FC = () => {
             target="_blank"
           >
             <button
-              className=" bg-[#5D5CD6] hover:bg-white hover:border hover:border-[#5D5CD6] 
-                            transition duration-300 ease-in-out hover:text-[#5D5CD6]
+              className=" bg-[#5B5AD1] hover:bg-white hover:border hover:border-[#5B5AD1] 
+                            transition duration-300 ease-in-out hover:text-[#5B5AD1]
                             rounded-[40px] p-4 px-6 font-gilroy text-[#FEFEFE]
                             font-bold w-250px md:w-[300px]"
             >

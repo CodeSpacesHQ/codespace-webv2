@@ -11,7 +11,7 @@ const Opportunities: React.FC = () => {
     if (item === "Onsite jobs" && item !== active) {
       return "text-[#A6A6A6]";
     } else if (item === active) {
-      return "text-[#5D5CD6]";
+      return "text-[#5B5AD1]";
     } else {
       return "text-black";
     }
@@ -27,7 +27,7 @@ const Opportunities: React.FC = () => {
               onClick={() => setActiveElement(item)}
               className={`font-gelion text-[16px]/[19px] tracking-[-0.02em] cursor-pointer pb-4 ${textColor(
                 item
-              )} ${active === item ? "border-b-[#5D5CD6] border-b-4" : ""} ${
+              )} ${active === item ? "border-b-[#5B5AD1] border-b-4" : ""} ${
                 item === "All" ? "w-10" : ""
               }`}
             >
