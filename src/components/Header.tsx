@@ -63,7 +63,7 @@ const Header = () => {
             <img
               src={logo}
               alt="logo"
-              className="relative h-[31px] cursor-pointer z-40"
+              className="relative h-[16px] cursor-pointer z-40"
             />
           </a>
           {/* Menu */}
@@ -104,8 +104,8 @@ const Header = () => {
 
         {/* Tab menu */}
         <div className={`lg:hidden z-30 ${navClasses}`}>
-          <div className="py-12 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
-            <img src={logo} alt="logo" className=" h-[31px]" />
+          <div className="py-12 max-md:py-8 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
+            <img src={logo} alt="logo" className=" h-[16px]" />
           </div>
 
           <ul className="px-7 h-[50px] text-left font-poppins">
