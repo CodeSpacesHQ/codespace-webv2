@@ -31,8 +31,8 @@ export const Partners = () => {
               key={index}
               className={`object-contain ${
                 item.name === "digitalTimes"
-                  ? "h-[180px] max-sm:h-[124px]"
-                  : "h-[44px] max-sm:h-[34px]"
+                  ? "h-[180px] max-sm:h-[106px]"
+                  : "h-[44px] max-sm:h-[28px]"
               }`}
             >
               <img src={item.where} className="w-full h-full" alt={item.name} />
