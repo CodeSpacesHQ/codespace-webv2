@@ -18,6 +18,7 @@ const useSlideIn = () => {
       controls.start({
         opacity: 0,
         x: "-100%",
+        transition: { duration: 0.8 },
       });
     }
   }, [isVisible, controls]);

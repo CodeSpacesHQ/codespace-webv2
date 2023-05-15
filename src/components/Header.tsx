@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 import HamburgerIcon from "./HamburgerIcon";
-import logo from "../assets/logo-black.svg";
+import logo from "../assets/logo.svg";
 import { menuItems } from "../data/menuItems";
 
 import { motion, useAnimation } from "framer-motion";
@@ -77,8 +78,8 @@ const Header = () => {
                       key={item.key}
                       className="transition-all cursor-pointer hover:scale-105 hover:text-primary"
                     >
-                      <a
-                        href={item.where}
+                      <NavLink
+                        to={item.where}
                         className={
                           window.location.pathname === item.where
                             ? "font-semibold"
@@ -86,7 +87,7 @@ const Header = () => {
                         }
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     </li>
                   );
                 })}
