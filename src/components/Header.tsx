@@ -61,13 +61,20 @@ const Header = () => {
     >
       <nav>
         <div className="flex justify-between lg:justify-between py-12 max-md:py-8 lg:py-8 items-center px-7 xl:px-[102px] sm:px-[64px] font-poppins mx-auto max-w-[1500px]">
-          <a href={"/"}>
+          <NavLink
+            to={"/"}
+            onClick={() => {
+              setNavOpen(!navOpen);
+              setIsAnimating(!isAnimating);
+              setAnimationKey((prevKey) => prevKey + 1);
+            }}
+          >
             <img
               src={logo}
               alt="logo"
               className="relative h-[16px] xmd:max-xl:h-[16px] sm:h-5 cursor-pointer z-40"
             />
-          </a>
+          </NavLink>
           {/* Menu */}
           <div className="items-center justify-between hidden menu lg:flex">
             <div>
@@ -134,8 +141,13 @@ const Header = () => {
                   className={`hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
                 >
                   <span>
-                    <a
-                      href={item.where}
+                    <NavLink
+                      to={item.where}
+                      onClick={() => {
+                        setNavOpen(!navOpen);
+                        setIsAnimating(!isAnimating);
+                        setAnimationKey((prevKey) => prevKey + 1);
+                      }}
                       className={
                         window.location.pathname === item.where
                           ? "font-semibold"
@@ -143,7 +155,7 @@ const Header = () => {
                       }
                     >
                       {item.name}
-                    </a>
+                    </NavLink>
                   </span>
                 </motion.li>
               );
