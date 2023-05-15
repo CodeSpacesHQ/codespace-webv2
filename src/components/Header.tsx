@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import HamburgerIcon from "./HamburgerIcon";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo-black.svg";
 import { menuItems } from "../data/menuItems";
 
 import { motion, useAnimation } from "framer-motion";
@@ -64,7 +64,7 @@ const Header = () => {
             <img
               src={logo}
               alt="logo"
-              className="relative h-[16px] cursor-pointer z-40"
+              className="relative h-[16px] xmd:max-xl:h-[16px] sm:h-5 cursor-pointer z-40"
             />
           </a>
           {/* Menu */}
@@ -115,7 +115,11 @@ const Header = () => {
         {/* Tab menu */}
         <div className={`lg:hidden z-30 ${navClasses}`}>
           <div className="py-12 max-md:py-8 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
-            <img src={logo} alt="logo" className=" h-[16px]" />
+            <img
+              src={logo}
+              alt="logo"
+              className="h-[16px] xmd:max-xl:h-[16px] sm:h-5"
+            />
           </div>
 
           <ul className="px-7 h-[50px] text-left font-poppins">
