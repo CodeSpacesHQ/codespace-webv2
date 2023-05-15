@@ -111,7 +111,7 @@ const Header = () => {
                   initial={{ opacity: 0, x: "-100%" }}
                   animate={isAnimating ? controls : undefined}
                   style={{ transitionDelay: `${item.key * 100}ms` }}
-                  className={`cursor-pointer hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
+                  className={`hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
                 >
                   <span>
                     <a href={item.where}>{item.name}</a>

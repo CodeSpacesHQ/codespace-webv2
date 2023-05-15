@@ -1,11 +1,12 @@
 import { Bounce } from "react-awesome-reveal";
 
+
 const Hero = () => {
   return (
-    <section className="bg-[url('/assets/Hero-bg.svg')] min-h-[90vh] md:min-h-[calc(100vh+100px)] mt-20 bg-no-repeat bg-right bg-contain flex items-center overflow-hidden relative max-w-[1500px] mx-auto">
-      <div className="max-w-3xl px-7 md:py-0 lg:pl-[102px] relative ">
+    <section className="bg-[url('/assets/Hero-bg.svg')] min-h-[90vh] md:min-h-[calc(100vh+100px)] mt-28 bg-no-repeat bg-right bg-contain flex items-center overflow-hidden relative max-w-[1500px] mx-auto">
+      <div className="px-7 sm:px-16 lg:px-[65px] md:py-0 xl:pl-[101px] relative ">
         <Bounce cascade damping={0.4} duration={2000}>
-          <h1 className="font-gelion font-bold text-4xl leading-[42px] md:text-[64px] md:leading-[70px] mb-9">
+          <h1 className="max-w-3xl font-gelion font-bold text-4xl leading-[42px] md:text-[64px] md:leading-[70px] mb-9">
             Reshaping how{" "}
             <span className="text-primary color-slide bounce-delayed">
               Africa's story
@@ -13,9 +14,9 @@ const Hero = () => {
             is told and shared with tech
           </h1>
 
-          <p className="mb-8 text-lg font-dm-sans md:text-2xl text-grey">
-            We are a Community that connects teen techies (17 -19) accross
-            Nigeria in one place to share opportunites, work on awesome projects
+          <p className="max-w-2xl mb-8 text-lg font-dm-sans md:text-2xl text-grey">
+            We are a Community that connects teen techies (17 -19) across
+            Nigeria in one place to share opportunities, work on awesome projects
             and foster quality connections.
           </p>
 
