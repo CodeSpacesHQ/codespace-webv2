@@ -54,10 +54,7 @@ const Community: React.FC = () => {
         </p>
 
         <div>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeBjs67bGLUuoJqUIFlIse2SQeHnmBCDp07cz_HrAlHSNKZsA/viewform?usp=send_form"
-            target="_blank"
-          >
+          <a href="https://forms.gle/YiUVneorNXeqbbss9" target="_blank">
             <button
               className=" bg-[#5B5AD1] hover:bg-white hover:border hover:border-[#5B5AD1] 
                             transition duration-300 ease-in-out hover:text-[#5B5AD1]

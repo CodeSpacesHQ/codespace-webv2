@@ -83,11 +83,16 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="hidden transition-all donate lg:block hover:scale-110">
+          <a
+            href="https://paystack.com/pay/77iitrxp80"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden transition-all donate lg:block hover:scale-110"
+          >
             <button className="bg-primary w-[150px] rounded-[10px] py-3 text-white">
               Donate Now
             </button>
-          </div>
+          </a>
           {/* Mobile Menu */}
 
           <div className="z-40 lg:hidden" onClick={handleNavClick}>
@@ -120,11 +125,16 @@ const Header = () => {
               );
             })}
           </ul>
-          <div className="absolute w-full transition-all donate bottom-10 hover:scale-110 px-7">
+          <a
+            href="https://paystack.com/pay/77iitrxp80"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute w-full transition-all donate bottom-10 hover:scale-110 px-7"
+          >
             <button className="bg-primary w-full rounded-[10px] py-3 text-white">
               Donate Now
             </button>
-          </div>
+          </a>
         </div>
       </nav>
     </header>

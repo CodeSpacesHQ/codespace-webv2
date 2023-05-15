@@ -12,7 +12,7 @@ export const donateContents: donateItems[] = [
     title: "PARTNER WITH US",
     text: "Collaborate with us to help achieve our goal of empowering more genz-s in tech throughout Africa! Let's work together to expand our reach and make a positive impact on the tech industry.",
     buttonText: "GET STARTED",
-    link: "#",
+    link: "/contact",
   },
   {
     key: 1,
