@@ -32,7 +32,7 @@ const JobHero: React.FC<JobHeroProps> = ({
 
   return (
     <div
-      className="relative w-full bg-cover bg-center overflow-hidden"
+      className="relative w-full overflow-hidden bg-center bg-cover"
       style={backgroundImageStyle}
     >
       <div className="absolute right-0 xmd:top-[11rem] xl:top-[8rem] max-lg:bottom-28 max-sm:-right-[10px]">
