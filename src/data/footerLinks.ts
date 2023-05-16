@@ -24,4 +24,9 @@ export const footerLinks = [
     title: "Perks & Benefits",
     social_link: "/perks",
   },
+  {
+    id: 5,
+    title: "FAQ",
+    social_link: "/faq",
+  },
 ];

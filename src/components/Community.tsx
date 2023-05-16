@@ -28,7 +28,7 @@ const Community: React.FC = () => {
           />
         </div>
 
-        <div className=" absolute right-2  w-[20px] sm:w-[40px] object-cover sm:right-8 md:right-12 xmd:right-24 top-8 xmd:top-20">
+        <div className=" absolute right-2 w-[20px] sm:w-[40px] object-cover sm:right-8 md:right-12 xmd:right-24 top-8 xmd:top-20">
           <img
             src={star1}
             alt={`star logo`}
