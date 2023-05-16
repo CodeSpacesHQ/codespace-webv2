@@ -2,6 +2,7 @@ import { arrow, box } from "../../assets/images";
 import art from "../../assets/art.png";
 import useSlideIn from "../../hooks/useSlideIn";
 import { motion } from "framer-motion";
+import { slideAnimation } from "../../config/motion";
 
 export const AboutBanner = () => {
   const { controls, ref } = useSlideIn();
@@ -32,12 +33,15 @@ export const AboutBanner = () => {
             <br className="max-lg:hidden" /> technology
           </h1>
         </motion.div>
-        <div className="relative md:-bottom-2 bottom-4 right-5 max-md:right-8 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-20 max-sm:me-[75px]">
+        <motion.div
+          {...slideAnimation("up")}
+          className="relative md:-bottom-2 bottom-4 right-5 max-md:right-8 w-24 h-24 md:w-40 md:h-40 max-md:me-[34px] max-md:mt-20 max-sm:me-[75px]"
+        >
           <div className="w-24 h-24 border-2 border-dashed rounded-full md:w-32 md:h-32 border-primary animate-spin-slow"></div>
           <div className="absolute top-[8px] left-[8px] bg-primary rounded-full mx-auto">
             <img className="w-20 h-20 md:w-28 md:h-28" src={art} alt="" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
