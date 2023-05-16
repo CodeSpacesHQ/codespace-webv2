@@ -1,5 +1,5 @@
 import Header from "../Header";
-import Footer from "../Footer-B";
+import Footer from "../Footer";
 import { Outlet } from "react-router";
 
 export const SharedLayout = () => {
