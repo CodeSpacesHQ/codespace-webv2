@@ -26,11 +26,11 @@ export const slideAnimation = (direction: string) => {
 export const fadeAnimation = {
   initial: {
     opacity: 0,
-    transition: { ...transition, delay: 0.5 },
+    transition: { duration: 0.8, delay: 0.5 },
   },
   animate: {
     opacity: 1,
-    transition: { ...transition, delay: 0 },
+    transition: { duration: 0.8, delay: 0 },
   },
   exit: {
     opacity: 0,

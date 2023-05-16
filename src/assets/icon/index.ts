@@ -7,6 +7,8 @@ import guardians from "./guardians.svg";
 import star1 from "./Star 1.svg";
 import star2 from "./Star 2.svg";
 import couchBase from "./couchBase.svg";
+import plus from "./plus.svg";
+import minus from "./minus.svg";
 
 export {
   icon1,
@@ -18,4 +20,6 @@ export {
   star1,
   star2,
   couchBase,
+  plus,
+  minus,
 };
