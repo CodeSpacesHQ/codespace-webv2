@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { donateContents } from "../../data/donateContent";
 
 const Body = () => {
@@ -38,16 +39,27 @@ const Body = () => {
                   </span>
                 )}
               </p>
-              <a
-                href={link}
-                className="absolute bottom-[35px] left-0 right-0 mx-8 font-poppins font-semibold tracking-normal py-[19px] text-white rounded-[10px] text-center text-base
+              {index === 0 ? (
+                <NavLink
+                  to={link}
+                  className="absolute bottom-[35px] left-0 right-0 mx-8 font-poppins font-semibold tracking-normal py-[19px] text-white rounded-[10px] text-center text-base
                     bg-[#5B5AD1] hover:bg-white hover:border hover:border-[#5B5AD1] 
                     transition duration-300 ease-in-out hover:text-[#5B5AD1]"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {buttonText}
-              </a>
+                >
+                  {buttonText}
+                </NavLink>
+              ) : (
+                <a
+                  href={link}
+                  className="absolute bottom-[35px] left-0 right-0 mx-8 font-poppins font-semibold tracking-normal py-[19px] text-white rounded-[10px] text-center text-base
+                    bg-[#5B5AD1] hover:bg-white hover:border hover:border-[#5B5AD1] 
+                    transition duration-300 ease-in-out hover:text-[#5B5AD1]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {buttonText}
+                </a>
+              )}
             </div>
           );
         })}
