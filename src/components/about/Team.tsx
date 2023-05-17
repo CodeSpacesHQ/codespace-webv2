@@ -6,7 +6,7 @@ export const Team = () => {
 
   const isMobile = width <= 640;
   return (
-    <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-8 sm:pt-12 md:pt-16 pb-[234px] max-sm:pb-[184px]">
+    <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-8 sm:pt-12 md:pt-16 pb-[234px] max-sm:pb-[184px] max-w-[1800px] mx-auto">
       <h2
         className="font-gelion font-[700] sm:mb-6 
             text-center text-[32px] sm:text-[54px] lg:text-[64px] leading-[72px] text-[#000000]"

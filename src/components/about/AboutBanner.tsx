@@ -7,14 +7,14 @@ import { slideAnimation } from "../../config/motion";
 export const AboutBanner = () => {
   const { controls, ref } = useSlideIn();
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden max-w-[1500px] mx-auto">
       <div className="absolute right-0 xmd:top-[12rem] xl:top-[8rem] max-lg:bottom-28 max-sm:-right-[10px]">
         <img src={arrow} alt="arrow" className="xl:w-full max-xl:h-[91px]" />
       </div>
       <div className="absolute bottom-0 right-0">
         <img src={box} alt="" />
       </div>
-      <div className="xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col">
+      <div className="xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col sm:px-16 lg:px-[65px]">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: "-100%" }}
