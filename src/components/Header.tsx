@@ -83,7 +83,7 @@ const Header = () => {
                   return (
                     <li
                       key={item.key}
-                      className="transition-all cursor-pointer hover:scale-105 hover:text-primary"
+                      className="transition-all cursor-pointer text-[#070F18] hover:scale-105 hover:text-primary"
                     >
                       <NavLink
                         to={item.where}
@@ -113,7 +113,10 @@ const Header = () => {
           </a>
           {/* Mobile Menu */}
 
-          <div className="z-40 lg:hidden" onClick={handleNavClick}>
+          <div
+            className="z-40 cursor-pointer lg:hidden"
+            onClick={handleNavClick}
+          >
             <div className="mobile-icon">
               <HamburgerIcon isOpen={isAnimating} />
             </div>
@@ -130,7 +133,7 @@ const Header = () => {
             />
           </div>
 
-          <ul className="px-7 h-[50px] text-left font-poppins">
+          <ul className="text-left px-7 sm:px-[62px] font-poppins">
             {menuItems.map((item) => {
               return (
                 <motion.li
@@ -138,7 +141,9 @@ const Header = () => {
                   initial={{ opacity: 0, x: "-100%" }}
                   animate={isAnimating ? controls : undefined}
                   style={{ transitionDelay: `${item.key * 100}ms` }}
-                  className={`hover:scale-105 border-light-purple border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
+                  className={`hover:scale-105 ${
+                    !navOpen && "hidden"
+                  } border-light-purple text-[#070F18] font-normal border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
                 >
                   <span>
                     <NavLink
@@ -150,8 +155,8 @@ const Header = () => {
                       }}
                       className={
                         window.location.pathname === item.where
-                          ? "font-semibold"
-                          : "font-normal"
+                          ? "text-primary"
+                          : "text-[#070F18]"
                       }
                     >
                       {item.name}

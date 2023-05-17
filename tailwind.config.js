@@ -9,6 +9,7 @@ export default {
       "hind-siliguri": ["Hind Siliguri"],
       epilogue: ['"Epilogue"', "sans-serif"],
       gilroy: ["svn-gilroy", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
     extend: {
       colors: {

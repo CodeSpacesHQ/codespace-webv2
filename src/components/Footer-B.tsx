@@ -2,6 +2,7 @@ import { socialLinks } from "../data/socialLinks";
 import { footerLinks } from "../data/footerLinks";
 
 import logo from "../assets/logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const textStyle =
@@ -56,21 +57,30 @@ const Footer = () => {
                   key={id}
                   className="transition-all hover:scale-105 font-hind-siliguri hover:text-primary"
                 >
-                  <a
-                    href={social_link}
-                    target="_blank"
-                    rel="noopener"
-                    className="text-base md:text-[22px] tracking-normal"
-                  >
-                    {title}
-                  </a>
+                  {title === "Community" ? (
+                    <a
+                      href={social_link}
+                      target="_blank"
+                      rel="noopener"
+                      className="text-base md:text-[22px] tracking-normal"
+                    >
+                      {title}
+                    </a>
+                  ) : (
+                    <NavLink
+                      to={social_link}
+                      className="text-base md:text-[22px] tracking-normal"
+                    >
+                      {title}
+                    </NavLink>
+                  )}
                 </div>
               ))}
             </div>
           </div>
         </div>
         <div className="flex justify-center">
-          <hr className="border border-[#C2C2F0] max-sm:border-[#EBEBEB] sm:w-11/12 w-full" />
+          <hr className="border border-[#EBEBEB] sm:w-11/12 w-full" />
         </div>
 
         <div className="pt-[30px] md:pt-[92px] text-center font-gelion text-[15px] md:text-lg">
