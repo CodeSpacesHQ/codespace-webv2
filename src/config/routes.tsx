@@ -4,6 +4,7 @@ import { SharedLayout } from "../components/layout/SharedLayout";
 import Contact from "../pages/contact/Contact";
 import Perks from "../pages/perks/Perks";
 import ScrollToTop from "../components/ScrollToTop";
+import CommunityPage from "../pages/community/Community";
 
 export function Routes() {
   const routes: RouteObject[] = [
@@ -24,6 +25,7 @@ export function Routes() {
         { path: "/shop", element: <Shop /> },
         { path: "/perks", element: <Perks /> },
         { path: "/faq", element: <Faq /> },
+        { path: "/community", element: <CommunityPage /> },
       ],
     },
   ];
