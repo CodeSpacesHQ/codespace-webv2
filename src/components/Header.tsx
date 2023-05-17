@@ -15,6 +15,13 @@ const Header = () => {
 
   const controls = useAnimation();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     if (isAnimating) {
       controls.start({
@@ -64,9 +71,10 @@ const Header = () => {
           <NavLink
             to={"/"}
             onClick={() => {
-              setNavOpen(!navOpen);
-              setIsAnimating(!isAnimating);
+              setNavOpen(false);
+              setIsAnimating(false);
               setAnimationKey((prevKey) => prevKey + 1);
+              window.location.pathname === "/" && scrollToTop();
             }}
           >
             <img
@@ -149,8 +157,8 @@ const Header = () => {
                     <NavLink
                       to={item.where}
                       onClick={() => {
-                        setNavOpen(!navOpen);
-                        setIsAnimating(!isAnimating);
+                        setNavOpen(false);
+                        setIsAnimating(false);
                         setAnimationKey((prevKey) => prevKey + 1);
                       }}
                       className={

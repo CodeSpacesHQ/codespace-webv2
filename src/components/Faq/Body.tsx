@@ -2,7 +2,6 @@ import FAQ from "./FAQ";
 import { motion } from "framer-motion";
 import { slideAnimation, fadeAnimation } from "../../config/motion";
 import { faqData } from "../../data/faqData";
-
 import art from "../../assets/art2.png";
 import art2 from "../../assets/art3.png";
 import arrow from "../../assets/Arrow 4.svg";
@@ -12,7 +11,9 @@ import { star2 } from "../../assets/icon";
 
 const Body = () => {
   return (
-    <section className="relative sm:pt-[296px] pt-[166px] xl:px-64 lg:px-44 sm:px-24 px-[42px] pb-[109px] sm:pb-[343px] bg-[#F7F7FD] overflow-hidden">
+    <section
+      className={`relative sm:pt-[296px] pt-[166px] xl:px-64 lg:px-44 sm:px-24 px-[42px] pb-[109px] sm:pb-[343px] bg-gradient-to-b from-[#f7f7fd] to-white overflow-hidden`}
+    >
       <div className="mb-16 text-center">
         <h1 className="mb-5 font-inter font-semibold text-[#101828] text-3xl/[38px] sm:text-[42px]/[44px] tracking-normal sm:tracking-[-0.02em]">
           Frequently asked questions
