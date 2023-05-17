@@ -2,8 +2,8 @@ import { icon1, icon2 } from "../../assets/icon";
 
 export const Vision = () => {
   return (
-    <section className=" bg-[#F6F6FF] px-7 sm:px-[65px] xl:px-[94px] xl:pe-[64px] pb-9 sm:pb-28">
-      <div className="flex flex-col items-center justify-center md:flex-row gap-x-12">
+    <section className=" bg-[#F6F6FF] px-7 xl:px-[102px] sm:px-[64px] pb-9 sm:pb-28">
+      <div className="flex flex-col items-center justify-center md:flex-row gap-x-12 max-w-[1500px] mx-auto px-0 [@media(min-width:1600px)]:px-[54px] [@media(min-width:1670px)]:px-[84px]">
         <div className="w-full mb-6 md:w-1/2 md:mb-0">
           <div className="mb-6 md:mb-10 mt-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
             <img
@@ -40,7 +40,7 @@ export const Vision = () => {
         </div>
 
         <div className="w-full md:w-1/2">
-          <div className=" mb-6 md:mb-8 w-[50px] h-[65px] md:w-[80px] md:h-[100px] object-cover">
+          <div className=" mb-6 md:mb-10 mt-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
             <img
               src={icon2}
               alt="What we do"

@@ -3,7 +3,7 @@ import { donateContents } from "../../data/donateContent";
 
 const Body = () => {
   return (
-    <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-[60px] sm:pt-[126px] pb-[126px] max-sm:pb-[161px]">
+    <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-[60px] sm:pt-[126px] pb-[126px] max-sm:pb-[161px] max-w-[1500px] mx-auto">
       <div className="sm:mb-[87px] mb-[31px]">
         <h2 className="font-gilroy text-[27px]/7 sm:text-[48px]/[53px] font-extrabold tracking-[-0.005em] mb-4">
           Donate to our programs

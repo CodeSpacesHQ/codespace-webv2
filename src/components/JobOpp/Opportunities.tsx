@@ -18,7 +18,7 @@ const Opportunities: React.FC = () => {
   };
 
   return (
-    <section className="relative h-screen bg-white px-[29px] sm:px-10 lg:px-[69.83px] xl:px-[102px] pt-20">
+    <section className="relative h-screen bg-white px-[29px] sm:px-[64px] lg:px-[69.83px] xl:px-[102px] max-w-[1500px] mx-auto pt-20">
       <div className="flex sm:gap-8 sm:justify-start justify-between border-b-[#C2C2F0] border-b-[0.2px] w-full">
         {typeJobs.map((item, index) => {
           return (

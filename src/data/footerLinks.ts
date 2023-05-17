@@ -12,7 +12,7 @@ export const footerLinks = [
   {
     id: 2,
     title: "Community",
-    social_link: "https://forms.gle/YiUVneorNXeqbbss9",
+    social_link: "/community",
   },
   {
     id: 3,

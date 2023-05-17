@@ -62,7 +62,7 @@ const ContactHero = () => {
   }, []);
   return (
     <section
-      className="relative w-full h-full overflow-hidden xl:ps-[104px] pt-[232px] max-md:pt-[189px] 
+      className="relative w-full h-full overflow-hidden xl:ps-[104px] pt-[182px] max-md:pt-[189px] 
         max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center
         wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col"
     >
