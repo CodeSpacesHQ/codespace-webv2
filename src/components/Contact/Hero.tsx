@@ -1,18 +1,18 @@
-import { Bounce } from "react-awesome-reveal";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
+import useSlideIn from "../../hooks/useSlideIn";
 
 const ContactHero = () => {
   const planeRef = useRef<HTMLImageElement>(null);
-  const controls = useAnimation();
-
+  const control = useAnimation();
+  const { controls, ref } = useSlideIn();
   useEffect(() => {
     const plane = planeRef.current;
 
     const initialAnimation = async () => {
       if (!plane) return;
 
-      await controls.start({
+      await control.start({
         opacity: 1,
         x: 0,
         y: 0,
@@ -42,13 +42,13 @@ const ContactHero = () => {
         const translateX = (translateY / maxTranslation) * 100;
         const rotateZ = (translateY / maxTranslation) * maxRotation;
 
-        controls.set({
+        control.set({
           x: translateX,
           y: -translateY,
           skewX: -rotateZ,
         });
       } else {
-        controls.set({
+        control.set({
           x: 0,
           y: 0,
           skewX: 0,
@@ -74,21 +74,22 @@ const ContactHero = () => {
         alt="dots icons"
       />
       <div className="max-md:me-16 max-sm:me-0">
-        <Bounce cascade damping={0.4} duration={2000}>
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, x: "-100%" }}
+          animate={controls}
+        >
           <h1 className="text-primary uppercase mb-[19px]">Get in touch</h1>
           <h2 className="font-gelion font-semibold text-[29px] leading-[42px] md:text-[43px] lg:text-[55px] md:leading-[65.98px] mb-12">
-            Empowering{" "}
-            <span className="text-primary color-slide bounce-delayed">
-              Africa
-            </span>{" "}
+            Empowering <span className="text-primary color-slide">Africa</span>{" "}
             through the limitless potential of technology
           </h2>
-        </Bounce>
+        </motion.div>
       </div>
       <motion.img
         ref={planeRef}
         initial={{ opacity: 0, x: "-100%", y: "100%", skewX: "10deg" }}
-        animate={controls}
+        animate={control}
         transition={{ duration: 1, ease: "easeOut" }}
         className="relativew w-56 h-56 sm:h-48 sm:w-48 lg:w-80 lg:h-80 max-md:me-[34px] max-sm:me-[75px]"
         src="/assets/plane-arrow.svg"
