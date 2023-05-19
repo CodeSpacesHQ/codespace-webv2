@@ -95,6 +95,10 @@ const Header = () => {
                     >
                       <NavLink
                         to={item.where}
+                        onClick={() =>
+                          window.location.pathname === item.where &&
+                          scrollToTop()
+                        }
                         className={
                           window.location.pathname === item.where
                             ? "font-semibold"
@@ -160,6 +164,8 @@ const Header = () => {
                         setNavOpen(false);
                         setIsAnimating(false);
                         setAnimationKey((prevKey) => prevKey + 1);
+                        window.location.pathname === item.where &&
+                          scrollToTop();
                       }}
                       className={
                         window.location.pathname === item.where

@@ -1,3 +1,5 @@
+import useReadingProgress from "../hooks/useReadingProgress";
+
 import Hero from "../components/Hero-2";
 import Community from "../components/Community";
 import Body from "../components/Shop/Body";
@@ -5,8 +7,13 @@ import image from "../assets/pattern2.png";
 
 export const Shop = () => {
   const isPresent = true;
+  const completion = useReadingProgress();
   return (
     <>
+      <span
+        style={{ transform: `translateX(${completion - 100}%)` }}
+        className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
+      />
       <Hero
         title="STORE"
         h1="Celebrate Your Journey"
