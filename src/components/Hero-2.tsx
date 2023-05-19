@@ -35,15 +35,14 @@ const JobHero: React.FC<JobHeroProps> = ({
       className="relative w-full overflow-hidden bg-center bg-cover"
       style={backgroundImageStyle}
     >
-      <div className="max-w-[1500px] mx-auto relative ">
-      <div className="absolute wideScreen:right-0 -right-9 md:-right-24  xl:-right-9 md:top-[156px] sm:bottom-[164px] bottom-[174px]  ">
-        <img src={arrow} alt="shapes" className="h-24 sm:h-28 md:h-40 xl:h-48" />
-        </div>
+      <div className="absolute right-0 xmd:top-[11rem] xl:top-[8rem] max-lg:bottom-28 max-sm:-right-[10px]">
+        <img src={arrow} alt="arrow" className="xl:w-full max-xl:h-[91px]" />
+      </div>
       <div className="absolute -right-[17px] max-lg:right-0 -bottom-12 max-smallest:-bottom-16 lg:bottom-14">
         <img src={pattern} alt="shapes" className="h-[143px]" />
       </div>
       <div
-        className={`xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 sm:px-[64px]  ${
+        className={`xl:ps-[104px] pt-[232px] max-md:pt-[189px] max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 ${
           star ? "max-lg:flex-col max-lg:items-end" : "max-md:flex-col"
         }`}
       >
@@ -83,7 +82,6 @@ const JobHero: React.FC<JobHeroProps> = ({
             </div>
           )}
         </motion.div>
-      </div>
       </div>
     </div>
   );

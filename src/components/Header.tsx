@@ -91,14 +91,18 @@ const Header = () => {
                   return (
                     <li
                       key={item.key}
-                      className="transition-all cursor-pointer text-[#070F18] hover:scale-105 hover:text-primary"
+                      className="transition-all font-normal cursor-pointer hover:scale-105 hover:text-primary"
                     >
                       <NavLink
                         to={item.where}
+                        onClick={() =>
+                          window.location.pathname === item.where &&
+                          scrollToTop()
+                        }
                         className={
                           window.location.pathname === item.where
-                            ? "font-semibold"
-                            : "font-normal"
+                            ? "text-primary"
+                            : "text-[#070F18]"
                         }
                       >
                         {item.name}
@@ -160,6 +164,8 @@ const Header = () => {
                         setNavOpen(false);
                         setIsAnimating(false);
                         setAnimationKey((prevKey) => prevKey + 1);
+                        window.location.pathname === item.where &&
+                          scrollToTop();
                       }}
                       className={
                         window.location.pathname === item.where
