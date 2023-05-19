@@ -7,5 +7,4 @@ export function updateThemeColor(color: ThemeColor) {
   if (themeColorMeta) {
     themeColorMeta.setAttribute("content", color);
   }
-  console.log("Theme color updated:", color);
 }
