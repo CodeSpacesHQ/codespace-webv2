@@ -12,7 +12,7 @@ const Footer = () => {
     });
   };
   return (
-    <footer className="">
+    <footer>
       <div className="pt-8 sm:pt-[101px] pb-[57px] mx-auto max-w-[1500px] px-7 lg:px-[65px] xl:px-[102px] sm:px-[64px]">
         <div className="w-full border-t-2 border-dashed border-[#D1D1D2] sm:hidden mb-10" />
         <div className="space-y-[34px] sm:space-y-0 pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-3 sm:gap-10">
