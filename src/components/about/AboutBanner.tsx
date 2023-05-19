@@ -7,7 +7,7 @@ import { slideAnimation } from "../../config/motion";
 export const AboutBanner = () => {
   const { controls, ref } = useSlideIn();
   return (
-    <div className="relative w-full h-full overflow-hidden max-w-[1500px] mx-auto">
+    <div className="relative w-full h-full overflow-hidden mx-auto">
       <div className="absolute right-0 xmd:top-[12rem] xl:top-[8rem] max-lg:bottom-28 max-sm:-right-[10px]">
         <img src={arrow} alt="arrow" className="xl:w-full max-xl:h-[91px]" />
       </div>
