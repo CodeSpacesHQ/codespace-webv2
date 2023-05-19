@@ -5,6 +5,7 @@ import Contact from "../pages/contact/Contact";
 import Perks from "../pages/perks/Perks";
 import ScrollToTop from "../components/ScrollToTop";
 import CommunityPage from "../pages/community/Community";
+import ErrorPage from "../pages/404/Error";
 
 export function Routes() {
   const routes: RouteObject[] = [
@@ -26,6 +27,7 @@ export function Routes() {
         { path: "/perks", element: <Perks /> },
         { path: "/faq", element: <Faq /> },
         { path: "/community", element: <CommunityPage /> },
+        { path: "/404", element: <ErrorPage /> },
       ],
     },
   ];

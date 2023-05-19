@@ -12,8 +12,8 @@ const Footer = () => {
     });
   };
   return (
-    <footer className="px-7 lg:px-[102px]">
-      <div className="pt-8 sm:pt-[101px] pb-[57px] mx-auto max-w-[1500px]">
+    <footer className="">
+      <div className="pt-8 sm:pt-[101px] pb-[57px] mx-auto max-w-[1500px] px-7 lg:px-[65px] xl:px-[102px] sm:px-[64px]">
         <div className="w-full border-t-2 border-dashed border-[#D1D1D2] sm:hidden mb-10" />
         <div className="space-y-[34px] sm:space-y-0 pb-[30px] md:pb-[89px] grid grid-cols-1 sm:grid-cols-3 sm:gap-10">
           <div className="flex flex-col relative">
@@ -55,12 +55,10 @@ const Footer = () => {
             <span className="mb-4 font-semibold text-xl">Quick links</span>
             <div className="flex flex-col space-y-[5px]">
               {footerLinks.map(({ id, title, social_link }) => (
-                <div
-                  key={id}
-                  className="font-hind-siliguri text-base transition-all hover:text-primary"
-                >
+                <div key={id} className="font-hind-siliguri text-base">
                   <NavLink
                     to={social_link}
+                    className="transition-all hover:text-primary"
                     onClick={() =>
                       window.location.pathname === social_link && scrollToTop()
                     }
