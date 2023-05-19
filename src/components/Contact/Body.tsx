@@ -1,6 +1,7 @@
 import { formPurpose } from '../../data/formPurpose';
 
 const ContactBody = () => {
+  
   return (
     <section className='min-h-[60vh] px-7 lg:px-[102px] relative items-center'>
       <div className='max-w-[1500px] mx-auto pb-60'>
