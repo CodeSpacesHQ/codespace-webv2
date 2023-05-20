@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { updateThemeColor, ThemeColor } from "../../utils/Theme";
+
 import useReadingProgress from "../../hooks/useReadingProgress";
 
 import ContactBody from "../../components/Contact/Body";
@@ -6,6 +9,15 @@ import { Partners } from "../../components/about";
 
 const Contact = () => {
   const completion = useReadingProgress();
+  useEffect(() => {
+    const themeColor: ThemeColor = "#ffffff"; // Set the theme color type explicitly
+
+    updateThemeColor(themeColor); // Set the theme color for this specific page
+
+    return () => {
+      updateThemeColor("#f9f9f9"); // Set the default theme color when leaving this page
+    };
+  }, []);
   return (
     <div className="max-w-[1520px] mx-auto">
       <span

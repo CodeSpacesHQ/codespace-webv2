@@ -3,25 +3,25 @@ interface formPurpose {
   value: string;
 }
 
-export const formPurpose:formPurpose[] = [
+export const formPurpose: formPurpose[] = [
   {
     key: 0,
     value: "General Information",
   },
   {
-    key: 0,
+    key: 1,
     value: "Donation",
   },
   {
-    key: 0,
+    key: 2,
     value: "Sponsorship",
   },
   {
-    key: 0,
+    key: 3,
     value: "Partnership",
   },
   {
-    key: 0,
+    key: 4,
     value: "Other",
   },
-]
+];
