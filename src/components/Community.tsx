@@ -5,7 +5,7 @@ import { buttons, buttonsSmall } from "../assets/images";
 
 const Community: React.FC = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center sm:mb-[116px] xmd:flex-row">
+    <div className="relative flex flex-col items-center justify-center sm:mb-[116px] xmd:flex-row max-w-[1500px] mx-auto">
       <div className="relative flex items-center justify-center w-full xmd:w-3/5">
         <div className="xmd:-ml-20">
           <img
