@@ -1,0 +1,1 @@
+We welcome contributions to our website from the community! If you'd like to contribute, please open a pull request with your changes. When opening a PR, please tag any associated parties, [@Tobithedev](https://github.com/Tobithedev) and [@PreciousOrjiude](https://github.com/IndigoSoftwares21)
