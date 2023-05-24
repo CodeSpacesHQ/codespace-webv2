@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { formPurpose } from "../../data/formPurpose";
 import { useNavigate } from "react-router";
 
@@ -16,6 +16,15 @@ const ContactBody: React.FC = () => {
     project: "",
     purpose: [],
   });
+
+  // Load cached form data on component mount
+  useEffect(() => {
+    const cachedData = localStorage.getItem("formData");
+    if (cachedData) {
+      setValues(JSON.parse(cachedData));
+    }
+  }, []);
+
   const navigate = useNavigate();
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -63,7 +72,8 @@ const ContactBody: React.FC = () => {
     })
       .then((response) => {
         if (response.ok) {
-          // Success, do something
+          // Clear form data from cache on successful submission
+          localStorage.removeItem("formData");
           navigate("/submitted");
         } else {
           // Error, do something
@@ -75,6 +85,10 @@ const ContactBody: React.FC = () => {
         console.log(error);
       });
   };
+  // Cache form data on component update
+  useEffect(() => {
+    localStorage.setItem("formData", JSON.stringify(values));
+  }, [values]);
 
   return (
     <section className="min-h-[60vh] px-7 lg:px-[102px] relative items-center">
@@ -83,16 +97,11 @@ const ContactBody: React.FC = () => {
           onSubmit={handleSubmit}
           id="email"
           className="text-[#344054] font-inter max-w-3xl"
-          action="https://formsubmit.co/ajax/lazbright1@gmail.com"
+          action="https://formsubmit.co/ajax/hello@codespaceafrica.com"
           method="POST"
         >
           <div>
             <input type="hidden" name="_subject" value="New submission!" />
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for contacting CodeSpace, will get in touch with you soon."
-            />
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2" htmlFor="name">
                 Name
