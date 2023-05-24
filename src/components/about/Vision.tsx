@@ -30,11 +30,7 @@ export const Vision = () => {
 
           <div>
             <p className=" font-dm-sans font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
-              We are lowering the barrier of entry to accepting global payments
-              by bridging the gap between fiat and crypto currencies. Achieving
-              swift and seamless payment processing is the goal for us at
-              Lazerpay, by building a decentralised and multi-chain payment
-              gateway.
+            Inspiring the growth of the African continent, one tech talent at a time.
             </p>
           </div>
         </div>
@@ -62,17 +58,15 @@ export const Vision = () => {
               className=" font-poppins font-[700] text-[28px] sm:text-[32px] lg:text-[40px] mb-7
                         tracking-[-1px] text-[#000000] leading-[64px]"
             >
-              Explore.Lead.Do
+              Our Mission
             </h3>
           </div>
 
           <div>
             <p className=" font-dm-sans font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
-              We are lowering the barrier of entry to accepting global payments
-              by bridging the gap between fiat and crypto currencies. Achieving
-              swift and seamless payment processing is the goal for us at
-              Lazerpay, by building a decentralised and multi-chain payment
-              gateway.
+            Our mission at Code Space is to create a thriving community that fosters technical growth, 
+            facilitates networking opportunities, provides mentorship, and enhances visibility for individuals 
+            at all levels of their careers in the field of technology.
             </p>
           </div>
         </div>
