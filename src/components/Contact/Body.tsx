@@ -1,15 +1,90 @@
+import React, { useState } from "react";
 import { formPurpose } from "../../data/formPurpose";
-import Checkbox from "./CheckBox";
+import { useNavigate } from "react-router";
 
-const ContactBody = () => {
+interface FormValues {
+  Name: string;
+  email: string;
+  project: string;
+  purpose: string[];
+}
+
+const ContactBody: React.FC = () => {
+  const [values, setValues] = useState<FormValues>({
+    Name: "",
+    email: "",
+    project: "",
+    purpose: [],
+  });
+  const navigate = useNavigate();
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value, type } = event.target;
+    if (type === "checkbox") {
+      const checked = (event.target as HTMLInputElement).checked;
+      if (checked) {
+        setValues((prevValues) => ({
+          ...prevValues,
+          purpose: [...prevValues.purpose, name],
+        }));
+      } else {
+        setValues((prevValues) => ({
+          ...prevValues,
+          purpose: prevValues.purpose.filter((item) => item !== name),
+        }));
+      }
+    } else {
+      setValues((prevValues) => ({
+        ...prevValues,
+        [name]: value,
+      }));
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+
+    const formData = new FormData();
+    formData.append("Name", values.Name);
+    formData.append("Email", values.email);
+    formData.append("Project", values.project);
+    const checkedPurpose = formPurpose.filter(({ key }) =>
+      values.purpose.includes(String(key))
+    );
+    checkedPurpose.forEach(({ value }) => {
+      formData.append("Purpose[]", value);
+    });
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Success, do something
+          navigate("/submitted");
+        } else {
+          // Error, do something
+          navigate("/404");
+        }
+      })
+      .catch((error) => {
+        navigate("/404");
+        console.log(error);
+      });
+  };
+
   return (
     <section className="min-h-[60vh] px-7 lg:px-[102px] relative items-center">
       <div className="max-w-[1500px] mx-auto pb-60">
         <form
-          action="https://formsubmit.co/lazbright1@gmail.com"
-          method="POST"
+          onSubmit={handleSubmit}
           id="email"
           className="text-[#344054] font-inter max-w-3xl"
+          action="https://formsubmit.co/ajax/lazbright1@gmail.com"
+          method="POST"
         >
           <div>
             <input type="hidden" name="_subject" value="New submission!" />
@@ -26,8 +101,10 @@ const ContactBody = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
                 id="name"
                 type="text"
-                name="Name"
                 placeholder="Your name"
+                value={values.Name}
+                onChange={handleChange}
+                name="Name"
               />
             </div>
             <div className="mb-6">
@@ -38,8 +115,10 @@ const ContactBody = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
                 id="email"
                 type="email"
-                name="Email"
                 placeholder="you@company.com"
+                value={values.email}
+                onChange={handleChange}
+                name="email"
               />
             </div>
             <div className="mb-6">
@@ -52,8 +131,10 @@ const ContactBody = () => {
               <textarea
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline min-h-[128px]"
                 id="project"
-                name="Project"
                 placeholder="Tell us a little about the project..."
+                value={values.project}
+                onChange={handleChange}
+                name="project"
               />
             </div>
             <div className="mb-8">
@@ -65,18 +146,16 @@ const ContactBody = () => {
               </label>
               <div className="grid grid-cols-2 gap-4">
                 {formPurpose.map(({ key, value }) => (
-                  <Checkbox
-                    key={key}
-                    value={value}
-                    onChange={(checked) => {
-                      // Handle the checkbox value change here
-                      console.log(
-                        `${value} checkbox is ${
-                          checked ? "checked" : "unchecked"
-                        }`
-                      );
-                    }}
-                  />
+                  <div key={key} className="flex items-center">
+                    <input
+                      className="mr-2 leading-tight w-5 h-5"
+                      type="checkbox"
+                      name={key.toString()} // Convert key to string
+                      checked={values.purpose.includes(key.toString())} // Convert key to string
+                      onChange={handleChange}
+                    />
+                    <span className="font-medium">{value}</span>
+                  </div>
                 ))}
               </div>
             </div>
