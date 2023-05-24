@@ -4,7 +4,6 @@ interface CountingAnimationProps {
   value: number;
   duration?: number;
   step?: number;
-  max?: number;
   onCountChange?: (count: number) => void;
 }
 
@@ -20,25 +19,27 @@ const CountingAnimation: React.FC<CountingAnimationProps> = ({
     let startTimestamp: number | null = null;
     let requestId: number;
 
-    const step = (timestamp: number) => {
+    const stepAnimation = (timestamp: number) => {
       if (!startTimestamp) startTimestamp = timestamp;
+
       const progress = timestamp - startTimestamp;
       const increment = Math.floor((value * progress) / duration);
 
       if (increment >= value) {
         setCount(value);
-        cancelAnimationFrame(requestId);
+        if (onCountChange) {
+          onCountChange(value);
+        }
       } else {
         setCount(increment);
-        requestId = requestAnimationFrame(step);
-      }
-
-      if (onCountChange) {
-        onCountChange(count);
+        requestId = requestAnimationFrame(stepAnimation);
+        if (onCountChange) {
+          onCountChange(increment);
+        }
       }
     };
 
-    requestId = requestAnimationFrame(step);
+    requestId = requestAnimationFrame(stepAnimation);
 
     return () => {
       cancelAnimationFrame(requestId);
