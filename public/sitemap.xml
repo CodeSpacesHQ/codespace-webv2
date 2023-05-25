@@ -90,4 +90,13 @@
       <image:title>404 | CodeSpace</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/submitted</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>Form Submit Successful | CodeSpace</image:title>
+    </image:image>
+  </url>
 </urlset>
