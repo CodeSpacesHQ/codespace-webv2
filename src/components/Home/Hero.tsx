@@ -1,5 +1,5 @@
 import { Bounce } from "react-awesome-reveal";
-import TestComponent from "./Test";
+import AnimatedBoxes from "./Animation";
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
                 foster quality connections.
               </p>
 
-              <button className="bg-primary text-white font-semibold text-base lg:text-xl rounded-[25px] px-[18px] py-[14.5px] sm:px-8 sm:py-4 lg:px-12 lg:py-[23px] hover:scale-105 transition-all4">
+              <button className="bg-primary text-white font-semibold text-base lg:text-xl rounded-[15px] px-[18px] py-[14.5px] sm:px-8 sm:py-4 lg:px-12 lg:py-[23px] hover:scale-105 transition-all">
                 <a
                   href="https://forms.gle/csVUQEScZpiK9WzE8"
                   target="_blank"
@@ -34,7 +34,7 @@ const Hero = () => {
             </Bounce>
           </div>
           <div className="h-[600px] sm:hidden"></div>
-          <TestComponent />
+          <AnimatedBoxes />
         </div>
       </div>
       <img

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { doubleFirst, doubleSecond, doubleThrid } from "../../assets/icon";
 
-const TestComponent = () => {
+const AnimatedBoxes = () => {
   const [animationStarted, setAnimationStarted] = useState(false);
   const [activeBox, setActiveBox] = useState(1);
   const intervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
@@ -52,4 +52,4 @@ const TestComponent = () => {
   );
 };
 
-export default TestComponent;
+export default AnimatedBoxes;

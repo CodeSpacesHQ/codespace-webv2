@@ -16,7 +16,7 @@ const Donations = () => {
           also dedicated to breaking down barriers in tech by providing
           resources and support to help individuals pursue their passions.
         </p>
-        <button className="bg-primary text-white font-semibold text-base md:text-xl lg:text-[26px] rounded-[25px] px-7 sm:px-8 py-4 md:px-24 md:py-5 hover:scale-105 transition-all leading-[19.2px] lg:leading-[33.59px]">
+        <button className="bg-primary text-white font-semibold text-base md:text-xl lg:text-[26px] rounded-[15px] px-7 sm:px-8 py-4 md:px-24 md:py-5 hover:scale-105 transition-all leading-[19.2px] lg:leading-[33.59px]">
           <a
             href="https://forms.gle/csVUQEScZpiK9WzE8"
             target="_blank"
@@ -27,7 +27,7 @@ const Donations = () => {
         </button>
       </div>
 
-      <div className="absolute w-24 h-24 bottom-4 right-5 md:w-40 md:h-40">
+      <div className="absolute w-24 h-24 md:-bottom-2 bottom-4 right-5 md:w-40 md:h-40">
         <div className="absolute top-0 left-0 w-24 h-24 border-2 border-dashed rounded-full md:w-40 md:h-40 border-primary animate-spin-slow"></div>
         <div className="w-16 h-16 mx-auto my-4 rounded-full bg-primary md:w-32 md:h-32 ">
           <img
