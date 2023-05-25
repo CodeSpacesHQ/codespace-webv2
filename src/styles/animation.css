@@ -41,30 +41,36 @@
 
 @keyframes grow {
   0% {
-    width: 30%;
+    width: 120px;
+  }
+  50% {
+    width: 240px;
   }
   100% {
-    width: 100%;
+    width: 240px;
   }
 }
 
 @keyframes compress {
   0% {
-    width: 100%;
+    width: 240px;
+  }
+  50% {
+    width: 240px;
   }
   100% {
-    width: 30%;
+    width: 120px;
   }
 }
 
 .animate-box {
   animation-name: grow;
-  animation-duration: 3s; /* Adjust this value to control the duration of the animation */
+  animation-duration: 5s; /* Adjust this value to control the duration of the growth animation */
   animation-fill-mode: forwards;
 }
 
 .compressed {
   animation-name: compress;
-  animation-duration: 2s; /* Adjust this value to control the duration of the animation */
+  animation-duration: 4s; /* Adjust this value to control the duration of the compression animation */
   animation-fill-mode: forwards;
 }

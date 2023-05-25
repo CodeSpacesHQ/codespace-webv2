@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { doubleFirst, doubleSecond, doubleThrid } from "../../assets/icon";
 
 const TestComponent = () => {
   const [animationStarted, setAnimationStarted] = useState(false);
@@ -15,7 +16,7 @@ const TestComponent = () => {
           return prevActiveBox + 1;
         }
       });
-    }, 6000); // Change the interval to 6000ms (6 seconds) for smooth transition
+    }, 2000);
 
     return () => {
       if (intervalRef.current) {
@@ -25,22 +26,28 @@ const TestComponent = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex absolute -right-[100px] top-[280px] items-center">
       <div
-        className={`h-96 w-80 rounded-[28px] bg-black ${
+        className={`h-full w-[240px] rounded-[28px] bg-[#100F3D] overflow-hidden ${
           animationStarted && activeBox === 1 ? "animate-box" : ""
         } ${animationStarted && activeBox !== 1 ? "compressed" : ""}`}
-      ></div>
+      >
+        <img src={doubleFirst} alt="pattern" className="w-auto h-full" />
+      </div>
       <div
-        className={`h-96 w-80 rounded-[28px] bg-primary ${
+        className={`h-full w-[120px] rounded-[28px] bg-[#C4C4C4] overflow-hidden ${
           animationStarted && activeBox === 2 ? "animate-box" : ""
         } ${animationStarted && activeBox !== 2 ? "compressed" : ""}`}
-      ></div>
+      >
+        <img src={doubleSecond} alt="pattern" className="w-auto h-full" />
+      </div>
       <div
-        className={`h-96 w-80 rounded-[28px] bg-red-600 ${
+        className={`h-full w-[120px] rounded-[28px] bg-[#0DBA67] overflow-hidden ${
           animationStarted && activeBox === 3 ? "animate-box" : ""
         } ${animationStarted && activeBox !== 3 ? "compressed" : ""}`}
-      ></div>
+      >
+        <img src={doubleThrid} alt="pattern" className="w-auto h-full" />
+      </div>
     </div>
   );
 };
