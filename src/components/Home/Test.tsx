@@ -26,7 +26,7 @@ const TestComponent = () => {
   }, []);
 
   return (
-    <div className="flex absolute -right-[100px] top-[280px] items-center">
+    <div className="flex absolute -right-[100px] max-md:-right-[150px] max-md:top-[600px] lg:-right-[280px] xl:-right-[100px] lg:top-[280px] max-lg:mt-14 items-center">
       <div
         className={`h-full w-[240px] rounded-[28px] bg-[#100F3D] overflow-hidden ${
           animationStarted && activeBox === 1 ? "animate-box" : ""

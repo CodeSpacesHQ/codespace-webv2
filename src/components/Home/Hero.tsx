@@ -3,12 +3,12 @@ import TestComponent from "./Test";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-b from-[#F8F8FD] to-white min-h-[90vh] md:min-h-[calc(100vh+100px)] ">
-      <div className="bg-[url('/assets/Hero-bg.svg')] bg-no-repeat bg-right bg-contain">
+    <section className="relative bg-gradient-to-b from-[#F8F8FD] to-white md:min-h-[calc(100vh+100px)] lg:min-h-[calc(100vh+260px)] xl:min-h-[calc(100vh+100px)] overflow-hidden">
+      <div className="bg-[url('/assets/Hero-bg.svg')] bg-no-repeat bg-left bg-cover">
         <div className="pt-[188px] sm:pt-[199px] relative max-w-[1500px] mx-auto">
           <div className="px-7 sm:px-16 lg:px-[65px] md:py-0 xl:pl-[101px] relative ">
             <Bounce cascade damping={0.4} duration={2000}>
-              <h1 className="max-w-3xl font-gelion font-bold text-4xl leading-[42px] md:text-[64px] md:leading-[70px] mb-9">
+              <h1 className="max-w-2xl font-gelion font-bold text-4xl/[42px] md:text-[60px]/[70px] mb-9">
                 Connecting{" "}
                 <span className="text-primary color-slide bounce-delayed">
                   teen techie
@@ -16,7 +16,7 @@ const Hero = () => {
                 looking to meet other techies in Nigeria
               </h1>
 
-              <p className="max-w-2xl mb-8 text-lg font-dm-sans md:text-2xl text-grey">
+              <p className="max-w-xl mb-8 text-[15px]/[30px] font-dm-sans md:text-xl/[30px] text-grey">
                 We are a Community that connects teen techies accross Africa in
                 one place to share opportunites, work on awesome projects and
                 foster quality connections.
@@ -33,11 +33,12 @@ const Hero = () => {
               </button>
             </Bounce>
           </div>
+          <div className="h-[600px] sm:hidden"></div>
           <TestComponent />
         </div>
       </div>
       <img
-        className="absolute left-0 bottom-24 lg:bottom-5 animate-pulse"
+        className="absolute max-md:right-0 max-md:rotate-180 sm:left-0 max-lg:w-[200px] max-lg:bottom-8 lg:bottom-10 animate-pulse"
         src="/assets/arrow.svg"
         alt=""
       />
