@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="pt-[188px] sm:pt-[251px] relative max-w-[1500px] mx-auto">
           <div className="px-7 sm:px-16 lg:px-[65px] md:py-0 xl:pl-[101px] relative ">
             <Bounce cascade damping={0.4} duration={2000}>
-              <h1 className="max-w-2xl lg:max-xl:max-w-xl font-gelion font-bold text-4xl/[42px] md:text-[60px]/[70px] mb-9">
+              <h1 className="max-w-2xl lg:max-xl:max-w-xl font-gelion font-bold text-4xl/[42px] md:text-[60px]/[70px] lg:max-xl:text-5xl/[60px] mb-9">
                 Connecting{" "}
                 <span className="text-primary color-slide bounce-delayed">
                   teen techie
@@ -16,7 +16,7 @@ const Hero = () => {
                 looking to meet other techies in Nigeria
               </h1>
 
-              <p className="max-w-xl lg:max-xl:max-w-xl mb-8 text-[15px]/[30px] font-dm-sans md:text-xl/[30px] text-grey">
+              <p className="max-w-xl lg:max-xl:max-w-md mb-8 text-[15px]/[30px] font-dm-sans md:text-xl/[30px] text-grey">
                 We are a Community that connects teen techies accross Africa in
                 one place to share opportunites, work on awesome projects and
                 foster quality connections.
