@@ -9,6 +9,9 @@ import star2 from "./Star 2.svg";
 import couchBase from "./couchBase.svg";
 import plus from "./plus.svg";
 import minus from "./minus.svg";
+import doubleThrid from "./doodle.svg";
+import doubleSecond from "./Doodle Pattern Palette 3-1.svg";
+import doubleFirst from "./DoodleOne.svg";
 
 export {
   icon1,
@@ -22,4 +25,7 @@ export {
   couchBase,
   plus,
   minus,
+  doubleFirst,
+  doubleSecond,
+  doubleThrid,
 };

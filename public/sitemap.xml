@@ -6,16 +6,16 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>Home | CodeSpace</image:title>
     </image:image>
   </url>
-   <url>
+  <url>
     <loc>https://www.codespaceafrica.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
        <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>About | CodeSpace</image:title>
     </image:image>
   </url>
   <url>
@@ -24,7 +24,7 @@
     <priority>0.8</priority>
     <image:image>
        <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>Job Opportunities | CodeSpace</image:title>
     </image:image>
   </url>
   <url>
@@ -33,34 +33,70 @@
     <priority>0.8</priority>
     <image:image>
        <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>Contact | CodeSpace</image:title>
     </image:image>
   </url>
-    <url>
+  <url>
     <loc>https://www.codespaceafrica.com/donate</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
        <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>Donate | CodeSpace</image:title>
     </image:image>
   </url>
-    <url>
+  <url>
     <loc>https://www.codespaceafrica.com/shop</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
        <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>Shop | CodeSpace</image:title>
     </image:image>
   </url>
-    <url>
+  <url>
     <loc>https://www.codespaceafrica.com/perks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
        <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
-      <image:title>CodeSpace Africa</image:title>
+      <image:title>Perks and Benefits | CodeSpace</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/community</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap2.png</image:loc>
+      <image:title>Community | CodeSpace</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>FAQ | CodeSpace</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/404</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>404 | CodeSpace</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.codespaceafrica.com/submitted</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+       <image:loc>https://www.codespaceafrica.com/Sitmap.png</image:loc>
+      <image:title>Form Submit Successful | CodeSpace</image:title>
     </image:image>
   </url>
 </urlset>

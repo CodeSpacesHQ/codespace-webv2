@@ -26,7 +26,9 @@ const CommunityPage = () => {
       />
       <CommunityHero />
       <CommunityBody />
-      <Community />
+      <div className="bg-white px-[30px] sm:px-[100px] lg:px-[42px] xl:px-[102px]">
+        <Community />
+      </div>
     </div>
   );
 };

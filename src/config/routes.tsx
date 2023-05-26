@@ -1,5 +1,5 @@
 import { RouteObject, useRoutes } from "react-router";
-import { Home, About, JobOpp, Donate, Shop, Faq } from "../pages";
+import { Home, About, JobOpp, Donate, Shop, Faq, Success } from "../pages";
 import { SharedLayout } from "../components/layout/SharedLayout";
 import Contact from "../pages/contact/Contact";
 import Perks from "../pages/perks/Perks";
@@ -28,6 +28,7 @@ export function Routes() {
         { path: "/faq", element: <Faq /> },
         { path: "/community", element: <CommunityPage /> },
         { path: "/404", element: <ErrorPage /> },
+        { path: "/submitted", element: <Success /> },
       ],
     },
   ];
