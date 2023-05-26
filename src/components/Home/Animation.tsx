@@ -26,9 +26,9 @@ const AnimatedBoxes = () => {
   }, []);
 
   return (
-    <div className="flex absolute -right-[100px] max-md:-right-[150px] max-md:top-[600px] lg:-right-[280px] xl:-right-[100px] lg:top-[280px] max-lg:mt-14 items-center">
+    <div className="flex gap-x-[14px] absolute -right-[100px] h-[524px] xl:h-[574px] max-md:hidden lg:max-xl:-right-[360px] xl:-right-[160px] lg:top-[199px] max-lg:mt-14 items-center">
       <div
-        className={`h-full w-[240px] rounded-[28px] bg-[#100F3D] overflow-hidden ${
+        className={`h-full w-[400px] rounded-[28px] bg-[#100F3D] overflow-hidden ${
           animationStarted && activeBox === 1 ? "animate-box" : ""
         } ${animationStarted && activeBox !== 1 ? "compressed" : ""}`}
       >

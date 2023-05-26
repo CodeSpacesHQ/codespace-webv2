@@ -43,20 +43,20 @@
   0% {
     width: 120px;
   }
-  50% {
-    width: 240px;
+  33.3% {
+    width: 400px;
   }
   100% {
-    width: 240px;
+    width: 400px;
   }
 }
 
 @keyframes compress {
   0% {
-    width: 240px;
+    width: 400px;
   }
-  50% {
-    width: 240px;
+  66.6% {
+    width: 120px;
   }
   100% {
     width: 120px;
@@ -65,7 +65,7 @@
 
 .animate-box {
   animation-name: grow;
-  animation-duration: 5s; /* Adjust this value to control the duration of the growth animation */
+  animation-duration: 6s; /* Adjust this value to control the duration of the growth animation */
   animation-fill-mode: forwards;
 }
 
