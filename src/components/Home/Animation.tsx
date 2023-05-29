@@ -1,50 +1,36 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { doubleFirst, doubleSecond, doubleThrid } from "../../assets/icon";
 
-const AnimatedBoxes = () => {
-  const [animationStarted, setAnimationStarted] = useState(false);
-  const [activeBox, setActiveBox] = useState(1);
-  const intervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
+const AnimatedBoxes: React.FC = () => {
+  const [activeBox, setActiveBox] = useState<number>(1);
 
-  useEffect(() => {
-    setAnimationStarted(true);
-    intervalRef.current = setInterval(() => {
-      setActiveBox((prevActiveBox) => {
-        if (prevActiveBox === 3) {
-          return 1;
-        } else {
-          return prevActiveBox + 1;
-        }
-      });
-    }, 2000);
-
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  }, []);
+  const handleBoxHover = (boxNumber: number) => {
+    setActiveBox(boxNumber);
+  };
 
   return (
-    <div className="flex absolute -right-[100px] max-md:-right-[150px] max-md:top-[600px] lg:-right-[280px] xl:-right-[100px] lg:top-[280px] max-lg:mt-14 items-center">
+    <div className="flex gap-x-[14px] cursor-cell absolute -right-[100px] h-[524px] xl:h-[574px] max-md:hidden lg:max-xl:-right-[210px] xl:-right-[110px] lg:top-[199px] max-xl:mt-14 items-center">
       <div
-        className={`h-full w-[240px] rounded-[28px] bg-[#100F3D] overflow-hidden ${
-          animationStarted && activeBox === 1 ? "animate-box" : ""
-        } ${animationStarted && activeBox !== 1 ? "compressed" : ""}`}
+        className={`h-full w-[400px] rounded-[28px] bg-[#100F3D] overflow-hidden ${
+          activeBox === 1 ? "animate-box" : "compressed"
+        }`}
+        onMouseEnter={() => handleBoxHover(1)}
       >
         <img src={doubleFirst} alt="pattern" className="w-auto h-full" />
       </div>
       <div
         className={`h-full w-[120px] rounded-[28px] bg-[#C4C4C4] overflow-hidden ${
-          animationStarted && activeBox === 2 ? "animate-box" : ""
-        } ${animationStarted && activeBox !== 2 ? "compressed" : ""}`}
+          activeBox === 2 ? "animate-box" : "compressed"
+        }`}
+        onMouseEnter={() => handleBoxHover(2)}
       >
         <img src={doubleSecond} alt="pattern" className="w-auto h-full" />
       </div>
       <div
         className={`h-full w-[120px] rounded-[28px] bg-[#0DBA67] overflow-hidden ${
-          animationStarted && activeBox === 3 ? "animate-box" : ""
-        } ${animationStarted && activeBox !== 3 ? "compressed" : ""}`}
+          activeBox === 3 ? "animate-box" : "compressed"
+        }`}
+        onMouseEnter={() => handleBoxHover(3)}
       >
         <img src={doubleThrid} alt="pattern" className="w-auto h-full" />
       </div>
