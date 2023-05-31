@@ -57,6 +57,26 @@
   }
 }
 
+@media (max-width: 640px) {
+  @keyframes grow {
+    0% {
+      height: 100.88px;
+    }
+    100% {
+      height: 270.51px;
+    }
+  }
+
+  @keyframes compress {
+    0% {
+      height: 270.51px;
+    }
+    100% {
+      height: 100.88px;
+    }
+  }
+}
+
 .compressed {
   animation-name: compress;
   animation-duration: 0.4s; /* Adjust this value to control the duration of the compression animation */
