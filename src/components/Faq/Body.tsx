@@ -17,10 +17,10 @@ const Body = () => {
       <div className="sm:pt-[296px] pt-[166px] xl:px-64 lg:px-44 sm:px-24 px-[42px] pb-[109px] sm:pb-[343px] max-w-[1500px] mx-auto">
         <div className="mb-16 text-center">
           <h1 className="mb-5 font-inter font-semibold text-[#101828] text-3xl/[38px] sm:text-[42px]/[44px] tracking-normal sm:tracking-[-0.02em]">
-            Frequently asked questions
+          Questions we get the most
           </h1>
           <p className="font-inter font-normal tracking-normal mx-auto text-[#667085] text-lg sm:text-2xl/[30px]">
-            Everything you need to know about the product and billing.
+            We answered questions so you don't have to ask them.
           </p>
         </div>
 
