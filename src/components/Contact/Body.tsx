@@ -110,7 +110,7 @@ const ContactBody: React.FC = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
                 id="name"
                 type="text"
-                placeholder="Your name"
+                placeholder="Enter your full name"
                 value={values.Name}
                 onChange={handleChange}
                 name="Name"
@@ -124,7 +124,7 @@ const ContactBody: React.FC = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
                 id="email"
                 type="email"
-                placeholder="you@company.com"
+                placeholder="hello@codespace.com"
                 value={values.email}
                 onChange={handleChange}
                 name="email"
@@ -140,7 +140,7 @@ const ContactBody: React.FC = () => {
               <textarea
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline min-h-[128px]"
                 id="project"
-                placeholder="Tell us a little about the project..."
+                placeholder="Write us something....."
                 value={values.project}
                 onChange={handleChange}
                 name="project"
@@ -151,7 +151,7 @@ const ContactBody: React.FC = () => {
                 className="block text-sm font-medium mb-5"
                 htmlFor="purpose"
               >
-                Purpose
+                Why are you contacting us
               </label>
               <div className="grid grid-cols-2 gap-4">
                 {formPurpose.map(({ key, value }) => (
