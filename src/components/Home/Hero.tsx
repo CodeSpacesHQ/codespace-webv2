@@ -3,7 +3,7 @@ import AnimatedBoxes from "./Animation";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-b from-[#F8F8FD] to-white sm:min-h-[calc(100vh+400px)] lg:min-h-[calc(100vh+370px)] xl:min-h-[calc(100vh+100px)] wideScreen:min-h-[calc(100vh+200px)] overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#F8F8FD] to-white sm:min-h-[calc(100vh+400px)] lg:min-h-[calc(100vh+820px)] xl:min-h-[calc(100vh+100px)] wideScreen:min-h-[calc(100vh+200px)] overflow-hidden">
       <div className="bg-[url('/assets/Elements.png')] bg-no-repeat bg-left bg-cover">
         <div className="pt-[188px] sm:pt-[251px] max-w-[1500px] mx-auto">
           <div className="px-7 sm:px-16 lg:px-[65px] md:py-0 xl:pl-[101px] relative ">

@@ -1,6 +1,6 @@
-import medium from "../../../public/assets/medium.svg";
-import techNext from "../../../public/assets/Technext.svg";
-import media from "../../../public/assets/GeoLamedia.svg";
+import medium from "../../assets/images/medium.svg";
+import techNext from "../../assets/images/Technext.svg";
+import media from "../../assets/images/GeoLamedia.svg";
 
 const Press = () => {
   return (
@@ -77,11 +77,7 @@ const Press = () => {
             <div className="absolute bottom-0 left-0 right-0 group-hover:h-40 bg-gradient-to-t from-black to-transparent h-full rounded-[28px] sm:rounded-[10px] transition-all"></div>
             <div className="absolute bottom-5 lg:bottom-2 flex flex-col space-y-[10px] p-5">
               <div className="news-icon">
-                <img
-                  src="/assets/medium.svg"
-                  alt="medium icon"
-                  className="h-[28px]"
-                />
+                <img src={medium} alt="medium icon" className="h-[28px]" />
               </div>
               <div className="title font-medium text-[22px] leading-7 lg:leading-[31.19px] lg:font-bold text-white lg:text-[26px] line-clamp-3">
                 Top 10 Gen Z changing the world of tech in Nigeria

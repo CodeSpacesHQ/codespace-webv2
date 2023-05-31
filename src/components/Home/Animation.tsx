@@ -9,7 +9,7 @@ const AnimatedBoxes: React.FC = () => {
   };
 
   return (
-    <div className="flex gap-x-[14px] cursor-cell gap-y-2 max-md:px-7 relative sm:absolute max-md:-bottom-12 max-md:mt-0 sm:-right-[40px] sm:h-[524px] max-md:flex-col xl:h-[574px] lg:max-xl:-right-[210px] xl:-right-[110px] lg:top-[199px] max-xl:mt-14 items-center">
+    <div className="flex gap-x-[14px] cursor-cell gap-y-2 max-md:px-7 relative sm:absolute max-md:-bottom-12 max-md:mt-0 sm:-right-[40px] sm:h-[524px] lg:h-[454px] max-md:flex-col xl:h-[574px] xl:-right-[102px] wideScreen:-right-[52px] xl:top-[199px] max-xl:mt-14 items-center">
       <div
         className={`h-full w-full sm:w-[400px] rounded-[20px] sm:rounded-[28px] bg-[#100F3D] overflow-hidden ${
           activeBox === 1 ? "animate-box" : "compressed"
