@@ -93,31 +93,20 @@ const Header = () => {
                       key={item.key}
                       className="transition-all font-normal cursor-pointer hover:scale-105 hover:text-primary"
                     >
-                      {item.name === "Blog" ? (
-                        <a
-                          href={item.where}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#070F18]"
-                        >
-                          {item.name}
-                        </a>
-                      ) : (
-                        <NavLink
-                          to={item.where}
-                          onClick={() =>
-                            window.location.pathname === item.where &&
-                            scrollToTop()
-                          }
-                          className={
-                            window.location.pathname === item.where
-                              ? "text-primary"
-                              : "text-[#070F18]"
-                          }
-                        >
-                          {item.name}
-                        </NavLink>
-                      )}
+                      <NavLink
+                        to={item.where}
+                        onClick={() =>
+                          window.location.pathname === item.where &&
+                          scrollToTop()
+                        }
+                        className={
+                          window.location.pathname === item.where
+                            ? "text-primary"
+                            : "text-[#070F18]"
+                        }
+                      >
+                        {item.name}
+                      </NavLink>
                     </li>
                   );
                 })}
@@ -169,34 +158,23 @@ const Header = () => {
                   } border-light-purple text-[#070F18] font-normal border-opacity-20 py-3 border-dashed border-t-2 text-2xl transform transition-all ease-in-out duration-500`}
                 >
                   <span>
-                    {item.name === "Blog" ? (
-                      <a
-                        href={item.where}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#070F18]"
-                      >
-                        {item.name}
-                      </a>
-                    ) : (
-                      <NavLink
-                        to={item.where}
-                        onClick={() => {
-                          setNavOpen(false);
-                          setIsAnimating(false);
-                          setAnimationKey((prevKey) => prevKey + 1);
-                          window.location.pathname === item.where &&
-                            scrollToTop();
-                        }}
-                        className={
-                          window.location.pathname === item.where
-                            ? "text-primary"
-                            : "text-[#070F18]"
-                        }
-                      >
-                        {item.name}
-                      </NavLink>
-                    )}
+                    <NavLink
+                      to={item.where}
+                      onClick={() => {
+                        setNavOpen(false);
+                        setIsAnimating(false);
+                        setAnimationKey((prevKey) => prevKey + 1);
+                        window.location.pathname === item.where &&
+                          scrollToTop();
+                      }}
+                      className={
+                        window.location.pathname === item.where
+                          ? "text-primary"
+                          : "text-[#070F18]"
+                      }
+                    >
+                      {item.name}
+                    </NavLink>
                   </span>
                 </motion.li>
               );

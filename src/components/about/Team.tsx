@@ -15,7 +15,7 @@ export const Team = () => {
       </h2>
 
       <div>
-        <p className=" font-gelion md:font-dm-sans mb-9 sm:mb-16 text-[#9F9A9A] font-normal text-[16px]/[20px] sm:text-[32px]/[48px] mx-auto text-center">
+        <p className=" font-gelion md:font-dm-sans mb-9 sm:mb-16 text-[#9F9A9A] font-normal text-[16px]/[20px] sm:text-[24px]/[48px] w-11/12 sm:w-10/12 xl:w-8/12 mx-auto text-center">
           We're a diverse, close-knit team on an adventure to build something
           enduring, while learning something new, everyday.
         </p>

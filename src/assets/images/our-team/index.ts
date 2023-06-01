@@ -1,8 +1,5 @@
-import isabella from "./isabella.png";
-import oreoluwa from "./odetola.png";
-import orijiude from "./orijiude.png";
-import precious from "./precious.png";
-import clinton from "./clinton.png";
-import sussan from "./sussan.png";
+import isabella from "./isabella-austine.jpg";
+import oreoluwa from "./oreoluwa-odetola.jpg";
+import precious from "./precious-orjiude.jpg";
 
-export { isabella, oreoluwa, precious, clinton, orijiude, sussan };
+export { isabella, oreoluwa, precious };
