@@ -10,7 +10,7 @@ import { Partners } from "../../components/about";
 const Contact = () => {
   const completion = useReadingProgress();
   useEffect(() => {
-    const themeColor: ThemeColor = "#ffffff"; // Set the theme color type explicitly
+    const themeColor: ThemeColor = "#f9f9f9"; // Set the theme color type explicitly
 
     updateThemeColor(themeColor); // Set the theme color for this specific page
 
