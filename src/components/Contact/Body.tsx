@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 import { formPurpose } from "../../data/formPurpose";
 import { useNavigate } from "react-router";
+import questionIcon from "../../assets/icon/question.svg";
+import HelpIcon from "../../assets/icon/help.svg";
+import arrow from "../../assets/icon/35-arrow-right-2.svg";
 
 interface FormValues {
   Name: string;
@@ -16,6 +21,15 @@ const ContactBody: React.FC = () => {
     project: "",
     purpose: [],
   });
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   // Load cached form data on component mount
   useEffect(() => {
@@ -110,7 +124,7 @@ const ContactBody: React.FC = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
                 id="name"
                 type="text"
-                placeholder="Enter your full name"
+                placeholder="Your name"
                 value={values.Name}
                 onChange={handleChange}
                 name="Name"
@@ -135,12 +149,12 @@ const ContactBody: React.FC = () => {
                 className="block text-sm font-medium mb-2"
                 htmlFor="project"
               >
-                Message
+                How can we help?
               </label>
               <textarea
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline min-h-[128px]"
                 id="project"
-                placeholder="Write us something....."
+                placeholder="Tell us a little about the project..."
                 value={values.project}
                 onChange={handleChange}
                 name="project"
@@ -151,7 +165,7 @@ const ContactBody: React.FC = () => {
                 className="block text-sm font-medium mb-5"
                 htmlFor="purpose"
               >
-                Why are you contacting us
+                Purpose
               </label>
               <div className="grid grid-cols-2 gap-4">
                 {formPurpose.map(({ key, value }) => (
