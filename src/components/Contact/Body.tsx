@@ -105,7 +105,7 @@ const ContactBody: React.FC = () => {
   }, [values]);
 
   return (
-    <section className="min-h-[60vh] pt-[81px] sm:pt-[131px] px-7 sm:px-16 lg:px-[102px] relative items-center">
+    <section className="min-h-[60vh] pt-[81px] sm:pt-[131px] px-7 sm:px-16 lg:px-[102px] relative items-center max-w-[1520px] mx-auto">
       <div className="flex items-start justify-between max-lg:flex-col-reverse gap-[60px] max-w-[1500px] mx-auto pb-60">
         <div className="w-full sm:w-4/5">
           <div className="text-[26px] mb-16 max-lg:mt-12 max-md:mt-6">

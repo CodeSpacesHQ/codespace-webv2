@@ -19,7 +19,7 @@ const Contact = () => {
     };
   }, []);
   return (
-    <div className="max-w-[1520px] mx-auto">
+    <>
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
@@ -27,7 +27,7 @@ const Contact = () => {
       <ContactHero />
       <ContactBody />
       <Partners />
-    </div>
+    </>
   );
 };
 
