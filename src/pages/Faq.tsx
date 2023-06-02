@@ -8,7 +8,7 @@ import Community from "../components/Community";
 export const Faq = () => {
   const completion = useReadingProgress();
   useEffect(() => {
-    const themeColor: ThemeColor = "#f7f7fd"; // Set the theme color type explicitly
+    const themeColor: ThemeColor = "#f8f8fd"; // Set the theme color type explicitly
 
     updateThemeColor(themeColor); // Set the theme color for this specific page
 

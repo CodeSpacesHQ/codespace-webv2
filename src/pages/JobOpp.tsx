@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { updateThemeColor, ThemeColor } from "../utils/Theme";
+
 import Hero from "../components/Hero-2";
 import Community from "../components/Community";
 import Opportunities from "../components/JobOpp/Opportunities";
@@ -7,6 +10,15 @@ import useReadingProgress from "../hooks/useReadingProgress";
 
 export const JobOpp = () => {
   const completion = useReadingProgress();
+  useEffect(() => {
+    const themeColor: ThemeColor = "#f9f9f9"; // Set the theme color type explicitly
+
+    updateThemeColor(themeColor); // Set the theme color for this specific page
+
+    return () => {
+      updateThemeColor("#f9f9f9"); // Set the default theme color when leaving this page
+    };
+  }, []);
   return (
     <>
       <span

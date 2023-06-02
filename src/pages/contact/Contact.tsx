@@ -10,7 +10,7 @@ import { Partners } from "../../components/about";
 const Contact = () => {
   const completion = useReadingProgress();
   useEffect(() => {
-    const themeColor: ThemeColor = "#ffffff"; // Set the theme color type explicitly
+    const themeColor: ThemeColor = "#f9f9f9"; // Set the theme color type explicitly
 
     updateThemeColor(themeColor); // Set the theme color for this specific page
 
@@ -19,7 +19,7 @@ const Contact = () => {
     };
   }, []);
   return (
-    <div className="max-w-[1520px] mx-auto">
+    <>
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
@@ -27,7 +27,7 @@ const Contact = () => {
       <ContactHero />
       <ContactBody />
       <Partners />
-    </div>
+    </>
   );
 };
 

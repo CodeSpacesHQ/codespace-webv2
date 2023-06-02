@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { ThemeColor, updateThemeColor } from "../utils/Theme";
+
 import useReadingProgress from "../hooks/useReadingProgress";
 
 import Hero from "../components/Hero-2";
@@ -7,6 +10,15 @@ import image from "../assets/pattern.png";
 
 export const Donate = () => {
   const completion = useReadingProgress();
+  useEffect(() => {
+    const themeColor: ThemeColor = "#f9f9f9"; // Set the theme color type explicitly
+
+    updateThemeColor(themeColor); // Set the theme color for this specific page
+
+    return () => {
+      updateThemeColor("#f9f9f9"); // Set the default theme color when leaving this page
+    };
+  }, []);
   return (
     <>
       <span
