@@ -1,4 +1,7 @@
+import textAnimation from "../../config/textAnimation";
+
 const Donations = () => {
+  const animateWords = textAnimation("up");
   return (
     <section className="font-gelion bg-light-purple pt-[82px] pb-[59px] relative overflow-hidden">
       <div className="space-y-6 mx-auto text-center w-[90%] max-w-5xl ">
@@ -7,7 +10,7 @@ const Donations = () => {
         </h2>
 
         <h2 className="font-medium text-[28px] leading-[33.59px] md:leading-[47.99px] md:font-semibold md:text-[40px]">
-          $1/day can make all the difference
+          {animateWords("$1/day can make all the difference")}
         </h2>
 
         <p className="font-poppins text-base md:text-2xl leading-[20.83px] md:leading-9 -tracking-[0.2px] pb-10">
