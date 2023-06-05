@@ -1,9 +1,12 @@
 import React from "react";
 
+import textAnimation from "../config/textAnimation";
+
 import { star1, star2 } from "../assets/icon";
 import { buttons, buttonsSmall } from "../assets/images";
 
 const Community: React.FC = () => {
+  const animateWords = textAnimation("up");
   return (
     <div className="relative flex flex-col items-center justify-center sm:mb-[116px] xmd:flex-row max-w-[1500px] mx-auto">
       <div className="relative flex items-center justify-center w-full xmd:w-3/5">
@@ -42,14 +45,15 @@ const Community: React.FC = () => {
                         leading-[21px] sm:leading-[32px] text-[14px] sm:text-[18px] sm:max-w-sm md:text-[22px] text-center xmd:text-start max-w-xs md:max-w-lg xmd:max-w-md"
         >
           <span className="max-lg:hidden">
-            Be a part of our ever growing community by joining our Telegram
-            channel and getting periodic updates.
+            {animateWords(
+              "Be a part of our ever growing community by joining our Telegram channel and getting periodic updates."
+            )}
           </span>
           <span className="lg:hidden">
-            Be a part of our ever growing
-            <br /> community by joining our Telegram
+            {animateWords("Be a part of our ever growing")}
+            <br /> {animateWords("community by joining our Telegram")}
             <br />
-            channel and getting periodic updates.
+            {animateWords("channel and getting periodic updates.")}
           </span>
         </p>
 
