@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+import textAnimation from "../../config/textAnimation";
+
 import { formPurpose } from "../../data/formPurpose";
 import { useNavigate } from "react-router";
 import questionIcon from "../../assets/icon/question.svg";
@@ -15,6 +17,7 @@ interface FormValues {
 }
 
 const ContactBody: React.FC = () => {
+  const animateWords = textAnimation("up");
   const [values, setValues] = useState<FormValues>({
     Name: "",
     email: "",
@@ -108,27 +111,38 @@ const ContactBody: React.FC = () => {
     <section className="min-h-[60vh] pt-[81px] sm:pt-[131px] px-7 sm:px-16 lg:px-[102px] relative items-center max-w-[1520px] mx-auto">
       <div className="flex items-start justify-between max-lg:flex-col-reverse gap-[60px] max-w-[1500px] mx-auto pb-60">
         <div className="w-full sm:w-4/5">
-          <div className="text-[26px] mb-16 max-lg:mt-12 max-md:mt-6">
+          <div className="text-2xl sm:text-[26px] mb-16 max-lg:mt-12 max-md:mt-6">
             <div className="relative -left-7">
-              <img className="w-36" src={questionIcon} alt="Services icons" />
+              <img
+                className="w-28 sm:w-36"
+                src={questionIcon}
+                alt="Services icons"
+              />
             </div>
             <h4 className="-mt-2 font-medium mb-[25px] line-clamp-1">
-              General questions
+              {animateWords("General questions")}
             </h4>
             <p className="text-[#737373] leading-[34px] tracking-[-0.02em]">
-              For general queries, including partnership opportunities. If you
-              have any questions, feel free to contact us through the form.
+              {animateWords(
+                "For general queries, including partnership opportunities. If you have any questions, feel free to contact us through the form."
+              )}
             </p>
           </div>
-          <div className="text-[26px]">
+          <div className="text-2xl sm:text-[26px]">
             <div className="relative -left-7">
-              <img className="w-36" src={HelpIcon} alt="Services icons" />
+              <img
+                className="w-28 sm:w-36"
+                src={HelpIcon}
+                alt="Services icons"
+              />
             </div>
             <h4 className="-mt-2 font-medium mb-[25px] line-clamp-1">
-              Our help center
+              {animateWords("Our help center")}
             </h4>
             <p className="text-[#737373] leading-[34px] tracking-[-0.02em] mb-[44px]">
-              Need help or have any questions, get answers from our FAQ
+              {animateWords(
+                "Need help or have any questions, get answers from our FAQ"
+              )}
             </p>
             <NavLink
               to={"/faq"}
@@ -136,7 +150,7 @@ const ContactBody: React.FC = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <p>Read our FAQs</p>
+              <p>{animateWords("Read our FAQs")}</p>
               <img
                 className={`ms-[7px] transition-transform ${
                   isHovered ? "translate-x-2" : ""
@@ -149,7 +163,9 @@ const ContactBody: React.FC = () => {
         </div>
         <div className="w-full">
           <h1 className="mb-[46px] font-inter font-semibold text-2xl sm:text-[40px]/[60px] -tracking-[0.02em]">
-            Please fill out the form and we'll be in touch with you shortly.
+            {animateWords(
+              "Please fill out the form and we'll be in touch with you shortly."
+            )}
           </h1>
           <form
             onSubmit={handleSubmit}

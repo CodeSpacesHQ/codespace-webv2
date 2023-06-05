@@ -2,18 +2,24 @@ import medium from "../../assets/images/medium.svg";
 import techNext from "../../assets/images/Technext.svg";
 import media from "../../assets/images/GeoLamedia.svg";
 
+import { motion } from "framer-motion";
+import { slideAnimation } from "../../config/motion";
+import textAnimation from "../../config/textAnimation";
+
 const Press = () => {
+  const animateWords = textAnimation("up");
   return (
-    <section className="px-7 sm:px-16 lg:px-[65px] xl:ps-[101px] max-w-[1500px] mx-auto">
+    <section className="px-7 sm:px-16 lg:px-[65px] xl:ps-[101px] max-w-[1500px] mx-auto overflow-hidden">
       <div className="mt-[71px] mb-24 ">
         <h2 className="font-dm-sans font-medium text-[29px] text-primary mb-4 uppercase">
-          Latest press release
+          {animateWords("Latest press release")}
         </h2>
         <h2 className="font-poppins font-bold text-[32px] leading-[48px] max-w-2xl mb-[63px]">
-          Get latest updates on the Nigeria Tech Community
+          {animateWords("Get latest updates on the Nigeria Tech Community")}
         </h2>
         <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 max-md:gap-y-7 gap-[14px] font-gelion">
-          <a
+          <motion.a
+            {...slideAnimation("left")}
             href="https://ifeomadev.medium.com/rising-stars-how-these-few-nigerians-in-tech-are-putting-nigeria-on-the-world-map-2b0b32f5d522"
             target="_blank"
             rel="noopener noreferrer"
@@ -35,8 +41,9 @@ const Press = () => {
                 making.........
               </div>
             </div>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            {...slideAnimation("right")}
             href="https://technext24.com/2022/08/16/clinton-imaro-18-year-old-afrowatch-founder/"
             target="_blank"
             rel="noopener noreferrer"
@@ -51,8 +58,9 @@ const Press = () => {
                 Meet Clinton Imaro, 18 year old Nigerian building...
               </div>
             </div>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            {...slideAnimation("up")}
             href="https://www.gbolamedia.com/startups-in-nigeria-by-gen-z.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,8 +75,9 @@ const Press = () => {
                 Top 10 Startups in Nigeria Founded by Gen-Z
               </div>
             </div>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            {...slideAnimation("up")}
             href="https://ifeomadev.medium.com/top-10-gen-z-changing-the-world-of-tech-in-nigeria-4db1b0d07460"
             target="_blank"
             rel="noopener noreferrer"
@@ -83,7 +92,7 @@ const Press = () => {
                 Top 10 Gen Z changing the world of tech in Nigeria
               </div>
             </div>
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>
