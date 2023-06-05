@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-import textAnimation from "../../config/textAnimation";
+import AnimateWords from "../../config/textAnimation";
 
 import { formPurpose } from "../../data/formPurpose";
 import { useNavigate } from "react-router";
@@ -17,7 +17,6 @@ interface FormValues {
 }
 
 const ContactBody: React.FC = () => {
-  const animateWords = textAnimation("up");
   const [values, setValues] = useState<FormValues>({
     Name: "",
     email: "",
@@ -120,12 +119,10 @@ const ContactBody: React.FC = () => {
               />
             </div>
             <h4 className="-mt-2 font-medium mb-[25px] line-clamp-1">
-              {animateWords("General questions")}
+              <AnimateWords text="General questions" />
             </h4>
             <p className="text-[#737373] leading-[34px] tracking-[-0.02em]">
-              {animateWords(
-                "For general queries, including partnership opportunities. If you have any questions, feel free to contact us through the form."
-              )}
+              <AnimateWords text="For general queries, including partnership opportunities. If you have any questions, feel free to contact us through the form." />
             </p>
           </div>
           <div className="text-2xl sm:text-[26px]">
@@ -137,12 +134,10 @@ const ContactBody: React.FC = () => {
               />
             </div>
             <h4 className="-mt-2 font-medium mb-[25px] line-clamp-1">
-              {animateWords("Our help center")}
+              <AnimateWords text="Our help center" />
             </h4>
             <p className="text-[#737373] leading-[34px] tracking-[-0.02em] mb-[44px]">
-              {animateWords(
-                "Need help or have any questions, get answers from our FAQ"
-              )}
+              <AnimateWords text="Need help or have any questions, get answers from our FAQ" />
             </p>
             <NavLink
               to={"/faq"}
@@ -150,7 +145,9 @@ const ContactBody: React.FC = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <p>{animateWords("Read our FAQs")}</p>
+              <p>
+                <AnimateWords text="Read our FAQs" />
+              </p>
               <img
                 className={`ms-[7px] transition-transform ${
                   isHovered ? "translate-x-2" : ""
@@ -163,9 +160,7 @@ const ContactBody: React.FC = () => {
         </div>
         <div className="w-full">
           <h1 className="mb-[46px] font-inter font-semibold text-2xl sm:text-[40px]/[60px] -tracking-[0.02em]">
-            {animateWords(
-              "Please fill out the form and we'll be in touch with you shortly."
-            )}
+            <AnimateWords text="Please fill out the form and we'll be in touch with you shortly." />
           </h1>
           <form
             onSubmit={handleSubmit}

@@ -1,7 +1,7 @@
 import FAQ from "./FAQ";
 import { motion } from "framer-motion";
 import { slideAnimation, fadeAnimation } from "../../config/motion";
-import textAnimation from "../../config/textAnimation";
+import AnimateWords from "../../config/textAnimation";
 import { faqData } from "../../data/faqData";
 import art from "../../assets/art2.png";
 import art2 from "../../assets/art3.png";
@@ -11,7 +11,6 @@ import pattern from "../../assets/Frame 48.svg";
 import { star2 } from "../../assets/icon";
 
 const Body = () => {
-  const animateWords = textAnimation("up");
   return (
     <section
       className={`relative bg-gradient-to-b from-[#f7f7fd] to-white overflow-hidden`}
@@ -19,12 +18,10 @@ const Body = () => {
       <div className="sm:pt-[296px] pt-[166px] xl:px-64 lg:px-44 sm:px-24 px-[42px] pb-[109px] sm:pb-[343px] max-w-[1500px] mx-auto">
         <div className="mb-16 text-center">
           <h1 className="mb-5 font-inter font-semibold text-[#101828] text-3xl/[38px] sm:text-[42px]/[44px] tracking-normal sm:tracking-[-0.02em]">
-            {animateWords("Questions we get the most")}
+            <AnimateWords text="Questions we get the most" />
           </h1>
           <p className="font-inter font-normal tracking-normal mx-auto text-[#667085] text-lg sm:text-2xl/[30px]">
-            {animateWords(
-              "We answered questions so you don't have to ask them."
-            )}
+            <AnimateWords text="We answered questions so you don't have to ask them." />
           </p>
         </div>
 

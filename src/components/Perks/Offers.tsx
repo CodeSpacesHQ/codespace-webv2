@@ -2,14 +2,13 @@ import { offersList } from "../../data/offersList";
 import { motion } from "framer-motion";
 import { slideAnimation } from "../../config/motion";
 
-import textAnimation from "../../config/textAnimation";
+import AnimateWords from "../../config/textAnimation";
 
 const Offers = () => {
-  const animateWords = textAnimation("up");
   return (
     <section className="mt-[106px] px-7 sm:px-16 lg:px-[65px] xl:pl-[101px] 2xl:px-[121px] mb-16 max-w-[1500px] mx-auto">
       <h2 className="text-3xl font-medium font-gelion md:text-4xl">
-        {animateWords("All offers")}
+        <AnimateWords text="All offers" />
       </h2>
       <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {offersList.map(({ key, icon, company, about, benefit1, benefit2 }) => (
