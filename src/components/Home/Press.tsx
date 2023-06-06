@@ -3,7 +3,7 @@ import techNext from "../../assets/images/Technext.svg";
 import media from "../../assets/images/GeoLamedia.svg";
 
 import { motion } from "framer-motion";
-import { slideAnimation } from "../../config/motion";
+import { zoomAnimation } from "../../config/motion";
 import AnimateWords from "../../config/textAnimation";
 
 const Press = () => {
@@ -18,7 +18,7 @@ const Press = () => {
         </h2>
         <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 max-md:gap-y-7 gap-[14px] font-gelion">
           <motion.a
-            {...slideAnimation("left")}
+            {...zoomAnimation()}
             href="https://ifeomadev.medium.com/rising-stars-how-these-few-nigerians-in-tech-are-putting-nigeria-on-the-world-map-2b0b32f5d522"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const Press = () => {
             </div>
           </motion.a>
           <motion.a
-            {...slideAnimation("right")}
+            {...zoomAnimation()}
             href="https://technext24.com/2022/08/16/clinton-imaro-18-year-old-afrowatch-founder/"
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Press = () => {
             </div>
           </motion.a>
           <motion.a
-            {...slideAnimation("up")}
+            {...zoomAnimation()}
             href="https://www.gbolamedia.com/startups-in-nigeria-by-gen-z.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,7 +76,7 @@ const Press = () => {
             </div>
           </motion.a>
           <motion.a
-            {...slideAnimation("up")}
+            {...zoomAnimation()}
             href="https://ifeomadev.medium.com/top-10-gen-z-changing-the-world-of-tech-in-nigeria-4db1b0d07460"
             target="_blank"
             rel="noopener noreferrer"

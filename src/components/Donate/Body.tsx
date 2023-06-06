@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { donateContents } from "../../data/donateContent";
 import { motion } from "framer-motion";
-import { slideAnimation } from "../../config/motion";
+import { zoomAnimation } from "../../config/motion";
 
 import AnimateWords from "../../config/textAnimation";
 
@@ -21,7 +21,7 @@ const Body = () => {
           const { title, text, buttonText, link } = item;
           return (
             <motion.div
-              {...slideAnimation("up")}
+              {...zoomAnimation()}
               key={index}
               className="xl:flex-1 max-xl:w-[48%] max-lg:w-full relative bg-[#F9F9F9] rounded-t-[48px] pt-[94px] pl-8 pr-[26px] pb-[164px]"
             >

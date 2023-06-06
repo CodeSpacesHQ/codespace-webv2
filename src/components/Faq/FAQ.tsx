@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import {
+  headTextAnimation,
+  headContentAnimation,
+  headContainerAnimation,
+} from "../../config/motion";
 import { plus, minus } from "../../assets/icon";
 import { fadeAnimation } from "../../config/motion";
 import { faqData } from "../../data/faqData";
@@ -28,7 +33,8 @@ const FAQ: React.FC<faqItem> = ({ index, question, answer }) => {
         className="flex items-center justify-between mb-2 text-base font-medium tracking-normal cursor-pointer sm:text-lg font-inter"
         onClick={toggleOpen}
       >
-        {question}
+        <motion.div {...headTextAnimation}>{question}</motion.div>
+
         <AnimatePresence>
           {isOpen ? (
             <motion.img
