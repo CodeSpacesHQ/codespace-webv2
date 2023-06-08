@@ -13,7 +13,8 @@ const Body = () => {
           <AnimateWords text="Donate to our programs" />
         </h2>
         <p className="font-gilroy text-[#8C8C8C] font-normal tracking-[-0.20000000298023224px] sm:text-[22px]/8 text-[18px]/6 w-full sm:w-10/12 lg:w-2/3">
-          <AnimateWords text="Our partners and donors go a long way in creating an impact and helping us reach thousands of genz-s in tech across Africa!" />
+          Our partners and donors go a long way in creating an impact and
+          helping us reach thousands of genz-s in tech across Africa!
         </p>
       </div>
       <div className="flex flex-wrap max-xl:justify-center gap-y-6 gap-x-5">

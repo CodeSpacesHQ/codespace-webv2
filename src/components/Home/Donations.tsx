@@ -13,7 +13,10 @@ const Donations = () => {
         </h2>
 
         <p className="font-poppins text-base md:text-2xl leading-[20.83px] md:leading-9 -tracking-[0.2px] pb-10">
-          <AnimateWords text="Our platform enables people to support each other in achieving their goals, and every dollar donated makes a significant difference. We're also dedicated to breaking down barriers in tech by providing resources and support to help individuals pursue their passions." />
+          Our platform enables people to support each other in achieving their
+          goals, and every dollar donated makes a significant difference. We're
+          also dedicated to breaking down barriers in tech by providing
+          resources and support to help individuals pursue their passions.
         </p>
         <button className="bg-primary text-white font-semibold text-base md:text-xl lg:text-[26px] rounded-[15px] px-7 sm:px-8 py-4 md:px-24 md:py-5 hover:scale-105 transition-all leading-[19.2px] lg:leading-[33.59px]">
           <a

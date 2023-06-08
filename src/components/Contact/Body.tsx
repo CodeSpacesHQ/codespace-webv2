@@ -122,7 +122,8 @@ const ContactBody: React.FC = () => {
               <AnimateWords text="General questions" />
             </h4>
             <p className="text-[#737373] leading-[34px] tracking-[-0.02em]">
-              <AnimateWords text="For general queries, including partnership opportunities. If you have any questions, feel free to contact us through the form." />
+              For general queries, including partnership opportunities. If you
+              have any questions, feel free to contact us through the form.
             </p>
           </div>
           <div className="text-2xl sm:text-[26px]">
@@ -137,7 +138,7 @@ const ContactBody: React.FC = () => {
               <AnimateWords text="Our help center" />
             </h4>
             <p className="text-[#737373] leading-[34px] tracking-[-0.02em] mb-[44px]">
-              <AnimateWords text="Need help or have any questions, get answers from our FAQ" />
+              Need help or have any questions, get answers from our FAQ
             </p>
             <NavLink
               to={"/faq"}
@@ -145,9 +146,7 @@ const ContactBody: React.FC = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <p>
-                <AnimateWords text="Read our FAQs" />
-              </p>
+              <p>Read our FAQs</p>
               <img
                 className={`ms-[7px] transition-transform ${
                   isHovered ? "translate-x-2" : ""

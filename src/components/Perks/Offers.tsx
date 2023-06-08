@@ -1,6 +1,6 @@
 import { offersList } from "../../data/offersList";
 import { motion } from "framer-motion";
-import { slideAnimation } from "../../config/motion";
+import { zoomAnimation } from "../../config/motion";
 
 import AnimateWords from "../../config/textAnimation";
 
@@ -13,7 +13,7 @@ const Offers = () => {
       <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {offersList.map(({ key, icon, company, about, benefit1, benefit2 }) => (
           <motion.div
-            {...slideAnimation("up")}
+            {...zoomAnimation()}
             key={key}
             className="bg-[#F8F2FF] p-7 rounded-[32px]"
           >

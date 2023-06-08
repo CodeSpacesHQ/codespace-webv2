@@ -1,5 +1,5 @@
 import useOnScreen from "../hooks/useOnScreen";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { useDebounce } from "usehooks-ts";
 
 export const transition = { type: "spring", duration: 0.8 };

@@ -18,7 +18,8 @@ export const Team = () => {
 
       <div>
         <p className=" font-gelion md:font-dm-sans mb-9 sm:mb-16 text-[#9F9A9A] font-normal text-[16px]/[20px] sm:text-[32px]/[48px] mx-auto text-center">
-          <AnimateWords text="We're a diverse, close-knit team on an adventure to build something enduring, while learning something new, everyday." />
+          We're a diverse, close-knit team on an adventure to build something
+          enduring, while learning something new, everyday.
         </p>
       </div>
 

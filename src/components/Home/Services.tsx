@@ -20,9 +20,7 @@ const Services = () => {
               <h4 className="-mt-5 font-medium text-[24px] mb-[9px] line-clamp-1">
                 <AnimateWords text={title} />
               </h4>
-              <p className="text-[#737373] leading-6">
-                <AnimateWords text={details} />
-              </p>
+              <p className="text-[#737373] leading-6">{details}</p>
             </div>
           ))}
         </div>

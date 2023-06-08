@@ -21,7 +21,7 @@ const Body = () => {
             <AnimateWords text="Questions we get the most" />
           </h1>
           <p className="font-inter font-normal tracking-normal mx-auto text-[#667085] text-lg sm:text-2xl/[30px]">
-            <AnimateWords text="We answered questions so you don't have to ask them." />
+            We answered questions so you don't have to ask them.
           </p>
         </div>
 

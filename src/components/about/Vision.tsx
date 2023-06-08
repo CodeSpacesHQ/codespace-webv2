@@ -32,7 +32,8 @@ export const Vision = () => {
 
           <div>
             <p className=" font-dm-sans font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
-              <AnimateWords text="Inspiring the growth of the African continent, one tech talent at a time." />
+              Inspiring the growth of the African continent, one tech talent at
+              a time.
             </p>
           </div>
         </div>
@@ -66,7 +67,10 @@ export const Vision = () => {
 
           <div>
             <p className=" font-dm-sans font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
-              <AnimateWords text="Our mission at Code Space is to create a thriving community that fosters technical growth, facilitates networking opportunities, provides mentorship, and enhances visibility for individuals at all levels of their careers in the field of technology." />
+              Our mission at Code Space is to create a thriving community that
+              fosters technical growth, facilitates networking opportunities,
+              provides mentorship, and enhances visibility for individuals at
+              all levels of their careers in the field of technology.
             </p>
           </div>
         </div>
