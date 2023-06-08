@@ -41,10 +41,11 @@ export const slideAnimation = (direction: string) => {
     ref,
   };
 };
+
 export const zoomAnimation = () => {
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
-  const debouncedIsVisible = useDebounce(isVisible, 200); // Adjust debounce delay as needed
+  const debouncedIsVisible = useDebounce(isVisible, 200);
 
   return {
     initial: { scale: 0, opacity: 0 },
