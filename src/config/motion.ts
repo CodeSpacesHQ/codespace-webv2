@@ -1,6 +1,6 @@
 import useOnScreen from "../hooks/useOnScreen";
 import { useRef } from "react";
-// import { useDebounce } from "usehooks-ts";
+import { useDebounce } from "usehooks-ts";
 
 export const transition = { type: "spring", duration: 0.8 };
 
@@ -45,13 +45,13 @@ export const slideAnimation = (direction: string) => {
 export const zoomAnimation = () => {
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
-  // const debouncedIsVisible = useDebounce(isVisible, 200);
+  const debouncedIsVisible = useDebounce(isVisible, 200);
 
   return {
     initial: { scale: 0, opacity: 0 },
     animate: {
-      scale: isVisible ? 1 : 0,
-      opacity: isVisible ? 1 : 0,
+      scale: debouncedIsVisible ? 1 : 0,
+      opacity: debouncedIsVisible ? 1 : 0,
       transition: { duration: 0.8, delay: 0 },
     },
     exit: { scale: 0, opacity: 0, transition: { duration: 0.8, delay: 0 } },
