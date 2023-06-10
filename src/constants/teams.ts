@@ -1,12 +1,12 @@
 import { placeholder } from "../assets/images";
-import { isabella, precious, oreoluwa } from "../assets/images/our-team";
+import { isabella, precious, oreoluwa,clinton,sussan,tobi } from "../assets/images/our-team";
 
 export const teams = [
   {
     id: 1,
     name: "Clinton Imaro",
     role: "Founder",
-    image: placeholder,
+    image: clinton,
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const teams = [
     id: 5,
     name: "Chigozie Sussan",
     role: "Lead Community Manager / Media",
-    image: placeholder,
+    image: sussan,
   },
   {
     id: 6,
@@ -40,8 +40,8 @@ export const teams = [
   },
   {
     id: 7,
-    name: "Tobi Uche",
-    role: "Community Manager",
-    image: placeholder,
+    name: "Chukwuemeka Oluwatobi Uche",
+    role: "Community Manager & Software Developer",
+    image: tobi,
   },
 ];

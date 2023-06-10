@@ -30,7 +30,7 @@ export const Team = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center`}
               >
-                <div className="w-[246px] h-[246px] rounded-full overflow-hidden flex justify-center items-start bg-gray-500 object-cover mb-7">
+                <div className="w-[245px] h-[245px] rounded-full overflow-hidden flex justify-center items-start bg-gray-500 object-cover mb-7">
                   <img src={image} alt={name} className="object-cover w-full" />
                 </div>
 
