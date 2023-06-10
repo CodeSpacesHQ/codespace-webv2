@@ -1,12 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { donateContents } from "../../data/donateContent";
+import { motion } from "framer-motion";
+import { zoomAnimation } from "../../config/motion";
+
+import AnimateWords from "../../config/textAnimation";
 
 const Body = () => {
   return (
     <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-[60px] sm:pt-[126px] pb-[126px] max-sm:pb-[161px] max-w-[1500px] mx-auto">
       <div className="sm:mb-[87px] mb-[31px]">
         <h2 className="font-gilroy text-[27px]/7 sm:text-[48px]/[53px] font-extrabold tracking-[-0.005em] mb-4">
-          Donate to our programs
+          <AnimateWords text="Donate to our programs" />
         </h2>
         <p className="font-gilroy text-[#8C8C8C] font-normal tracking-[-0.20000000298023224px] sm:text-[22px]/8 text-[18px]/6 w-full sm:w-10/12 lg:w-2/3">
           Our partners and donors go a long way in creating an impact and
@@ -17,7 +21,8 @@ const Body = () => {
         {donateContents.map((item, index) => {
           const { title, text, buttonText, link } = item;
           return (
-            <div
+            <motion.div
+              {...zoomAnimation()}
               key={index}
               className="xl:flex-1 max-xl:w-[48%] max-lg:w-full relative bg-[#F9F9F9] rounded-t-[48px] pt-[94px] pl-8 pr-[26px] pb-[164px]"
             >
@@ -60,7 +65,7 @@ const Body = () => {
                   {buttonText}
                 </a>
               )}
-            </div>
+            </motion.div>
           );
         })}
       </div>

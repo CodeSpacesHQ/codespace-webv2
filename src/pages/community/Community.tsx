@@ -10,7 +10,7 @@ import CommunityHero from "../../components/community/Hero";
 const CommunityPage = () => {
   const completion = useReadingProgress();
   useEffect(() => {
-    const themeColor: ThemeColor = "#f7f7fd"; // Set the theme color type explicitly
+    const themeColor: ThemeColor = "#f8f8fe"; // Set the theme color type explicitly
 
     updateThemeColor(themeColor); // Set the theme color for this specific page
 

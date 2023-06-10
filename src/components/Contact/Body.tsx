@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
+import AnimateWords from "../../config/textAnimation";
+
 import { formPurpose } from "../../data/formPurpose";
 import { useNavigate } from "react-router";
+import questionIcon from "../../assets/icon/question.svg";
+import HelpIcon from "../../assets/icon/help.svg";
+import arrow from "../../assets/icon/35-arrow-right-2.svg";
 
 interface FormValues {
   Name: string;
@@ -16,6 +23,15 @@ const ContactBody: React.FC = () => {
     project: "",
     purpose: [],
   });
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   // Load cached form data on component mount
   useEffect(() => {
@@ -91,90 +107,150 @@ const ContactBody: React.FC = () => {
   }, [values]);
 
   return (
-    <section className="min-h-[60vh] px-7 lg:px-[102px] relative items-center">
-      <div className="max-w-[1500px] mx-auto pb-60">
-        <form
-          onSubmit={handleSubmit}
-          id="email"
-          className="text-[#344054] font-inter max-w-3xl"
-          action="https://formsubmit.co/ajax/hello@codespaceafrica.com"
-          method="POST"
-        >
-          <div>
-            <input type="hidden" name="_subject" value="New submission!" />
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2" htmlFor="name">
-                Name
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
-                id="name"
-                type="text"
-                placeholder="Your name"
-                value={values.Name}
-                onChange={handleChange}
-                name="Name"
+    <section className="min-h-[60vh] pt-[81px] sm:pt-[131px] px-7 sm:px-16 lg:px-[102px] relative items-center max-w-[1520px] mx-auto">
+      <div className="flex items-start justify-between max-lg:flex-col-reverse gap-[60px] max-w-[1500px] mx-auto pb-60">
+        <div className="w-full sm:w-4/5">
+          <div className="text-2xl sm:text-[26px] mb-16 max-lg:mt-12 max-md:mt-6">
+            <div className="relative -left-7">
+              <img
+                className="w-28 sm:w-36"
+                src={questionIcon}
+                alt="Services icons"
               />
             </div>
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2" htmlFor="email">
-                Email
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-12"
-                id="email"
-                type="email"
-                placeholder="you@company.com"
-                value={values.email}
-                onChange={handleChange}
-                name="email"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                className="block text-sm font-medium mb-2"
-                htmlFor="project"
-              >
-                How can we help?
-              </label>
-              <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline min-h-[128px]"
-                id="project"
-                placeholder="Tell us a little about the project..."
-                value={values.project}
-                onChange={handleChange}
-                name="project"
-              />
-            </div>
-            <div className="mb-8">
-              <label
-                className="block text-sm font-medium mb-5"
-                htmlFor="purpose"
-              >
-                Purpose
-              </label>
-              <div className="grid grid-cols-2 gap-4">
-                {formPurpose.map(({ key, value }) => (
-                  <div key={key} className="flex items-center">
-                    <input
-                      className="mr-2 leading-tight w-5 h-5"
-                      type="checkbox"
-                      name={key.toString()} // Convert key to string
-                      checked={values.purpose.includes(key.toString())} // Convert key to string
-                      onChange={handleChange}
-                    />
-                    <span className="font-medium">{value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              className="bg-primary text-white w-full rounded-lg h-12 cursor-pointer hover:transition-all hover:bg-white hover:text-primary hover:border-primary border"
-            />
+            <h4 className="-mt-2 font-medium mb-[25px] line-clamp-1">
+              <AnimateWords text="General questions" />
+            </h4>
+            <p className="text-[#737373] leading-[34px] tracking-[-0.02em]">
+              For general queries, including partnership opportunities. If you
+              have any questions, feel free to contact us through the form.
+            </p>
           </div>
-        </form>
+          <div className="text-2xl sm:text-[26px]">
+            <div className="relative -left-7">
+              <img
+                className="w-28 sm:w-36"
+                src={HelpIcon}
+                alt="Services icons"
+              />
+            </div>
+            <h4 className="-mt-2 font-medium mb-[25px] line-clamp-1">
+              <AnimateWords text="Our help center" />
+            </h4>
+            <p className="text-[#737373] leading-[34px] tracking-[-0.02em] mb-[44px]">
+              Need help or have any questions, get answers from our FAQ
+            </p>
+            <NavLink
+              to={"/faq"}
+              className="flex justify-left items-center font-normal text-black leading-9 text-[24px] tracking-[-0.02em] hover:underline"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <p>Read our FAQs</p>
+              <img
+                className={`ms-[7px] transition-transform ${
+                  isHovered ? "translate-x-2" : ""
+                }`}
+                src={arrow}
+                alt="icon"
+              />
+            </NavLink>
+          </div>
+        </div>
+        <div className="w-full">
+          <h1 className="mb-[46px] font-inter font-semibold text-2xl sm:text-[40px]/[60px] -tracking-[0.02em]">
+            <AnimateWords text="Please fill out the form and we'll be in touch with you shortly." />
+          </h1>
+          <form
+            onSubmit={handleSubmit}
+            id="email"
+            className="text-[#344054] font-inter"
+            action="https://formsubmit.co/ajax/hello@codespaceafrica.com"
+            method="POST"
+          >
+            <div>
+              <input type="hidden" name="_subject" value="New submission!" />
+              <div className="mb-6">
+                <label
+                  className="block mb-2 text-sm font-medium"
+                  htmlFor="name"
+                >
+                  Name
+                </label>
+                <input
+                  className="w-full h-12 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  value={values.Name}
+                  onChange={handleChange}
+                  name="Name"
+                />
+              </div>
+              <div className="mb-6">
+                <label
+                  className="block mb-2 text-sm font-medium"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  className="w-full h-12 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="you@company.com"
+                  value={values.email}
+                  onChange={handleChange}
+                  name="email"
+                />
+              </div>
+              <div className="mb-6">
+                <label
+                  className="block mb-2 text-sm font-medium"
+                  htmlFor="project"
+                >
+                  How can we help?
+                </label>
+                <textarea
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline min-h-[128px]"
+                  id="project"
+                  placeholder="Tell us a little about the project..."
+                  value={values.project}
+                  onChange={handleChange}
+                  name="project"
+                />
+              </div>
+              <div className="mb-8">
+                <label
+                  className="block mb-5 text-sm font-medium"
+                  htmlFor="purpose"
+                >
+                  Purpose
+                </label>
+                <div className="grid grid-cols-2 gap-4">
+                  {formPurpose.map(({ key, value }) => (
+                    <div key={key} className="flex items-center">
+                      <input
+                        className="w-5 h-5 mr-2 leading-tight"
+                        type="checkbox"
+                        name={key.toString()} // Convert key to string
+                        checked={values.purpose.includes(key.toString())} // Convert key to string
+                        onChange={handleChange}
+                      />
+                      <span className="font-medium">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                className="w-full h-12 text-white border rounded-lg cursor-pointer bg-primary hover:transition-all hover:bg-white hover:text-primary hover:border-primary"
+              />
+            </div>
+          </form>
+        </div>
+
         <img
           className="absolute bottom-0 w-32 h-32 md:w-[213px] md:h-[206px] -z-10 right-0"
           src="/assets/asterisk.svg"

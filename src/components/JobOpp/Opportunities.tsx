@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 const typeJobs = ["All", "Remote", "Hybrid", "Onsite jobs"];
 
+import AnimateWords from "../../config/textAnimation";
+
 const Opportunities: React.FC = () => {
   const [active, setActive] = useState<string>("All");
 
@@ -38,7 +40,7 @@ const Opportunities: React.FC = () => {
       </div>
       <div className="flex justify-center w-full mt-[164px] sm:mt-64">
         <h2 className="font-gelion text-[#868687] font-semibold max-sm:font-medium max-sm:text-[20px]/6 max-xl:text-[40px] text-[55px]/[66px] tracking-[-0.02em]">
-          Jobs list coming soon... 🚀🚀
+          <AnimateWords text="Jobs list coming soon... 🚀🚀" />
         </h2>
       </div>
     </section>

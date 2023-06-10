@@ -28,7 +28,7 @@ export const menuItems: MenuItems[] = [
   {
     key: 5,
     name: "Blog",
-    where: "#",
+    where: "https://codespaceafrica.medium.com/",
   },
   {
     key: 6,

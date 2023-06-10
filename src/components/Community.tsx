@@ -1,5 +1,7 @@
 import React from "react";
 
+import AnimateWords from "../config/textAnimation";
+
 import { star1, star2 } from "../assets/icon";
 import { buttons, buttonsSmall } from "../assets/images";
 
@@ -42,14 +44,14 @@ const Community: React.FC = () => {
                         leading-[21px] sm:leading-[32px] text-[14px] sm:text-[18px] sm:max-w-sm md:text-[22px] text-center xmd:text-start max-w-xs md:max-w-lg xmd:max-w-md"
         >
           <span className="max-lg:hidden">
-            Be a part of our ever growing community by joining our Telegram
-            channel and getting periodic updates.
+            <AnimateWords text="Be a part of our ever growing community by joining our Telegram channel and getting periodic updates." />
           </span>
           <span className="lg:hidden">
-            Be a part of our ever growing
-            <br /> community by joining our Telegram
+            <AnimateWords text="Be a part of our ever growing" />
             <br />
-            channel and getting periodic updates.
+            <AnimateWords text="community by joining our Telegram" />
+            <br />
+            <AnimateWords text="channel and getting periodic updates." />
           </span>
         </p>
 
