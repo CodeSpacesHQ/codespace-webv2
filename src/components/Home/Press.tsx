@@ -3,30 +3,29 @@ import techNext from "../../assets/images/Technext.svg";
 import media from "../../assets/images/GeoLamedia.svg";
 
 import { motion } from "framer-motion";
-import { slideAnimation } from "../../config/motion";
-import textAnimation from "../../config/textAnimation";
+import { zoomAnimation } from "../../config/motion";
+import AnimateWords from "../../config/textAnimation";
 
 const Press = () => {
-  const animateWords = textAnimation("up");
   return (
     <section className="px-7 sm:px-16 lg:px-[65px] xl:ps-[101px] max-w-[1500px] mx-auto overflow-hidden">
       <div className="mt-[71px] mb-24 ">
         <h2 className="font-dm-sans font-medium text-[29px] text-primary mb-4 uppercase">
-          {animateWords("Latest press release")}
+          <AnimateWords text="Latest press release" />
         </h2>
         <h2 className="font-poppins font-bold text-[32px] leading-[48px] max-w-2xl mb-[63px]">
-          {animateWords("Get latest updates on the Nigeria Tech Community")}
+          <AnimateWords text="Get latest updates on the Nigeria Tech Community" />
         </h2>
         <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 max-md:gap-y-7 gap-[14px] font-gelion">
           <motion.a
-            {...slideAnimation("left")}
+            {...zoomAnimation()}
             href="https://ifeomadev.medium.com/rising-stars-how-these-few-nigerians-in-tech-are-putting-nigeria-on-the-world-map-2b0b32f5d522"
             target="_blank"
             rel="noopener noreferrer"
             className='lg:row-span-2 lg:col-span-2 bg-[url("/assets/press-1.svg")] h-[400px] sm:h-[500px] rounded-[28px] sm:rounded-[10px] lg:h-[600px] relative font-dm-sans shadow-lg group hover:scale-105 transition-all cursor-pointer bg-no-repeat bg-center bg-cover'
           >
             <div className="absolute bottom-0 left-0 right-0 group-hover:h-80 h-full transition-all bg-gradient-to-t rounded-[28px] sm:rounded-[10px] from-black to-transparent"></div>
-            <div className="absolute bottom-5 flex flex-col space-y-5 p-5">
+            <div className="absolute flex flex-col p-5 space-y-5 bottom-5">
               <div className="news-icon">
                 <img src={medium} alt="medium icon" />
               </div>
@@ -43,7 +42,7 @@ const Press = () => {
             </div>
           </motion.a>
           <motion.a
-            {...slideAnimation("right")}
+            {...zoomAnimation()}
             href="https://technext24.com/2022/08/16/clinton-imaro-18-year-old-afrowatch-founder/"
             target="_blank"
             rel="noopener noreferrer"
@@ -60,7 +59,7 @@ const Press = () => {
             </div>
           </motion.a>
           <motion.a
-            {...slideAnimation("up")}
+            {...zoomAnimation()}
             href="https://www.gbolamedia.com/startups-in-nigeria-by-gen-z.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,7 +76,7 @@ const Press = () => {
             </div>
           </motion.a>
           <motion.a
-            {...slideAnimation("up")}
+            {...zoomAnimation()}
             href="https://ifeomadev.medium.com/top-10-gen-z-changing-the-world-of-tech-in-nigeria-4db1b0d07460"
             target="_blank"
             rel="noopener noreferrer"

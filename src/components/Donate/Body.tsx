@@ -1,22 +1,20 @@
 import { NavLink } from "react-router-dom";
 import { donateContents } from "../../data/donateContent";
 import { motion } from "framer-motion";
-import { slideAnimation } from "../../config/motion";
+import { zoomAnimation } from "../../config/motion";
 
-import textAnimation from "../../config/textAnimation";
+import AnimateWords from "../../config/textAnimation";
 
 const Body = () => {
-  const animateWords = textAnimation("up");
   return (
     <section className="bg-[#FFFFFF] px-7 sm:px-16 lg:px-[65px] xl:px-[101px] pt-[60px] sm:pt-[126px] pb-[126px] max-sm:pb-[161px] max-w-[1500px] mx-auto">
       <div className="sm:mb-[87px] mb-[31px]">
         <h2 className="font-gilroy text-[27px]/7 sm:text-[48px]/[53px] font-extrabold tracking-[-0.005em] mb-4">
-          {animateWords("Donate to our programs")}
+          <AnimateWords text="Donate to our programs" />
         </h2>
         <p className="font-gilroy text-[#8C8C8C] font-normal tracking-[-0.20000000298023224px] sm:text-[22px]/8 text-[18px]/6 w-full sm:w-10/12 lg:w-2/3">
-          {animateWords(
-            "Our partners and donors go a long way in creating an impact and helping us reach thousands of genz-s in tech across Africa!"
-          )}
+          Our partners and donors go a long way in creating an impact and
+          helping us reach thousands of genz-s in tech across Africa!
         </p>
       </div>
       <div className="flex flex-wrap max-xl:justify-center gap-y-6 gap-x-5">
@@ -24,7 +22,7 @@ const Body = () => {
           const { title, text, buttonText, link } = item;
           return (
             <motion.div
-              {...slideAnimation("up")}
+              {...zoomAnimation()}
               key={index}
               className="xl:flex-1 max-xl:w-[48%] max-lg:w-full relative bg-[#F9F9F9] rounded-t-[48px] pt-[94px] pl-8 pr-[26px] pb-[164px]"
             >
