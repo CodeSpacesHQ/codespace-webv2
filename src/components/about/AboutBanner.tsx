@@ -14,7 +14,7 @@ export const AboutBanner = () => {
       <div className="absolute bottom-0 right-0">
         <img src={box} alt="" />
       </div>
-      <div className="xl:ps-[102px] pt-[232px] max-md:pt-[189px] max-w-[1500px] mx-auto max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-lg:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-lg:flex-col sm:px-16 lg:px-[65px]">
+      <div className="xl:ps-[102px] pt-[136px] max-w-[1500px] mx-auto max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-lg:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-lg:flex-col sm:px-16 lg:px-[65px]">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: "-100%" }}

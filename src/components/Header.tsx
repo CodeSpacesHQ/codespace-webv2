@@ -8,7 +8,6 @@ import { menuItems } from "../data/menuItems";
 import { motion, useAnimation } from "framer-motion";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
@@ -36,36 +35,19 @@ const Header = () => {
     }
   }, [controls, isAnimating]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 42) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   const handleNavClick = () => {
     setNavOpen(!navOpen);
     setIsAnimating(!isAnimating);
     setAnimationKey((prevKey) => prevKey + 1);
   };
-  const navClasses = `fixed top-0 h-full w-full bg-white transform transition-all ease-in-out duration-500 ${
-    navOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+  const navClasses = `top-0  w-full bg-white transform transition-all ease-in-out duration-500 overflow-hidden ${
+    navOpen
+      ? "translate-y-0 opacity-100 h-full"
+      : "-translate-y-[150%] opacity-0 h-0"
   }`;
 
   return (
-    <header
-      className={`fixed top-0 w-full z-20 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
-      }  transition-all duration-500`}
-    >
+    <header className="w-full z-20 bg-transparent relative">
       <nav>
         <div className="flex justify-between lg:justify-between py-12 max-md:py-8 lg:py-8 items-center px-7 xl:px-[102px] sm:px-[64px] font-poppins mx-auto max-w-[1500px]">
           <NavLink
@@ -148,15 +130,7 @@ const Header = () => {
 
         {/* Tab menu */}
         <div className={`lg:hidden z-30 ${navClasses}`}>
-          <div className="py-12 max-md:py-8 lg:py-8 px-7 sm:px-[62px] xl:px-[102px] mx-auto opacity-0">
-            <img
-              src={logo}
-              alt="logo"
-              className="h-[16px] xmd:max-xl:h-[16px] sm:h-5"
-            />
-          </div>
-
-          <ul className="text-left px-7 sm:px-[62px] font-poppins">
+          <ul className="text-left px-7 sm:px-[62px] font-poppins pb-36 pt-4">
             {menuItems.map((item) => {
               return (
                 <motion.li
