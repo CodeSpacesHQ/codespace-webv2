@@ -29,7 +29,7 @@ export const Donate = () => {
         title="Donate to our programs"
         h1="$1/day can make all the"
         h1Cont="difference"
-        text="Every dollar donated makes a significant difference. We're also dedicated to breaking down barriers in tech by providing resources and support to help individuals pursue their passions."
+        text="We provide job opportunities and learning resources to young Africans, some of whom do not have the necessary tools to work, like data, laptops, and even learning resources, among others. Whether you are donating a dollar or more, it will go a long way in impacting the future of our community members in need."
         hero={image}
       />
       <Body />
