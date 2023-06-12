@@ -1,16 +1,19 @@
-import { offersList } from "../../data/offersList";
-import { motion } from "framer-motion";
-import { zoomAnimation } from "../../config/motion";
+// import { offersList } from "../../data/offersList";
+// import { motion } from "framer-motion";
+// import { zoomAnimation } from "../../config/motion";
 
 import AnimateWords from "../../config/textAnimation";
 
 const Offers = () => {
   return (
-    <section className="mt-[106px] px-7 sm:px-16 lg:px-[65px] xl:pl-[101px] 2xl:px-[121px] mb-16 max-w-[1500px] mx-auto">
+    <section className="mt-[106px] h-screen px-7 sm:px-16 lg:px-[65px] xl:pl-[101px] 2xl:px-[121px] mb-16 max-w-[1500px] mx-auto">
       <h2 className="text-3xl font-medium font-gelion md:text-4xl">
         <AnimateWords text="All offers" />
       </h2>
-      <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-[142px] font-gelion text-4xl lg:w-4/5 sm:text-[55px]/[66px] tracking-[-0.02em] font-semibold">
+        <AnimateWords text="Coming soon — We're working on this section of our website 🤞🏾" />
+      </div>
+      {/* <div className="mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {offersList.map(({ key, icon, company, about, benefit1, benefit2 }) => (
           <motion.div
             {...zoomAnimation()}
@@ -45,7 +48,7 @@ const Offers = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
