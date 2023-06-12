@@ -15,7 +15,7 @@ export const Success = () => {
     };
   }, []);
   return (
-    <section className="grid min-h-screen place-content-center">
+    <section className="grid min-h-[60vh] place-content-center">
       <div className="w-full max-w-[1500px] mx-auto">
         <div className="flex flex-col justify-center w-full text-center align-middle">
           <h2 className="font-gelion text-[#868687] font-semibold max-sm:font-medium max-sm:text-[20px]/6 max-xl:text-[40px] text-[55px]/[66px] tracking-[-0.02em]">
