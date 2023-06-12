@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 import { updateThemeColor, ThemeColor } from "../utils/Theme";
 
-import { Partners, AboutBanner, Vision, Team } from "../components/about";
+import {
+  Partners,
+  AboutBanner,
+  Vision,
+  Team,
+  Contents,
+} from "../components/about";
 import useReadingProgress from "../hooks/useReadingProgress";
 
 export const About = () => {
@@ -23,6 +29,10 @@ export const About = () => {
       />
       <div>
         <AboutBanner />
+      </div>
+
+      <div>
+        <Contents />
       </div>
 
       <div>

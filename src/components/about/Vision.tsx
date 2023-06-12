@@ -1,13 +1,26 @@
 import { icon1, icon2 } from "../../assets/icon";
+import { motion } from "framer-motion";
+import { slideAnimation } from "../../config/motion";
 
 import AnimateWords from "../../config/textAnimation";
 
 export const Vision = () => {
   return (
-    <section className=" bg-[#F6F6FF] px-7 xl:px-[102px] sm:px-[64px] pb-9 sm:pb-28">
-      <div className="flex flex-col items-center justify-center md:flex-row gap-x-12 max-w-[1500px] mx-auto px-0 [@media(min-width:1600px)]:px-[54px] [@media(min-width:1670px)]:px-[84px]">
-        <div className="w-full mb-6 md:w-1/2 md:mb-0">
-          <div className="mb-6 md:mb-10 mt-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
+    <section className=" bg-[#FFFFFF] px-7 xl:px-[102px] sm:px-[64px] pb-9 pt-10 sm:pt-[94px] sm:pb-28">
+      <div className="flex flex-col max-lg:flex-wrap justify-center md:flex-row gap-x-12 max-w-[1500px] mx-auto px-0 [@media(min-width:1600px)]:px-[54px] [@media(min-width:1670px)]:px-[84px]">
+        <motion.div {...slideAnimation("left")} className="w-full max-lg:mb-6">
+          <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-sm:text-[16px]/[19px] ps-[2px]">
+            MISSION &VISION.
+          </p>
+          <h1 className="font-gelion max-xl:text-[45px] text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
+            Why we{" "}
+            <span className="underline underline-offset-[11px] decoration-[#5D5CD6] decoration-[5px]">
+              exist
+            </span>
+          </h1>
+        </motion.div>
+        <div className="flex flex-col items-center w-full sm:max-lg:w-[45%] mb-6 md:mb-0">
+          <div className="mb-6 md:mb-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
             <img
               src={icon1}
               alt="Our Vision"
@@ -16,30 +29,21 @@ export const Vision = () => {
           </div>
 
           <div>
-            <h2
-              className="text-[#000000] font-epilogue
-                          text-[16px] sm:text-[20px] mb-[15px] lg:text-[24px] leading-[18px] sm:leading-[32px]  tracking-[3px] font-normal"
-            >
+            <h2 className="text-[#000000] text-center font-poppins text-2xl sm:text-[32]/[64px] mb-[20px] tracking-[-1px] font-medium">
               <AnimateWords text="OUR VISION" />
             </h2>
           </div>
 
           <div>
-            <h3 className="font-poppins font-[700] text-[28px] sm:text-[32px] lg:text-[40px] mb-7 tracking-[-1px] text-[#000000] leading-[64px]">
-              <AnimateWords text="Explore.Lead.Do" />
-            </h3>
-          </div>
-
-          <div>
-            <p className=" font-dm-sans font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
-              Inspiring the growth of the African continent, one tech talent at
-              a time.
+            <p className=" font-dm-sans text-center font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
+              To be at the centre of Africa’s tech ecosystem by inspiring the
+              growth of tech talents.
             </p>
           </div>
         </div>
 
-        <div className="w-full md:w-1/2">
-          <div className=" mb-6 md:mb-10 mt-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
+        <div className="flex flex-col items-center w-full sm:max-lg:w-[45%]">
+          <div className=" mb-6 md:mb-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
             <img
               src={icon2}
               alt="What we do"
@@ -48,29 +52,15 @@ export const Vision = () => {
           </div>
 
           <div>
-            <h2
-              className="text-[#000000] font-epilogue
-                         text-[16px] sm:text-[20px] mb-[15px] lg:text-[24px] leading-[18px] sm:leading-[32px] tracking-[3px] font-normal"
-            >
-              <AnimateWords text="WHY WE DO THIS" />
+            <h2 className="text-[#000000] text-center font-poppins text-2xl sm:text-[32]/[64px] mb-[20px] tracking-[-1px] font-medium">
+              <AnimateWords text="Our Mission" />
             </h2>
           </div>
 
           <div>
-            <h3
-              className=" font-poppins font-[700] text-[28px] sm:text-[32px] lg:text-[40px] mb-7
-                        tracking-[-1px] text-[#000000] leading-[64px]"
-            >
-              <AnimateWords text="Our Mission" />
-            </h3>
-          </div>
-
-          <div>
-            <p className=" font-dm-sans font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
-              Our mission at Code Space is to create a thriving community that
-              fosters technical growth, facilitates networking opportunities,
-              provides mentorship, and enhances visibility for individuals at
-              all levels of their careers in the field of technology.
+            <p className=" font-dm-sans text-center font-normal text-[18px]/6 lg:text-[24px]/8 leading-[23px] sm:leading-[31px] text-[#9F9A9A]">
+              To promote global opportunities and resources for young tech
+              talents across Africa.
             </p>
           </div>
         </div>

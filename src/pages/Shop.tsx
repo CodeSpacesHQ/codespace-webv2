@@ -29,8 +29,7 @@ export const Shop = () => {
       />
       <Hero
         title="STORE"
-        h1="Celebrate Your Journey"
-        h1Cont="with Style and Swag"
+        h1="Choose your Spacer Style and Swag with one Click!"
         text="Ignite your style. Embrace your tech brilliance. Be an CodeSpacers!"
         hero={image}
         star={isPresent}

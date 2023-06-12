@@ -16,7 +16,7 @@ const ErrorPage = () => {
       <img
         src="/assets/404.svg"
         alt="error-404"
-        className="w-[399px] h-[399px] md:w-[550px] md:h-[550px] lg:w-[870px] lg:h-[870px]"
+        className="w-[399px] lg:mt-24 h-[399px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px]"
       />
     </section>
   );

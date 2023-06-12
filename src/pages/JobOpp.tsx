@@ -27,8 +27,7 @@ export const JobOpp = () => {
       />
       <Hero
         title="JOB OPPORTUNITIES"
-        h1="Empowering the Next"
-        h1Cont="Generation of Tech Innovators"
+        h1="Let’s connect you to your next big deal!"
         text="We are a non-profit organization focused on celebrating and
         empowering Genz in technology across Africa."
         hero={image}

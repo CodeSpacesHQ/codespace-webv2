@@ -12,7 +12,7 @@ interface JobHeroProps {
   title: string;
   h1: string;
   h1Cont?: string;
-  text: string;
+  text?: string;
   hero: string;
   star?: boolean;
 }
@@ -42,9 +42,7 @@ const JobHero: React.FC<JobHeroProps> = ({
         <img src={pattern} alt="shapes" className="h-[143px]" />
       </div>
       <div
-        className={`xl:ps-[102px] pt-[232px] max-md:pt-[189px] max-w-[1500px] mx-auto max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center max-md:items-end wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 ${
-          star ? "max-lg:flex-col max-lg:items-end" : "max-md:flex-col"
-        }`}
+        className={`xl:ps-[102px] pt-[232px] max-md:pt-[189px] max-w-[1500px] mx-auto max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-lg:flex-col max-lg:items-end`}
       >
         <motion.div
           ref={ref}
