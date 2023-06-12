@@ -1,4 +1,3 @@
-import { placeholder } from "../assets/images";
 import {
   isabella,
   precious,
@@ -6,6 +5,7 @@ import {
   clinton,
   orijiude,
   sussan,
+  tobi,
 } from "../assets/images/our-team";
 
 export const teams = [
@@ -48,7 +48,7 @@ export const teams = [
   {
     id: 7,
     name: "Tobi Uche",
-    role: "Community Manager & Software Developer",
-    image: placeholder,
+    role: "Community Manager",
+    image: tobi,
   },
 ];
