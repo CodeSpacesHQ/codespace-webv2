@@ -8,12 +8,12 @@ import AnimateWords from "../../config/textAnimation";
 
 const Press = () => {
   return (
-    <section className="px-7 sm:px-16 lg:px-[65px] xl:ps-[101px] max-w-[1500px] mx-auto overflow-hidden">
+    <section className="px-7 sm:px-16 lg:px-[65px] xl:ps-[101px] max-w-[1500px] mx-auto overflow-hidden max-md:mt-12 max-md:bg-[linear-gradient(180deg,#F7F7FD_16.46%,rgba(247,247,253,0)100%)]">
       <div className="mt-[71px] mb-24 ">
-        <h2 className="font-dm-sans font-medium text-[29px] text-primary mb-4 uppercase">
+        <h2 className="font-gelion sm:font-dm-sans font-normal sm:font-medium max-md:tracking-[0.12em] text-sm/[17px] sm:text-[29px]/[45px] text-primary mb-4 uppercase">
           <AnimateWords text="Latest press release" />
         </h2>
-        <h2 className="font-poppins font-bold text-[32px] leading-[48px] max-w-2xl mb-[63px]">
+        <h2 className="font-gelion sm:font-poppins font-medium sm:font-bold text-[28px]/[34px] max-md:tracking-[-0.02em] sm:text-[32px]/[48px] max-w-2xl mb-[37px] sm:mb-[63px]">
           <AnimateWords text="Get latest updates on the Nigeria Tech Community" />
         </h2>
         <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 max-md:gap-y-7 gap-[14px] font-gelion">
