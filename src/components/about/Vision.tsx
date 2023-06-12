@@ -19,12 +19,12 @@ export const Vision = () => {
             </span>
           </h1>
         </motion.div>
-        <div className="flex flex-col items-center w-full sm:max-lg:w-[45%] mb-6 md:mb-0">
-          <div className="mb-6 md:mb-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
+        <div className="flex flex-col items-center w-full sm:max-lg:w-[45%] mb-14 md:mb-0 lg:mt-8">
+          <div className="mb-6 md:mb-9 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
             <img
               src={icon1}
               alt="Our Vision"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full animate-float"
             />
           </div>
 
@@ -42,12 +42,12 @@ export const Vision = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full sm:max-lg:w-[45%]">
-          <div className=" mb-6 md:mb-10 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
+        <div className="flex flex-col items-center w-full sm:max-lg:w-[45%] lg:mt-8">
+          <div className=" mb-6 md:mb-9 w-[60px] h-[50px] md:w-[80px] md:h-[80px] object-cover">
             <img
               src={icon2}
               alt="What we do"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full animate-float"
             />
           </div>
 
