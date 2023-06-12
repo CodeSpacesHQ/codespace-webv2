@@ -87,9 +87,8 @@ const ContactHero = () => {
           >
             <h1 className="text-primary uppercase mb-[19px]">Get in touch</h1>
             <h2 className="font-gelion font-semibold text-[29px] leading-[42px] md:text-[43px] lg:text-[55px] md:leading-[65.98px] mb-12 max-w-xl lg:max-w-2xl">
-              Empowering{" "}
-              <span className="text-primary color-slide">Africa</span> through
-              the limitless potential of technology
+              We would love to hear from{" "}
+              <span className="text-primary color-slide">you!</span>
             </h2>
           </motion.div>
         </div>
