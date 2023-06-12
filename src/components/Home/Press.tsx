@@ -2,8 +2,6 @@ import medium from "../../assets/images/medium.svg";
 import techNext from "../../assets/images/Technext.svg";
 import media from "../../assets/images/GeoLamedia.svg";
 
-import { motion } from "framer-motion";
-import { zoomAnimation } from "../../config/motion";
 import AnimateWords from "../../config/textAnimation";
 
 const Press = () => {
@@ -17,8 +15,7 @@ const Press = () => {
           <AnimateWords text="Get latest updates on the Nigeria Tech Community" />
         </h2>
         <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 max-md:gap-y-7 gap-[14px] font-gelion">
-          <motion.a
-            {...zoomAnimation()}
+          <a
             href="https://ifeomadev.medium.com/rising-stars-how-these-few-nigerians-in-tech-are-putting-nigeria-on-the-world-map-2b0b32f5d522"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,9 +37,8 @@ const Press = () => {
                 making.........
               </div>
             </div>
-          </motion.a>
-          <motion.a
-            {...zoomAnimation()}
+          </a>
+          <a
             href="https://technext24.com/2022/08/16/clinton-imaro-18-year-old-afrowatch-founder/"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,9 +53,8 @@ const Press = () => {
                 Meet Clinton Imaro, 18 year old Nigerian building...
               </div>
             </div>
-          </motion.a>
-          <motion.a
-            {...zoomAnimation()}
+          </a>
+          <a
             href="https://www.gbolamedia.com/startups-in-nigeria-by-gen-z.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -74,9 +69,8 @@ const Press = () => {
                 Top 10 Startups in Nigeria Founded by Gen-Z
               </div>
             </div>
-          </motion.a>
-          <motion.a
-            {...zoomAnimation()}
+          </a>
+          <a
             href="https://ifeomadev.medium.com/top-10-gen-z-changing-the-world-of-tech-in-nigeria-4db1b0d07460"
             target="_blank"
             rel="noopener noreferrer"
@@ -91,7 +85,7 @@ const Press = () => {
                 Top 10 Gen Z changing the world of tech in Nigeria
               </div>
             </div>
-          </motion.a>
+          </a>
         </div>
       </div>
     </section>
