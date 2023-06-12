@@ -1,7 +1,7 @@
 export const Contents = () => {
   return (
-    <section className=" bg-[#F6F6FF] px-7 xl:px-[102px] sm:px-[64px] py-12">
-      <p className="font-poppins font-normal text-lg sm:text-2xl/9 tracking-[-0.20000000298023224px]">
+    <section className=" bg-[#F6F6FF] py-12">
+      <p className="font-poppins max-w-[1500px] mx-auto px-7 xl:px-[102px] sm:px-[64px] font-normal text-base sm:text-2xl/9 tracking-[-0.20000000298023224px]">
         CodeSpace is a community-based organization that connects individuals in
         the African tech ecosystem. Our mission is to provide a community where
         Gen Z developers, founders, designers, and techies across Africa can
