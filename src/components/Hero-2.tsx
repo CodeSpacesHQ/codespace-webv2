@@ -12,7 +12,7 @@ interface JobHeroProps {
   title: string;
   h1: string;
   h1Cont?: string;
-  text: string;
+  text?: string;
   hero: string;
   star?: boolean;
 }
