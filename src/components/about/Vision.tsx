@@ -10,12 +10,12 @@ export const Vision = () => {
       <div className="flex flex-col max-lg:flex-wrap justify-center md:flex-row gap-x-12 max-w-[1500px] mx-auto px-0 [@media(min-width:1600px)]:px-[54px] [@media(min-width:1670px)]:px-[84px]">
         <motion.div {...slideAnimation("left")} className="w-full max-lg:mb-6">
           <p className="font-gelion text-[20px]/6 text-primary font-normal tracking-[0.08em] mb-2 max-sm:text-[16px]/[19px] ps-[2px]">
-            MISSION &VISION.
+            MISSION & VISION.
           </p>
           <h1 className="font-gelion max-xl:text-[45px] text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
             Why we{" "}
             <span className="underline underline-offset-[11px] decoration-[#5D5CD6] decoration-[5px]">
-              exist
+              Exist
             </span>
           </h1>
         </motion.div>
@@ -30,7 +30,7 @@ export const Vision = () => {
 
           <div>
             <h2 className="text-[#000000] text-center font-poppins text-2xl sm:text-[32]/[64px] mb-[20px] tracking-[-1px] font-medium">
-              <AnimateWords text="OUR VISION" />
+              <AnimateWords text="Our Vision" />
             </h2>
           </div>
 

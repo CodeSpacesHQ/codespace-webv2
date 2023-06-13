@@ -27,8 +27,8 @@ export const AboutBanner = () => {
               KNOW ABOUT US
             </p>
             <h1 className="font-gelion max-lg:text-[45px] text-[55px]/[66px] max-md:text-[32px]/10 text-dark-blue tracking-[-0.02em] font-semibold mb-[26px]">
-              Connect African Techies to <br className="max-lg:hidden" /> Global
-              Opportunities
+              Connecting African Techies to <br className="max-lg:hidden" />{" "}
+              Global Opportunities
             </h1>
           </motion.div>
           <motion.div
