@@ -22,6 +22,7 @@ export const Faq = () => {
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
       />
+      <div className="absolute top-0 left-0 w-full bg-[#f7f7fd] bg-cover h-20 sm:h-28"></div>
       <Body />
       <div className="bg-white px-[30px] sm:px-[100px] lg:px-[42px] xl:px-[102px]">
         <Community />

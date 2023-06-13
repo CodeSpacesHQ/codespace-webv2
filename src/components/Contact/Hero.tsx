@@ -61,49 +61,52 @@ const ContactHero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section className="relative bg-center bg-[url('../assets/pattern.png')] bg-cover w-full h-full overflow-hidden">
-      <img
-        className="absolute bottom-0 -right-6 sm:right-0"
-        width={123}
-        height={143}
-        src="/assets/bottom-dots.svg"
-        alt="dots icons"
-      />
-      <img
-        className="absolute rotate-[355deg] max-md:-left-16 sm:rotate-[345deg] sm:right-[12rem] lg:right-[310px] wideScreen:right-[26rem] max-lg:w-[200px] -bottom-14 sm:-bottom-2 animate-pulse"
-        src="/assets/arrow.svg"
-        alt=""
-      />
-      <div
-        className="max-w-[1520px] mx-auto xl:ps-[104px] pt-[136px]
+    <>
+      <div className="absolute top-0 left-0 w-full bg-[#f9f9f9] bg-cover h-20 sm:h-28"></div>
+      <section className="relative bg-center bg-[url('../assets/pattern.png')] bg-cover w-full h-full overflow-hidden">
+        <img
+          className="absolute bottom-0 -right-6 sm:right-0"
+          width={123}
+          height={143}
+          src="/assets/bottom-dots.svg"
+          alt="dots icons"
+        />
+        <img
+          className="absolute rotate-[355deg] max-md:-left-16 sm:rotate-[345deg] sm:right-[12rem] lg:right-[310px] wideScreen:right-[26rem] max-lg:w-[200px] -bottom-14 sm:-bottom-2 animate-pulse"
+          src="/assets/arrow.svg"
+          alt=""
+        />
+        <div
+          className="max-w-[1520px] mx-auto xl:ps-[104px] pt-[136px]
         max-xl:px-[65px] pb-[129px] max-md:pb-[42px] flex justify-between items-center
         wideScreen:pe-[280px] xl:pe-[175px] max-md:px-7 max-md:flex-col"
-      >
-        <div className="max-md:me-16 max-sm:me-0">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, x: "-100%" }}
-            animate={controls}
-          >
-            <h1 className="text-primary uppercase mb-[19px]">Get in touch</h1>
-            <h2 className="font-gelion font-semibold text-[29px] leading-[42px] md:text-[43px] lg:text-[55px] md:leading-[65.98px] mb-12 max-w-xl lg:max-w-2xl">
-              We would love to hear from{" "}
-              <span className="text-primary color-slide">you!</span>
-            </h2>
-          </motion.div>
+        >
+          <div className="max-md:me-16 max-sm:me-0">
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, x: "-100%" }}
+              animate={controls}
+            >
+              <h1 className="text-primary uppercase mb-[19px]">Get in touch</h1>
+              <h2 className="font-gelion font-semibold text-[29px] leading-[42px] md:text-[43px] lg:text-[55px] md:leading-[65.98px] mb-12 max-w-xl lg:max-w-2xl">
+                We would love to hear from{" "}
+                <span className="text-primary color-slide">you!</span>
+              </h2>
+            </motion.div>
+          </div>
+          <motion.img
+            ref={planeRef}
+            initial={{ opacity: 0, x: "-100%", y: "100%", skewX: "10deg" }}
+            animate={control}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="relative w-20 h-20 lg:w-[141px] lg:h-[141px] max-md:me-[34px] max-sm:me-[75px]"
+            src="/assets/plane-arrow.svg"
+            alt="paper plane icon"
+            style={{ transition: "transform 0.3s ease-out" }} // Add initial transition
+          />
         </div>
-        <motion.img
-          ref={planeRef}
-          initial={{ opacity: 0, x: "-100%", y: "100%", skewX: "10deg" }}
-          animate={control}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="relative w-20 h-20 lg:w-[141px] lg:h-[141px] max-md:me-[34px] max-sm:me-[75px]"
-          src="/assets/plane-arrow.svg"
-          alt="paper plane icon"
-          style={{ transition: "transform 0.3s ease-out" }} // Add initial transition
-        />
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  headTextAnimation,
-} from "../../config/motion";
+import { headTextAnimation } from "../../config/motion";
 import { plus, minus } from "../../assets/icon";
 import { fadeAnimation } from "../../config/motion";
 import { faqData } from "../../data/faqData";
