@@ -15,7 +15,7 @@ const Body = () => {
     <section
       className={`relative bg-gradient-to-b from-[#f7f7fd] to-white overflow-hidden`}
     >
-      <div className="sm:pt-[296px] pt-[166px] xl:px-64 lg:px-44 sm:px-24 px-[42px] pb-[109px] sm:pb-[343px] max-w-[1500px] mx-auto">
+      <div className="pt-[136px] xl:px-64 lg:px-44 sm:px-24 px-[42px] pb-[109px] sm:pb-[343px] max-w-[1500px] mx-auto">
         <div className="mb-16 text-center">
           <h1 className="mb-5 font-inter font-semibold text-[#101828] text-3xl/[38px] sm:text-[42px]/[44px] tracking-normal sm:tracking-[-0.02em]">
             <AnimateWords text="Questions we get the most" />

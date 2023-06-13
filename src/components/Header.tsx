@@ -51,14 +51,18 @@ const Header: React.FC = () => {
   }, [controls, isAnimating]);
 
   return (
-    <header className="w-full z-20 bg-transparent relative">
+    <header
+      className={`w-full z-20 ${
+        navOpen ? "bg-white" : "bg-transparent"
+      } relative`}
+    >
       <nav>
         <div className="flex justify-between lg:justify-between py-12 max-md:py-8 lg:py-8 items-center px-7 xl:px-[102px] sm:px-[64px] font-poppins mx-auto max-w-[1500px]">
           <NavLink
             to={"/"}
             onClick={() => {
               setNavOpen(false);
-              menuHeight.set(navOpen ? 0 : 540 || 0);
+              menuHeight.set(navOpen ? 0 : 0);
               setIsAnimating(false);
               setAnimationKey((prevKey) => prevKey + 1);
               window.location.pathname === "/" && scrollToTop();
@@ -158,7 +162,7 @@ const Header: React.FC = () => {
                       to={item.where}
                       onClick={() => {
                         setNavOpen(false);
-                        menuHeight.set(navOpen ? 0 : 540 || 0);
+                        menuHeight.set(navOpen ? 0 : 0);
                         setIsAnimating(false);
                         setAnimationKey((prevKey) => prevKey + 1);
                         window.location.pathname === item.where &&
