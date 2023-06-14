@@ -161,12 +161,11 @@ const Header: React.FC = () => {
                     <NavLink
                       to={item.where}
                       onClick={() => {
+                        menuHeight.set(0);
+                        scrollToTop();
                         setNavOpen(false);
-                        menuHeight.set(navOpen ? 0 : 0);
                         setIsAnimating(false);
                         setAnimationKey((prevKey) => prevKey + 1);
-                        window.location.pathname === item.where &&
-                          scrollToTop();
                       }}
                       className={
                         window.location.pathname === item.where
