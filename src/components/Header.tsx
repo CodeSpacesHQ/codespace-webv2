@@ -162,7 +162,7 @@ const Header: React.FC = () => {
                       to={item.where}
                       onClick={() => {
                         setNavOpen(false);
-                        menuHeight.set(navOpen ? 0 : 540 || 0);
+                        menuHeight.set(navOpen ? 0 : 0);
                         setIsAnimating(false);
                         setAnimationKey((prevKey) => prevKey + 1);
                         window.location.pathname === item.where &&
