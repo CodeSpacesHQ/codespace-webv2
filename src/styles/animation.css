@@ -1,0 +1,90 @@
+.color-slide {
+  background-image: linear-gradient(
+    -150deg,
+    #231557 0%,
+    #44107a 29%,
+    #5b5ad1 67%,
+    #5b5ad1 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 120px;
+  }
+  100% {
+    width: 400px;
+  }
+}
+
+@keyframes compress {
+  0% {
+    width: 400px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  @keyframes grow {
+    0% {
+      height: 100.88px;
+    }
+    100% {
+      height: 270.51px;
+    }
+  }
+
+  @keyframes compress {
+    0% {
+      height: 270.51px;
+    }
+    100% {
+      height: 100.88px;
+    }
+  }
+}
+
+.compressed {
+  animation-name: compress;
+  animation-duration: 0.4s; /* Adjust this value to control the duration of the compression animation */
+  animation-fill-mode: forwards;
+}
+
+.animate-box {
+  animation-name: grow;
+  animation-duration: 0.5s; /* Adjust this value to control the duration of the growth animation */
+  animation-fill-mode: forwards;
+}
