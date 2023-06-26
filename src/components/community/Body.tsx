@@ -16,8 +16,7 @@ const CommunityBody = () => {
           <AnimateWords text="Our reach so far" />
         </h3>
         <p className="text-xl text-[#667085] max-w-3xl leading-[30px]">
-          We’ve done all the heavy lifting so you don’t have to — get all the
-          data you need to launch and grow your business faster.
+        We are committed to changing the African narrative by empowering African teens. See how we have progressed so far. 
         </p>
       </div>
       <div className="mt-16 flex flex-col lg:flex-row max-w-[1500px] lg:space-x-10 mx-auto items-center justify-between space-y-28 lg:space-y-0">
