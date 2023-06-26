@@ -13,7 +13,9 @@ const Donations = () => {
         </h2>
 
         <p className="font-poppins text-base md:text-2xl leading-[20.83px] md:leading-9 -tracking-[0.2px] pb-10">
-        According to data gathered by the World Bank, 736 million Africans are living on less than $1.90 per day; the majority of people greatly affected are women and children. However, we can make a difference by providing teens with tech opportunities that can transform their lives.
+        According to the World Bank, over 260 million children in sub-Saharan Africa live on less than $1.90 per day. This means that the possibility of the average African child getting access to certain opportunities is slim. But we can make that happen! With your donations or sponsorship, we could provide tech training, mentorship, access to data, and laptops, among other things.
+        <br></br>
+Whether you are donating a dollar or more, it will go a long way in impacting the future of our community members in need.
         </p>
         <button className="bg-primary text-white font-semibold text-base md:text-xl lg:text-[26px] rounded-[15px] px-7 sm:px-8 py-4 md:px-24 md:py-5 hover:scale-105 transition-all leading-[19.2px] lg:leading-[33.59px]">
           <a
