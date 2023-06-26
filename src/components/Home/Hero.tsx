@@ -19,9 +19,10 @@ const Hero = () => {
                 </h1>
 
                 <p className="max-w-xl lg:max-xl:max-w-md mb-8 text-[15px]/[30px] font-dm-sans md:text-xl/[30px] text-grey">
-                  We are a Community that connects teen techies accross Africa
-                  in one place to share opportunites, work on awesome projects
-                  and foster quality connections.
+                We are increasing the human capital resources of Africa and the earning power of 
+                Africans by connecting teens to opportunities in terms of jobs, mentorship, 
+                tech skills, and community interaction.
+
                 </p>
 
                 <button className="bg-primary text-white font-semibold text-base lg:text-xl rounded-[15px] px-[18px] py-[14.5px] sm:px-8 sm:py-4 lg:px-12 hover:scale-105 transition-all">
