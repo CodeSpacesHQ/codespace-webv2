@@ -10,24 +10,24 @@ export const communityContents: community[] = [
     key: 1,
     count: 1000,
     title: "Community Members",
-    description: "We’ve helped over 4,000 amazing global companies.",
+    description: "Our community is booming with over 1,000 amazing Spacers.",
   },
   {
     key: 2,
     count: 11,
     title: "African Countries",
-    description: "Our customers have reported an average of ~600% ROI.",
+    description: "Our members are in over eleven African countries. Our goal is to reach every talent in all fifty-four (54) African countries.    ",
   },
   {
     key: 3,
     count: 4,
     title: "Partners",
-    description: "Our app has been downloaded over 10k times.",
+    description: "We are grateful to have partners that believe in our vision, mission, and goals.",
   },
   {
     key: 4,
     count: 0,
     title: "Physical Events",
-    description: "We’re proud of our 5-star rating with over 200 reviews.",
+    description: "At the moment, we are focused on reaching more talents virtually. However, in the future, we want to engage Spacers via physical conferences and programs. ",
   },
 ];
