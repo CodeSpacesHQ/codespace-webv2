@@ -29,7 +29,7 @@ export const Donate = () => {
         title="Donate to our programs"
         h1="$1/day can make all the"
         h1Cont="difference"
-        text="We provide job opportunities and learning resources to young Africans, some of whom do not have the necessary tools to work, like data, laptops, and even learning resources, among others. Whether you are donating a dollar or more, it will go a long way in impacting the future of our community members in need."
+        text="According to data gathered by the World Bank, 736 million Africans are living on less than $1.90 per day; the majority of people greatly affected are women and children. However, we can make a difference by providing teens with tech opportunities that can transform their lives.        "
         hero={image}
       />
       <Body />
