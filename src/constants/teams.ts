@@ -18,7 +18,7 @@ export const teams = [
   {
     id: 2,
     name: "Isabella Enaworu",
-    role: "Head of Partnerships",
+    role: "Content Marketing Strategist",
     image: isabella,
   },
   {
