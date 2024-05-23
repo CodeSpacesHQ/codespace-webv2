@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { updateThemeColor, ThemeColor } from "../../utils/Theme";
-import { NextSeo } from 'next-seo';
+import { Helmet } from 'react-helmet';
+
 
 import Hero from "../../components/Home/Hero";
 import Donations from "../../components/Home/Donations";
@@ -24,24 +25,15 @@ export const Home = () => {
 
   return (
     <>
-      <NextSeo
-        title="Code Space - One of Africa's Fastest Growing Community for Gen-Zs in Tech."
-        description="We are a non-profit community focused on celebrating and Connecting Gen Z-s into the global tech scene – connecting dots, chasing dreams."
-        openGraph={{
-          url: 'https://www.codespaces.org/',
-          title: 'Code Space - One of Africas Fastest Growing Community for Gen - Zs in Tech.',
-          description: 'We are a non-profit community focused on celebrating and Connecting Gen Z-s into the global tech scene – connecting dots, chasing dreams.',
-          images: [
-            {
-              url: 'https://i.postimg.cc/XvRyXV10/Sitmap.png',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-            },
-          ],
-          site_name: 'Code Space',
-        }}
-      />
+      <Helmet>
+        <title>Code Space - One of Africa's Fastest Growing Community for Gen-Zs in Tech.</title>
+        <meta name="description" content="We are a non-profit community focused on celebrating and Connecting Gen Z-s into the global tech scene – connecting dots, chasing dreams." />
+        <meta property="og:title" content="Code Space - One of Africa's Fastest Growing Community for Gen-Zs in Tech." />
+        <meta property="og:description" content="We are a non-profit community focused on celebrating and Connecting Gen Z-s into the global tech scene – connecting dots, chasing dreams." />
+        <meta property="og:url" content="https://www.codespaces.org/" />
+        <meta property="og:image" content="https://i.postimg.cc/XvRyXV10/Sitmap.png" />
+      </Helmet>
+
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"

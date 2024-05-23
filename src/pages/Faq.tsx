@@ -6,6 +6,7 @@ import useReadingProgress from "../hooks/useReadingProgress";
 
 import Body from "../components/Faq/Body";
 import Community from "../components/Community";
+import { Helmet } from "react-helmet";
 
 export const Faq = () => {
   const completion = useReadingProgress();
@@ -21,24 +22,15 @@ export const Faq = () => {
 
   return (
     <>
-      <NextSeo
-        title="FAQ"
-        description="We answered questions so you don't have to ask them."
-        openGraph={{
-          url: 'https://www.codespaces.org/faq',
-          title: 'FAQ - Codespaces',
-          description: 'We answered questions so you dont have to ask them.',
-          images: [
-            {
-              url: 'https://i.postimg.cc/XvRyXV10/Sitmap.png',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-            },
-          ],
-          site_name: 'Code Space',
-        }}
-      />
+      <Helmet>
+        <title>FAQ</title>
+        <meta name="description" content="We answered questions so you don't have to ask them." />
+        <meta property="og:title" content="FAQ" />
+        <meta property="og:description" content="We answered questions so you don't have to ask them." />
+        <meta property="og:url" content="https://www.codespaces.org/faq" />
+        <meta property="og:image" content="https://i.postimg.cc/XvRyXV10/Sitmap.png" />
+      </Helmet>
+      
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"

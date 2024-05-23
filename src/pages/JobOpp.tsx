@@ -8,6 +8,7 @@ import Opportunities from "../components/JobOpp/Opportunities";
 import image from "../assets/pattern.png";
 
 import useReadingProgress from "../hooks/useReadingProgress";
+import { Helmet } from "react-helmet";
 
 export const JobOpp = () => {
   const completion = useReadingProgress();
@@ -23,24 +24,15 @@ export const JobOpp = () => {
 
   return (
     <>
-      <NextSeo
-        title="Job Opportunities"
-        description="Let’s connect you to your next big deal!"
-        openGraph={{
-          url: 'https://www.codespaces.org/job-opportunities',
-          title: 'Job Opportunities',
-          description: 'Let’s connect you to your next big deal!',
-          images: [
-            {
-              url: 'https://i.postimg.cc/XvRyXV10/Sitmap.png',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-            },
-          ],
-          site_name: 'Code Space',
-        }}
-      />
+      <Helmet>
+        <title>Job Opportunities</title>
+        <meta name="description" content="Let’s connect you to your next big deal!" />
+        <meta property="og:title" content="About Us" />
+        <meta property="og:description" content="Let’s connect you to your next big deal!" />
+        <meta property="og:url" content="https://www.codespaces.org/job" />
+        <meta property="og:image" content="https://i.postimg.cc/XvRyXV10/Sitmap.png" />
+      </Helmet>
+      
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"

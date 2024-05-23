@@ -8,6 +8,7 @@ import Hero from "../components/Hero-2";
 import Community from "../components/Community";
 import Body from "../components/Donate/Body";
 import image from "../assets/pattern.png";
+import { Helmet } from "react-helmet";
 
 export const Donate = () => {
   const completion = useReadingProgress();
@@ -23,24 +24,15 @@ export const Donate = () => {
 
   return (
     <>
-      <NextSeo
-        title="Donate"
-        description="$1/day can make all the"
-        openGraph={{
-          url: 'https://www.codespaces.org/donate',
-          title: 'Donate',
-          description: '$1/day can make all the',
-          images: [
-            {
-              url: 'https://i.postimg.cc/XvRyXV10/Sitmap.png',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-            },
-          ],
-          site_name: 'Code Space',
-        }}
-      />
+      <Helmet>
+        <title>Donate</title>
+        <meta name="description" content="$1/day can make all the" />
+        <meta property="og:title" content="Donate" />
+        <meta property="og:description" content="$1/day can make all the" />
+        <meta property="og:url" content="https://www.codespaces.org/donate" />
+        <meta property="og:image" content="https://i.postimg.cc/XvRyXV10/Sitmap.png" />
+      </Helmet>
+      
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
