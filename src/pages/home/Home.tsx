@@ -10,6 +10,7 @@ import Press from "../../components/Home/Press";
 import { Partners } from "../../components/about";
 
 export const Home = () => {
+  
   const completion = useReadingProgress();
   useEffect(() => {
     const themeColor: ThemeColor = "#f9f9f9"; // Set the theme color type explicitly
