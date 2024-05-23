@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { updateThemeColor, ThemeColor } from "../utils/Theme";
+import { NextSeo } from 'next-seo';
 
 import Hero from "../components/Hero-2";
 import Community from "../components/Community";
@@ -11,16 +12,35 @@ import useReadingProgress from "../hooks/useReadingProgress";
 export const JobOpp = () => {
   const completion = useReadingProgress();
   useEffect(() => {
-    const themeColor: ThemeColor = "#f9f9f9"; // Set the theme color type explicitly
+    const themeColor: ThemeColor = "#f9f9f9";
 
-    updateThemeColor(themeColor); // Set the theme color for this specific page
+    updateThemeColor(themeColor);
 
     return () => {
-      updateThemeColor("#f9f9f9"); // Set the default theme color when leaving this page
+      updateThemeColor("#f9f9f9");
     };
   }, []);
+
   return (
     <>
+      <NextSeo
+        title="Job Opportunities"
+        description="Let’s connect you to your next big deal!"
+        openGraph={{
+          url: 'https://www.codespaces.org/job-opportunities',
+          title: 'Job Opportunities',
+          description: 'Let’s connect you to your next big deal!',
+          images: [
+            {
+              url: 'https://i.postimg.cc/XvRyXV10/Sitmap.png',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+            },
+          ],
+          site_name: 'Code Space',
+        }}
+      />
       <span
         style={{ transform: `translateX(${completion - 100}%)` }}
         className="fixed z-[100] w-full h-1 bg-primary top-0 max-lg:hidden"
@@ -28,8 +48,7 @@ export const JobOpp = () => {
       <Hero
         title="JOB OPPORTUNITIES"
         h1="Let’s connect you to your next big deal!"
-        text="We are a non-profit organization focused on celebrating and
-        empowering Genz in technology across Africa."
+        text="We are a non-profit organization focused on celebrating and empowering Genz in technology across Africa."
         hero={image}
       />
       <Opportunities />
