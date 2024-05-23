@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
         <hr className="border border-gray-200" />
         <div className="pt-[30px] md:pt-20 text-center font-gelion text-[15px]">
-          <span>Code Space | All Rights Reserved | Copyright 2023</span>
+          <span>Code Space | All Rights Reserved | Copyright 2024</span>
         </div>
       </div>
     </footer>
