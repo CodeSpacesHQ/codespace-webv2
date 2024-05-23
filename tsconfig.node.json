@@ -3,8 +3,12 @@
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["generate-sitemap.ts"]
 }
