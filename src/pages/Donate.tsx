@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { ThemeColor, updateThemeColor } from "../utils/Theme";
-import { NextSeo } from 'next-seo';
 
 import useReadingProgress from "../hooks/useReadingProgress";
 

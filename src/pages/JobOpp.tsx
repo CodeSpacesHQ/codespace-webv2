@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { updateThemeColor, ThemeColor } from "../utils/Theme";
-import { NextSeo } from 'next-seo';
 
 import Hero from "../components/Hero-2";
 import Community from "../components/Community";

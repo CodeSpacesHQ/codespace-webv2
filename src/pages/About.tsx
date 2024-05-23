@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { updateThemeColor, ThemeColor } from "../utils/Theme";
-import { NextSeo } from 'next-seo';
 
 import {
   Partners,

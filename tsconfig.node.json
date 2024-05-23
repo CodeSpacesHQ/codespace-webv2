@@ -8,7 +8,8 @@
     "target": "ESNext",
     "outDir": "./dist",
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["generate-sitemap.ts"]
 }
