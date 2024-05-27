@@ -24,7 +24,7 @@ const Hero = () => {
 
                 <button className="bg-primary text-white font-semibold text-base lg:text-xl rounded-[15px] px-[18px] py-[14.5px] sm:px-8 sm:py-4 lg:px-12 hover:scale-105 transition-all">
                   <a
-                    href="https://forms.gle/csVUQEScZpiK9WzE8"
+                    href="https://join.slack.com/t/codespaace/shared_invite/zt-2jljhjod1-JFlJyJS_qlswWC3~JfP3Lg"
                     target="_blank"
                     rel="noreferrer"
                   >
