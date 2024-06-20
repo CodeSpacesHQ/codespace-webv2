@@ -15,7 +15,7 @@ We welcome contributions to our website from the community! If you'd like to con
 
 
 ## Contact Us
-> If you have any question, please reach out to us at hello@codespaceafrica.com or come chat with us on Twitter.
+> If you have any question, please reach out to us at hello@codespaces.org or come chat with us on Twitter.
 
 ## License
 

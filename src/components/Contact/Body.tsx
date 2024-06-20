@@ -165,7 +165,7 @@ const ContactBody: React.FC = () => {
             onSubmit={handleSubmit}
             id="email"
             className="text-[#344054] font-inter"
-            action="https://formsubmit.co/ajax/hello@codespaces.com"
+            action="https://formsubmit.co/ajax/hello@codespaces.org"
             method="POST"
           >
             <div>
