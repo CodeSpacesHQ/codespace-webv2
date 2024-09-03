@@ -11,7 +11,7 @@ Our aim is to bring together teenage tech enthusiasts (aged 17-20) from across A
 
 ## Contributing ✨
 
-We welcome contributions to our website from the community! If you'd like to contribute, please open a pull request with your changes. When opening a PR, please tag any associated parties, [@Tobithedev](https://github.com/Tobithedev) and [@PreciousOrjiude](https://github.com/IndigoSoftwares21)
+We welcome contributions to our website from the community! If you'd like to contribute, please open a pull request with your changes. When opening a PR, please tag any associated parties, [@defiboyszn](https://github.com/defiboyszn) and [@PreciousOrjiude](https://github.com/IndigoSoftwares21)
 
 
 ## Contact Us
