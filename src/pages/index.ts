@@ -5,3 +5,5 @@ export * from "./Donate";
 export * from "./Shop";
 export * from "./Faq";
 export * from "./FormSubmit/Success";
+export * from "./Ambassadors";
+

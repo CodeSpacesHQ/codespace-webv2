@@ -22,9 +22,14 @@ export const menuItems: MenuItems[] = [
   },
   {
     key: 4,
-    name: "Job Opportunities",
-    where: "/job",
+    name: "Ambassadors",
+    where: "/ambassadors",
   },
+  // {
+  //   key: 4,
+  //   name: "Job Opportunities",
+  //   where: "/job",
+  // },
   {
     key: 5,
     name: "Blog",
