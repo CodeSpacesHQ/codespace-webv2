@@ -11,7 +11,7 @@
     "generate-sitemap": "node --import ./loaders.mjs generate-sitemap.ts"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.8",
+    "@emotion/react": "^11.11.1",
     "framer-motion": "^10.12.9",
     "next-seo": "^6.5.0",
     "next-sitemap": "^4.2.3",
