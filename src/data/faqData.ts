@@ -33,7 +33,7 @@ export const faqData: faqData[] = [
   {
     question: "How do I contact Code Space on sponsoring / partnering?",
     answer:
-      "You can reach us via codespaceng@gmail.com",
+      "You can reach us via partnership@codespaceafrica.com",
   },
   {
     question: "Can I post a job to your community?",
