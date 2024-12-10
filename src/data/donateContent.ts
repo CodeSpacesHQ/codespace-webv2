@@ -26,6 +26,6 @@ export const donateContents: donateItems[] = [
     title: "DONATE IN KIND",
     text: "At Code Space Africa, we welcome donations in kind from anyone willing to support our community members. If you have any laptops, books, or other tech gear that you would like to donate, please don't hesitate to contact us at     ",
     buttonText: "SEND US AN EMAIL",
-    link: "mailto:info@codespaceafrica.com",
+    link: "mailto:codespaceng@gmail.com",
   },
 ];
